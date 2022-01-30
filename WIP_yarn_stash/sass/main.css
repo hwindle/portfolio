@@ -1,0 +1,29 @@
+body {
+  margin: 0em;
+  font-family: cantarell, sans-serif;
+  font-size: 1em;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0.2em;
+  grid-template-columns: 20%  40%  30%;
+  grid-template-areas: "header header  header" "sidebar content content" "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  background: url("../img/bg_header.png") #ccc;
+}
+
+#big-title {
+  font-size: 2.6em;
+  color: white;
+}
+
+header h2 {
+  font-size: 2.2em;
+  font-style: italic;
+  color: white;
+}

@@ -1,0 +1,898 @@
+/******************
+ * Imported CSS files, partial SCSS files
+ * and the mixin import live in here
+ ***/
+/* for the header and key contacts area rgb(178, 179, 181) */
+/* for the content and links, rgb(63, 57, 50) */
+/* from the logo rgb(1, 204, 221) */
+/* from the logo rgb(32, 2, 136) */
+/* for effects, rgb(40, 134, 169) */
+/* for success, rgb(50, 123, 51) */
+/* for errors, rgb(159, 35, 2) */
+@font-face {
+  /* For the body copy and non-active links */
+  font-family: body-sans;
+  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.eot");
+  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.eot#iefix") format("embedded-opentype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.svg#latin_modern_sans_demi_co10Rg") format("svg"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.ttf") format("truetype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  /* for small titles and the strong tag */
+  font-family: body-bold;
+  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.eot");
+  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.eot#iefix") format("embedded-opentype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.svg#latin_modern_sans10_bold") format("svg"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.ttf") format("truetype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  /* for emphasis and the copyright information */
+  font-family: body-italic;
+  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.eot");
+  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.eot#iefix") format("embedded-opentype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.svg#latin_modern_sans_demi_co10Ob") format("svg"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.ttf") format("truetype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.woff") format("woff"); }
+/* SCSS variables for font stacks and font-weight properties */
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/********************************************
+ * LAYOUT
+ *
+ * Setting up the padding, basic colours, and
+ * any positioning.
+ ********************************************/
+html, body {
+  height: 100%; }
+
+body, div#mainContent {
+  background: #3f3932;
+  color: #EEE; }
+
+a#top_head, .jumbotron, #keyContacts, #mainDiv > .row {
+  background: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/lighter_sandy_bg.png") repeat;
+  color: #3f3932;
+  text-decoration: none; }
+
+#keyContacts {
+  color: #3f3932 !important; }
+
+/*
+.no-multiplebgs a#top_head, .jumbotron, #keyContacts, #mainDiv > .row {
+  background: $header-bg;
+  color: $content-bg;
+  text-decoration: none;
+}
+*/
+#top_head.jumbotron {
+  margin: 0;
+  padding: 1em 2em; }
+
+#logo {
+  margin: 0;
+  margin-left: 0;
+  padding: 0;
+  width: 700px;
+  height: 151px;
+  background-image: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/abc_filtspec_website_logo.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+@media (max-width: 1400px) and (min-height: 1200px) {
+  #logo {
+    width: 800px;
+    height: 251px; } }
+@media (max-width: 950px) {
+  #logo {
+    width: 650px;
+    height: 101px; } }
+@media (max-width: 800px) {
+  #logo {
+    width: 630px;
+    height: 101px; } }
+@media (max-width: 700px) {
+  #logo {
+    width: 550px;
+    height: 80px; } }
+@media (max-width: 600px) {
+  #logo {
+    /* background-image: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/abc_letters.svg"); */
+    width: 450px;
+    height: 70px; } }
+@media (max-width: 500px) {
+  #logo {
+    /* background-image: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/abc_letters.svg"); */
+    width: 340px;
+    height: 65px; }
+
+  #keyContacts span {
+    width: 20px;
+    height: 20px; }
+
+  #keyContacts {
+    font-size: 80%; } }
+pre, code, p {
+  padding: 1em; }
+
+footer {
+  width: 80%;
+  margin: 20px auto 3px auto;
+  /* margin-left: 50%; */ }
+
+/** special bits **/
+#ourMap {
+  width: 100%;
+  height: 500px; }
+
+@media (max-width: 1000px) {
+  #ourMap {
+    height: 400px; } }
+@media (max-width: 800px) {
+  #ourMap {
+    height: 360px; } }
+@media (max-width: 700px) {
+  #ourMap {
+    height: 320px; } }
+@media (max-width: 600px) {
+  #ourMap {
+    height: 280px; } }
+@media (max-width: 500px) {
+  #ourMap {
+    height: 400px; } }
+/***********
+* FORMS
+*
+* styles for various types of form
+* or PHP web applications
+*/
+.success, .js-success, .php-error, .js-error {
+  color: #b2b3b5;
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+  width: 50%;
+  margin: 0 auto; }
+
+.success {
+  background: #327b33; }
+
+.php-error {
+  background: #9f2302;
+  color: #b2b3b5; }
+
+.js-error {
+  width: 70%;
+  background: #3f3932;
+  color: #EEE;
+  border: 1px solid #9f2302;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 0 2px rgba(255, 0, 0, 0.5); }
+
+#error_space {
+  width: 70%;
+  height: 4em;
+  margin: 0 auto;
+  color: #EEE;
+  font-family: body-italic, "Liberation Sans", Arial, sans-serif;
+  font-size: 1.2em; }
+
+/* CONTACT FORM */
+form#contactForm {
+  width: 75%;
+  margin: 0 auto; }
+
+@media (max-width: 768px) {
+  form#contactForm {
+    width: 90%;
+    margin: 0 auto; } }
+@media (max-width: 600px) {
+  form#contactForm {
+    width: 95%;
+    margin: 0 auto; } }
+textarea#message {
+  box-shadow: 0 0 5px black;
+  width: 100%;
+  height: 8em;
+  max-height: 60%; }
+
+label {
+  float: left;
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+  font-size: 1.2em; }
+
+input:focus, textarea:focus {
+  box-shadow: -1px 1px 3px #2886a9, 0 0 5px #200288;
+  background: #EEE; }
+
+input {
+  width: 100%; }
+
+input, textarea {
+  float: left;
+  font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif;
+  background: #b2b3b5;
+  color: black;
+  padding: 0.3em;
+  border: 1px solid transparent;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0; }
+
+input#submit-custom, input#attach {
+  width: 4em;
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+  font-size: 1.6em;
+  color: #3f3932;
+  background: #b2b3b5;
+  padding: 0.4em 1em;
+  margin-left: 15px;
+  border: 2px solid transparent; }
+
+input#submit-custom:focus, input#attach:focus,
+input#submit-custom:hover, input#attach:hover {
+  background: #2886a9;
+  color: white;
+  border: 2px solid #200288; }
+
+button#unhide-attachments {
+  background: #3f3932;
+  color: #EEE;
+  border: 2px solid #b2b3b5;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif !important;
+  font-size: 1.2em !important;
+  padding: 0.3em 1em !important;
+  margin-left: 15px !important; }
+
+#uploads-div {
+  display: none; }
+
+input#attach {
+  padding: 0.3em 0.6em;
+  font-size: 1.2em; }
+
+/*******************************************
+* HEADINGS & PARAGRAPHS
+*
+* h1-h6 values and line-heights  go here.
+******************************************/
+h1 {
+  font-size: 2em;
+  line-height: 2;
+  letter-spacing: 2px; }
+
+h2 {
+  font-size: 2em;
+  line-height: 1.5; }
+
+h3 {
+  font-size: 1.4em;
+  line-height: 1.3; }
+
+h4 {
+  font-size: 1em;
+  line-height: 1; }
+
+h5 {
+  font-size: 0.8em; }
+
+h6 {
+  font-size: 0.6em; }
+
+a, p, table, figcaption {
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+  font-size: 1em;
+  padding: 0.3em 1em; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center; }
+
+h1, h3, h5 {
+  font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif; }
+
+h2, h4, h6 {
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+  font-weight: 500; }
+
+h1 a:link, h2 a:link, h3 a:link,
+h1 a:visited, h2 a:visited, h3 a:visited,
+h1 a:hover, h2 a:hover, h3 a:hover,
+h1 a:focus, h2 a:focus, h3 a:focus {
+  text-decoration: none; }
+
+#keyContacts ol li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.3em 2em;
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+  font-size: 1.6em; }
+
+/***************************************
+* IMAGES
+*
+* Including figure, hover effects over images
+* and captions
+***************************************/
+/* Use srcset in images. Will display a smaller img in IE 8 */
+figcaption {
+  font-size: 1.4em;
+  font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif;
+  letter-spacing: 1px;
+  width: 100%; }
+
+a.product > figure {
+  color: #b2b3b5;
+  text-decoration: none; }
+
+a.product:hover > figure {
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 3px #200288, 0 0 5px #2886a9;
+  -moz-box-shadow: 0 0 3px #200288, 0 0 5px #2886a9;
+  box-shadow: 0 0 3px #200288, 0 0 5px #2886a9;
+  border-color: #200288; }
+
+figure {
+  width: 75%;
+  height: 75%;
+  margin: 15px auto;
+  padding: 1em 1em;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #EEE;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0; }
+
+figure > img {
+  background: white;
+  width: 100%; }
+
+/******
+ * The suppliers table on the about.php page
+ *
+ */
+#suppliersTable ol li, ol.suppliers li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 4px 4px; }
+
+/*******************************************
+* NAVIGATION & LINKS
+*
+* a link settings and navigation bar styling
+******************************************/
+#twitterLogo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 1.5em;
+  height: 1.8em;
+  /* 23px, 50px for retina screens */
+  z-index: 2;
+  background: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/twitter_small.png") no-repeat top/100% 100%; }
+
+#facebookLogo {
+  position: absolute;
+  top: 4em;
+  right: 10px;
+  width: 1.5em;
+  height: 1.8em;
+  /* 23px, 50px for retina screens */
+  z-index: 2;
+  background: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/facebook_small.png") no-repeat top/100% 100%; }
+
+@media (min-width: 1200px) {
+  #twitterLogo, #facebookLogo {
+    width: 2em;
+    height: 2.2em; } }
+/**********
+ * Plain links within the body copy
+ *
+ **/
+a, a:visited {
+  color: #2886a9;
+  border-bottom: #200288; }
+
+a:hover, a:focus {
+  color: #200288;
+  border-bottom: #2886a9; }
+
+span .glyphicon {
+  width: 30px;
+  height: 30px; }
+
+#phoneNav ul li, #mainNav ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+
+#phoneNav ul li:last-child, #mainNav ul li:last-child {
+  border-bottom: none; }
+
+#mainNav {
+  padding-top: 20px; }
+
+#mainNav ul li {
+  margin-top: 0.3em; }
+
+#twoContacts p {
+  position: relative;
+  width: auto;
+  height: 1.2em;
+  padding-bottom: 2em; }
+
+/* #twoContacts p:last-child { padding-bottom: 1em; } */
+#twoContacts a, #twoContacts a:visited {
+  font-size: 70%;
+  margin: 0, 0, 0, 2em !important;
+  padding: 5px; }
+
+#twoContacts p a:before {
+  content: "\261B ";
+  color: #b2b3b5; }
+
+#twoContacts a:hover, #twoContacts a:focus {
+  border-bottom: 0px solid transparent !important;
+  background: #141414;
+  background: rgba(0, 0, 0, 0.5); }
+
+#mainNav a, #mainNav a:visited {
+  color: #b2b3b5;
+  /* animation part */
+  border-bottom: 2px solid transparent;
+  width: 0px;
+  transition: 0.7s ease; }
+
+#mainNav a:hover, #mainNav a:focus {
+  background: #141414;
+  /* IE 8 */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  /* animation part, eases in */
+  width: 100%;
+  border-bottom: 2px solid #b2b3b5; }
+
+/*********
+ * PHONE Navigation drop down menu only
+ * and the menu button
+ */
+#phoneNav ul li, #mainNav ul li {
+  display: block;
+  height: 100%;
+  font-size: 1.6em;
+  padding: 0.3em 1em;
+  background: #3f3932;
+  border-bottom: 0px solid transparent; }
+
+/* The hamburger menu, shown on mobile devices */
+#topHamMenu {
+  background: #3f3932;
+  color: #b2b3b5;
+  font-size: 1.2em;
+  margin-top: -2.4em;
+  margin-left: 30px; }
+
+/* mobile orientation */
+@media (max-width: 768px) and (orientation: portrait) {
+  #topHamMenu {
+    display: block; } }
+@media (max-width: 450px) {
+  /* below 450px make the menu navigation move to the left. */
+  #phoneNav ul {
+    margin-left: -65%; } }
+#phoneNav .dropdown-menu {
+  background: #3f3932;
+  box-shadow: 0 0 3px #CCC, 0 0 5px #EEE; }
+
+#phoneNav .dropdown-menu li a {
+  /* background: rgba(0, 0, 0, 0.3); */
+  color: #b2b3b5;
+  border: none; }
+
+#phoneNav a, #phoneNav a:visited {
+  border: 1px solid transparent;
+  /* animation part */
+  border-bottom: 2px solid transparent;
+  width: 0px;
+  transition: 0.7s ease; }
+
+#phoneNav a:hover, #phoneNav a:focus {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  /* animation part, eases in */
+  width: 100%;
+  border-bottom: 2px solid #b2b3b5; }
+
+/********
+ * Footer Navigation
+ *
+ * For accessibility, usability.
+ */
+#footerNav, footer > p {
+  font-size: 0.9em;
+  padding: 6px 10px; }
+
+#footerNav ul li {
+  display: inline-block;
+  margin-bottom: 1em; }
+
+#footerNav a, #footerNav a:visited {
+  color: #2886a9;
+  text-decoration: none; }
+
+#footerNav a:hover, #footerNav a:focus {
+  color: #200288;
+  text-decoration: none;
+  border-bottom: 1px solid #01CCDD; }
+
+/* Link for my website */
+footer p > a {
+  color: #b2b3b5 !important;
+  border-bottom: 1px dashed #EEE !important;
+  font-size: 0.9em; }
+
+/**************
+* For special bits that don't belong
+* in the other SCSS files
+*
+*/
+table.suppliers {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0 5px black; }
+
+table.suppliers td > span {
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif; }
+
+@media (max-width: 768px) {
+  table td img, table th img,
+  table.suppliers img, #suppliersTable img {
+    width: 100px; } }
+#suppliersTable {
+  display: none;
+  width: 90%;
+  margin: 0 auto; }
+
+#suppliersTable img {
+  background: white; }
+
+#moreSuppliers {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.6em;
+  background: #4d453c;
+  /* IE 8 */
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer; }
+
+#moreSuppliers td > h3 {
+  text-align: left; }
+
+/** Google Maps Buttons **/
+.map-button {
+  width: 4em;
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+  font-size: 1.6em;
+  color: #3f3932;
+  background: #b2b3b5;
+  padding: 0.4em 1em;
+  border: 2px solid transparent; }
+
+.map-button:focus, .map-button:hover {
+  background: #2886a9;
+  color: white;
+  border: 2px solid #200288; }
+
+/** Footer cards accepted bit **/
+footer #cardsAccepted ul li {
+  display: inline-block;
+  height: 30px; }
+
+@media (max-width: 1000px) {
+  footer #cardsAccepted ul li {
+    height: 20px; } }
+footer #cardsAccepted ul li img {
+  width: 100%;
+  height: 100%; }
+
+/* Welcome to Compass. Use this file to define print styles.
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/***********
+* TABLES
+*
+* Table layouts for basic tables and lists of parts.
+***/
+table {
+  width: 80%;
+  margin: 13px auto;
+  border-top: #EEE 1px solid;
+  border-bottom: #EEE 1px solid;
+  border-collapse: collapse;
+  padding: 2px;
+  box-shadow: 2px 0 2px rgba(240, 240, 240, 0.3), -2px 0 2px rgba(240, 240, 240, 0.3); }
+
+caption {
+  font-size: 1.4em;
+  font-family: body-italic, "Liberation Sans", Arial, sans-serif;
+  padding: 0 0 0.3em 0; }
+
+thead, tfoot {
+  background-color: #333;
+  /* for IE 8 */
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), #3f3932);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), #3f3932);
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), #3f3932);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), #3f3932);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #3f3932);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AA000000', endColorstr='#FF3F3932', GradientType=0); }
+
+thead {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+
+tfoot {
+  border-top: 1px solid rgba(0, 0, 0, 0.5); }
+
+th, td {
+  padding: 0.3em 0.8em; }
+
+colgroup {
+  background: #4d453c;
+  /* IE 8 */
+  background: rgba(255, 255, 255, 0.3); }
+
+thead > tr > th {
+  font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 0 #222, -1px -1px 0 #222; }
+
+tfoot > tr > td {
+  font-family: body-italic, "Liberation Sans", Arial, sans-serif;
+  font-size: 0.9em; }
+
+tbody > tr:nth-child(even) {
+  background: #4d453c;
+  background: rgba(255, 255, 255, 0.3); }
+
+tbody > tr > td:nth-child(odd) {
+  background: #302c26;
+  background: rgba(0, 0, 0, 0.3); }
+
+td {
+  color: white; }
+
+/* parts list table styles */
+table.partsList {
+  width: 80%;
+  margin: 13px auto;
+  border: 1px solid rgba(32, 2, 136, 0.4);
+  border-collapse: collapse;
+  padding: 2px;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+
+.partsList caption {
+  background: rgba(32, 2, 136, 0.4);
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  color: #EEE;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; }
+
+.partsList thead {
+  background: #200288;
+  /* for IE 8 */
+  background: rgba(32, 2, 136, 0.4); }
+
+.partsList tfoot {
+  background-color: #3f3932;
+  background-image: -webkit-linear-gradient(top, rgba(32, 2, 136, 0.5), #3f3932);
+  background-image: -moz-linear-gradient(top, rgba(32, 2, 136, 0.5), #3f3932);
+  background-image: -ms-linear-gradient(top, rgba(32, 2, 136, 0.5), #3f3932);
+  background-image: -o-linear-gradient(top, rgba(32, 2, 136, 0.5), #3f3932);
+  background-image: linear-gradient(rgba(32, 2, 136, 0.5), #3f3932);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AA200288', endColorstr='#FF3F3932', GradientType=0); }
+
+.partsList thead {
+  border-bottom: 1px solid rgba(32, 2, 136, 0.5); }
+
+.partsList tfoot {
+  border-top: 1px solid rgba(32, 2, 136, 0.5); }
+
+.partsList colgroup {
+  background: #4d453c;
+  background: rgba(255, 255, 255, 0.3); }
+
+.partsList thead > tr > th {
+  font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 0 #222, -1px -1px 0 #222; }
+
+.partsList tbody > tr:nth-child(even) {
+  background: #4d453c;
+  background: rgba(200, 200, 200, 0.3); }
+
+.partsList tbody > tr > td:nth-child(odd) {
+  background: rgba(40, 134, 169, 0.2); }
+
+/** for links page table **/
+td > a > h3, th > a > h3 {
+  text-align: left; }
+
+/** for the opening Times table **/
+table.openingTable {
+  margin: 5px auto 5px 2em;
+  width: 60%;
+  border: 0px solid transparent;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0px 0px 5px #b2b3b5;
+  -webkit-box-shadow: 0px 0px 5px #b2b3b5;
+  box-shadow: 0px 0px 0px transparent; }
+
+table.openingTable > tr, table.openingTable > tr:nth-child(even),
+table.openingTable > tr:nth-child(odd), table.openingTable td,
+table.openingTable > tbody > tr > td:nth-child(2n+1) {
+  background: #3f3932; }
+
+/*** TEXT STYLES - for body copy, strong, em etc **/
+article {
+  padding: 1em; }
+
+strong {
+  color: #2886a9; }
+
+em {
+  font-family: body-italic, "Liberation Sans", Arial, sans-serif; }
+
+.centre {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.left {
+  text-align: left; }
+
+.smaller-font {
+  font-size: 70%; }
+
+.indent {
+  padding-left: 3em; }
+
+.bulletList li {
+  margin-left: 3em;
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif; }
+
+.bulletList li:before {
+  content: "\261B  ";
+  color: #b2b3b5; }
+
+.numberList li {
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+  list-style-type: decimal;
+  margin-left: 3em; }
+
+.numberList li:before {
+  content: " "; }
+
+.bulletList li > .numberList li {
+  list-style-type: lower-alpha; }
+
+.bulletList li > .circles li {
+  list-style-type: disc; }
+
+.bulletList li > .circles li:before {
+  content: ""; }
+
+ul.bulletList li > p {
+  margin-left: 1em; }
+
+.secondCol {
+  border-left: 2px solid #352F27; }
+
+dl, dd, dt, .openingTable td {
+  padding: 1em;
+  font-size: 1.1em;
+  font-family: body-sans, "Liberation Sans", Arial, sans-serif; }
+
+/*******
+ * Vehicle Record Card link on front page
+ *
+ * Links to a downloadable PDF
+ */
+#recCardLink {
+  width: 300px;
+  height: 300px;
+  float: right; }
+
+@media (max-width: 950px) and (min-width: 700px) {
+  #recCardLink {
+    width: 170px;
+    height: 200px; }
+
+  #recCardLink figcaption {
+    font-size: 0.8em; } }
+@media (max-width: 700px) {
+  #recCardLink {
+    display: none; } }
+#recCardLink img {
+  background: transparent; }
+
+#recCardLink h4 > a {
+  color: #b2b3b5;
+  font-size: 1.4em; }
+
+/*# sourceMappingURL=style.css.map */
+
+/*
+     FILE ARCHIVED ON 22:28:47 Oct 17, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:16:11 Aug 11, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 140.173
+  LoadShardBlock: 84.533 (3)
+  RedisCDXSource: 31.559
+  PetaboxLoader3.resolve: 39.483
+  esindex: 0.014
+  exclusion.robots.policy: 0.26
+  CDXLines.iter: 19.249 (3)
+  PetaboxLoader3.datanode: 143.524 (4)
+  load_resource: 133.322
+  exclusion.robots: 0.279
+*/

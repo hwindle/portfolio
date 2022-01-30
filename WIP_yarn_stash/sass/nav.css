@@ -1,0 +1,26 @@
+/* Navigation bit */
+nav {
+  grid-area: sidebar;
+  background-color: #ba76b0;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 1.2em;
+  padding: 0.6em;
+}
+
+a:link, a:visited {
+    background-color: #ba76b0;
+    color: white;
+    padding: 4px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+}
+
+a:hover, a:active {
+    background-color: #930a7e;
+    font-weight: bold;
+}
+/* navigation */

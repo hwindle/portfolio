@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(115, 108, 95);
+  font-size: 16px;
+  font-family: 'Liberation sans', 'Roboto', 'Arial';
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.8), 0 8px 22px 0 
+    rgba(0, 0, 0, 0.7);
+  background-color: #dacfc2;
+}
+
+h1.title {
+  font-size: 3.4rem;
+  font-family: 'Liberation serif', 'Times New Roman', Times, serif;
+  margin-bottom: 6rem;
+}
+
+div#msg-js {
+  font-size: 1.8rem;
+}
+
+div#msg-js > span.mood {
+  /* text-decoration: dotted underline; */
+}
+
+div#msg-js > span.food {
+  font-weight: bold;
+}
+
+div#msg-js > span.animal {
+  color: rgb(40, 72, 13);
+  font-weight: bold;
+} 
+
+button.large {
+  padding: 1rem;
+  width: 100%;
+  background-color: #eee;
+  color: rgb(40, 72, 13);
+  border: 1px solid rgb(40, 72, 13);
+  border-radius: 4px;
+  cursor: pointer;
+}

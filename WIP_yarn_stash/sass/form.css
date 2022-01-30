@@ -1,0 +1,41 @@
+
+
+form {
+  margin: 1.2em;
+  background: #b998c6;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.6em;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+input {
+  font-size: 1.2em;
+  margin: 5px;
+  padding: 2px 5px 2px 0px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+select {
+  font-size: 1.4em;
+  font-weight: bold;
+  background: #ddd;
+}
+
+.form-row {
+
+}
+
+.submit-btn-row {
+  background: white;
+}
+
+input[type="submit"] {
+  background-color: #930a7e;
+  font-weight: bold;
+}

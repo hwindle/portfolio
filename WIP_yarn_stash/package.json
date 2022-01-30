@@ -1,0 +1,22 @@
+{
+  "name": "yarn-db",
+  "version": "0.0.1",
+  "description": "Keeping track of yarn stash",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hazel Windle",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-coffee": "^3.0.3",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.4.1",
+    "mustache": "^3.0.3"
+  }
+}
