@@ -41,9 +41,100 @@
         </nav>
 
         <section id="content">
-            
+            <h3>Contact</h3>
+
+            <form method="post" action="#" id="contact-form" class="" enctype="multipart/form-data">
+            <!-- names are: submit, name, email, telephone, human, message -->
+            <div class="group">
+                <label for="name" class="">*Name
+                    <input type="text" name="name" id="name" class=""  required="required" placeholder="First Last">
+                </label>
+            </div>
+            <div class="group">
+                <label for="email" class="">*Email
+                    <input type="text" name="email" id="email" class=""  required="required" placeholder="info@example.com">
+                </label>
+            </div>
+            <div class="group">
+                <label for="telephone" class="col-xs-12 col-sm-3">Telephone
+                    <input type="text" name="telephone" id="telephone" class="" max-length="20" placeholder="01234 567890"/>
+                </label>
+            </div>
+            <!-- This is the start of the PHP mailer, file upload picture bit -->
+      <div class="group"><button id="unhide-attachments">Add Pictures</button></div>
+      <!-- hidden part -->
+      <div id="uploads-div">
+        <div class="group">
+          <input type="hidden" name="MAX_FILE_SIZE" value="1000">
+          <label for="uploads" class="">
+            <span class="glyphicon glyphicon-paperclip"></span>
+            Upload
+          </label>
+          <div class="">
+            <input id="uploads" name="userfile[]" type="file" multiple="multiple">
+          </div>
+        </div>
+        <div class="group">
+          <div class="">
+            <input type="submit" name="attach" id="attach" value="Attach"/>
+          </div>
+        </div>
+      </div>
+      <!-- end of hidden part -->
+      <div class="group">
+        <label for="human" class="">*Three plus two is?
+            <input type="number" name="human" id="human" class="" required="required" placeholder="1"/>
+        </label>
+      </div>
+      <div class="group">  
+            <textarea name="message" id="message" class="" placeholder="type your enquiry here"></textarea>
+      </div>
+      <div class="group">
+          <input type="submit" class="btn" id="submit-custom" name="submit" value="Send"/>
+      </div>
+    </form>
+
+        <div id="error_space" tabindex="-1" role="dialog" aria-labelledby="Contact Form Errors">
+            <header>
+                <h4 class="modal-title" id="contact_header_errors">Contact  Form Result</h4>
+            </header>
+            <div class="">
+                <p id="php_success"></p>
+                <p id="php_errors"></p>
+            </div>
+        </div>
+
+    <!-- Google map -->
+    <div class="row">
+        <div id="opening-times" class="">
+        <h3>Trade Counter</h3>
+        <p>We are open Monday to Saturday, and we also sell a range of oils. </p>
+        <table class="openingTable">
+	    <tr>
+            <td class="right">Mon: </td>
+            <td class="left"> 8am - 6pm</td>
+        </tr><tr>
+            <td class="right">Tues: </td>
+            <td class="left"> 8am - 6pm</td>
+        </tr><tr>
+            <td class="right">Weds: </td>
+            <td class="left"> 8am - 6pm</td>
+        </tr><tr>
+            <td class="right">Thurs: </td>
+	        <td class="left"> 8am - 6pm</td>
+        </tr><tr>
+            <td class="right">Fri: </td>
+            <td class="left"> 8am - 6pm</td>
+        </tr><tr>
+            <td class="right">Sat: </td>
+            <td class="left"> 8am - 12 noon</td>
+        </tr>
+        </table>
+    </div>
+     
         </section>
     </main>
+    
     <footer>
         <p>
             Taken from the Internet archives by Hazel Windle, originally made in 2016 for a local company, revamped in 2022.
