@@ -1,0 +1,55 @@
+/*******************************************
+* HEADINGS & PARAGRAPHS
+*
+* h1-h6 values and line-heights  go here.
+******************************************/
+h1 {
+    font-size: 2em;
+    line-height: 2;
+    letter-spacing: 2px; }
+  
+  h2 {
+    font-size: 2em;
+    line-height: 1.5; }
+  
+  h3 {
+    font-size: 1.4em;
+    line-height: 1.3; }
+  
+  h4 {
+    font-size: 1em;
+    line-height: 1; }
+  
+  h5 {
+    font-size: 0.8em; }
+  
+  h6 {
+    font-size: 0.6em; }
+  
+  a, p, table, figcaption {
+    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+    font-size: 1em;
+    padding: 0.3em 1em; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center; }
+  
+  h1, h3, h5 {
+    font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif; }
+  
+  h2, h4, h6 {
+    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+    font-weight: 500; }
+  
+  h1 a:link, h2 a:link, h3 a:link,
+  h1 a:visited, h2 a:visited, h3 a:visited,
+  h1 a:hover, h2 a:hover, h3 a:hover,
+  h1 a:focus, h2 a:focus, h3 a:focus {
+    text-decoration: none; }
+  
+  #keyContacts ol li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.3em 2em;
+    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+    font-size: 1.6em; }

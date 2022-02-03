@@ -1,0 +1,49 @@
+/***************************************
+* IMAGES
+*
+* Including figure, hover effects over images
+* and captions
+***************************************/
+/* Use srcset in images. Will display a smaller img in IE 8 */
+figcaption {
+    font-size: 1.4em;
+    font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif;
+    letter-spacing: 1px;
+    width: 100%; }
+  
+  a.product > figure {
+    color: #b2b3b5;
+    text-decoration: none; }
+  
+  a.product:hover > figure {
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 3px #200288, 0 0 5px #2886a9;
+    -moz-box-shadow: 0 0 3px #200288, 0 0 5px #2886a9;
+    box-shadow: 0 0 3px #200288, 0 0 5px #2886a9;
+    border-color: #200288; }
+  
+  figure {
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    padding: 1em 1em;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #EEE;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0; }
+  
+  figure > img {
+    background: white;
+    width: 100%; }
+  
+  /******
+   * The suppliers table on the about.php page
+   *
+   */
+  #suppliersTable ol li, ol.suppliers li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 4px 4px; }
+  
