@@ -179,3 +179,15 @@ nav.tutorial ul li a:hover {
 section {
     scroll-behavior: smooth;
 }
+
+/*** skills highlight - pills ***/
+span.skill {
+    background-color: $grey2;
+    color: $white;
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.6rem;
+    margin-bottom: 0.3rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
