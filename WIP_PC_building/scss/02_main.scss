@@ -108,3 +108,26 @@ main {
         display: inline-block;
     }
 }
+
+/*** Links, nav bar ***/
+
+/* plain links */
+a {
+    color: $highlight;
+    text-decoration-color: transparent;
+    font-size: 1.6rem;
+}
+
+p a {
+    font-size: 1rem;
+}
+
+a:visited {
+    text-decoration-color: $grey2;
+}
+
+a:active, a:hover {
+    color: $grey2;
+    text-decoration-color: $headings;
+}
+

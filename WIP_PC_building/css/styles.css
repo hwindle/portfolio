@@ -150,6 +150,26 @@ main {
     display: inline-block;
   }
 }
+/*** Links, nav bar ***/
+/* plain links */
+a {
+  color: #0b4b6e;
+  text-decoration-color: transparent;
+  font-size: 1.6rem;
+}
+
+p a {
+  font-size: 1rem;
+}
+
+a:visited {
+  text-decoration-color: #505363;
+}
+
+a:active, a:hover {
+  color: #505363;
+  text-decoration-color: #1e3ca5;
+}
 .img-container {
   margin: 1.6rem 0;
   display: flex;
