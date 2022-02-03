@@ -131,3 +131,17 @@ a:active, a:hover {
     text-decoration-color: $headings;
 }
 
+/*** header links ***/
+nav.header-links a {
+    color: $white;
+    text-decoration-color: transparent;
+    font-size: 1.8rem;
+    padding: 0 1.6rem;
+}
+
+nav.header-links a:active, nav.header-links a:hover {
+    color: $white;
+    text-shadow: 1px 1px 3px $grey1;
+    text-decoration-color: $grey1;
+}
+

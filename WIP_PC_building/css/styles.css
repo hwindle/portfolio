@@ -170,6 +170,20 @@ a:active, a:hover {
   color: #505363;
   text-decoration-color: #1e3ca5;
 }
+
+/*** header links ***/
+nav.header-links a {
+  color: whitesmoke;
+  text-decoration-color: transparent;
+  font-size: 1.8rem;
+  padding: 0 1.6rem;
+}
+
+nav.header-links a:active, nav.header-links a:hover {
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px #a4a1ac;
+  text-decoration-color: #a4a1ac;
+}
 .img-container {
   margin: 1.6rem 0;
   display: flex;
