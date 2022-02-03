@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="simple_company_website_wireframe.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="396.5"
+     inkscape:cy="559.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="114.73523"
+       y="1061.8952"
+       width="191.97485"
+       height="51.483281"
+       id="rect16190" />
+    <rect
+       x="212.63947"
+       y="186.22375"
+       width="350.16644"
+       height="73.332611"
+       id="rect9308" />
+    <rect
+       x="52.157623"
+       y="204.56322"
+       width="111.75034"
+       height="54.173203"
+       id="rect3362" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect868"
+       width="203.83478"
+       height="151.03493"
+       x="4.5020828"
+       y="43.407181" />
+    <rect
+       style="fill:none;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect936"
+       width="202.38092"
+       height="31.125031"
+       x="4.5020823"
+       y="43.407181" />
+    <ellipse
+       style="fill:none;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="path960"
+       cx="30.046713"
+       cy="60.053921"
+       rx="20.730097"
+       ry="12.449592" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text3360"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3362);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="52.158203"
+         y="239.95312"
+         id="tspan23494">logo</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text9306"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect9308);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="212.63867"
+         y="221.61523"
+         id="tspan23496">company name</tspan></text>
+    <rect
+       style="fill:#5d5959;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;fill-opacity:1"
+       id="rect11424"
+       width="202.31966"
+       height="11.988476"
+       x="4.5020823"
+       y="74.532204" />
+    <rect
+       style="fill:#5d5959;fill-opacity:1;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect11470"
+       width="31.366528"
+       height="66.475494"
+       x="173.20689"
+       y="95.543686" />
+    <rect
+       style="fill:#5d5959;fill-opacity:1;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect11472"
+       width="202.7486"
+       height="10.704744"
+       x="5.5882411"
+       y="183.73737" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect11474"
+       width="54.877342"
+       height="93.924286"
+       x="26.273033"
+       y="200.6571" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect11498"
+       width="54.343475"
+       height="18.116478"
+       x="26.273033"
+       y="200.6571" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect11500"
+       width="45.557861"
+       height="11.696879"
+       x="30.684273"
+       y="224.50119" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect11502"
+       width="45.749237"
+       height="11.740651"
+       x="30.684273"
+       y="236.19806" />
+    <rect
+       style="fill:#5d5959;fill-opacity:1;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect11504"
+       width="11.127278"
+       height="12.098104"
+       x="69.689339"
+       y="203.24835" />
+    <rect
+       style="fill:#5d5959;fill-opacity:1;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect11528"
+       width="46.053917"
+       height="14.431423"
+       x="30.684273"
+       y="247.93871" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#040a0b;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect11610"
+       width="45.749237"
+       height="11.740651"
+       x="30.988953"
+       y="262.37012" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text16188"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect16190);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="114.73438"
+         y="1097.2852"
+         id="tspan23498">aside bel</tspan></text>
+  </g>
+</svg>
