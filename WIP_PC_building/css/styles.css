@@ -59,7 +59,11 @@ select {
 body {
   font-size: 16px;
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
-  background-color: #a4a1ac;
+  background: #a4a1ac;
+  background: #a4a1ac;
+  background-image: linear-gradient(35deg, #908d98 25%, transparent 0, transparent 75%, #908d98 0), linear-gradient(60deg, #908d98 25%, transparent 0, transparent 75%, #908d98 0);
+  background-position: 0 0 15px 15px;
+  background-size: 30px 30px;
   color: #141414;
 }
 
