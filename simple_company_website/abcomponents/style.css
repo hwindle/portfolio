@@ -12,23 +12,25 @@
 @font-face {
   /* For the body copy and non-active links */
   font-family: body-sans;
-  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.eot");
-  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.eot#iefix") format("embedded-opentype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.svg#latin_modern_sans_demi_co10Rg") format("svg"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.ttf") format("truetype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_regular/lmsansdemicond10-regular-webfont.woff") format("woff");
+  src: url('');
   font-weight: normal;
   font-style: normal;
-  font-stretch: normal; }
+  font-stretch: normal; 
+}
+
 @font-face {
   /* for small titles and the strong tag */
   font-family: body-bold;
-  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.eot");
-  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.eot#iefix") format("embedded-opentype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.svg#latin_modern_sans10_bold") format("svg"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.ttf") format("truetype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_bold/lmsans10-bold-webfont.woff") format("woff");
+  src: url('');
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal; 
+}
+
 @font-face {
   /* for emphasis and the copyright information */
   font-family: body-italic;
-  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.eot");
-  src: url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.eot#iefix") format("embedded-opentype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.svg#latin_modern_sans_demi_co10Ob") format("svg"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.ttf") format("truetype"), url("/web/20161017222847im_/http://abcomponents.org/assets/fonts/latinmodernsans_demicond_oblique/lmsansdemicond10-oblique-webfont.woff") format("woff"); }
+  src: url(''); 
+}
 /* SCSS variables for font stacks and font-weight properties */
  /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
