@@ -114,15 +114,17 @@ ul, ol, p {
 /*** main content ***/
 main {
   background-color: whitesmoke;
+  border: 1px solid #141414;
+  box-shadow: 0px 0px 5px #141414, 0px 0px 13px #505363;
 }
 
 @media screen and (max-width: 1200px) {
   main {
     width: 90%;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 
-  nav.tutorial li a {
+  nav.tutorial li {
     display: block;
   }
 
@@ -133,7 +135,7 @@ main {
 @media screen and (min-width: 1201px) {
   main {
     width: 80%;
-    margin: 0 auto;
+    margin: 1.6rem auto;
     border: 1px solid #141414;
     box-shadow: 0px 0px 5px #141414, 0px 0px 13px #505363;
   }
@@ -146,7 +148,7 @@ main {
     margin-left: 4rem;
   }
 
-  nav.tutorial li a {
+  nav.tutorial li {
     display: inline-block;
   }
 }
@@ -184,6 +186,33 @@ nav.header-links a:active, nav.header-links a:hover {
   text-shadow: 1px 1px 3px #a4a1ac;
   text-decoration-color: #a4a1ac;
 }
+
+/**** nav tutorial class ***/
+nav.tutorial {
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+}
+
+nav.tutorial ul {
+  padding: 0;
+}
+
+nav.tutorial ul li {
+  display: inline-block;
+}
+
+nav.tutorial ul li a {
+  padding: 0.3rem 1.6rem;
+}
+
+nav.tutorial ul li a:hover {
+  background: #0b4b6e;
+  color: whitesmoke;
+  text-decoration-color: #a4a1ac;
+}
 .img-container {
   margin: 1.6rem 0;
   display: flex;
@@ -194,6 +223,7 @@ nav.header-links a:active, nav.header-links a:hover {
 
 .img-container figure img {
   margin: 1rem;
+  max-width: 95%;
 }
 
 .img-container figure figcaption {
