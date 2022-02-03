@@ -24,6 +24,7 @@ header h2 {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 h2 {
@@ -42,6 +43,12 @@ h5, h6 {
     font-size: 1.6rem;
 }
 
+/*** paddings ***/
+ul, ol, p {
+    padding: 1rem;
+}
+
+
 /*** main content ***/
 
 main {
@@ -57,6 +64,10 @@ main {
     nav.tutorial li a {
         display: block;
     }
+
+    ul.list li {
+        margin-left: 0.3rem;
+    }
 }
 
 @media screen and (min-width: 1201px) {
@@ -65,6 +76,14 @@ main {
         margin: 0 auto;
         border: 1px solid black;
         box-shadow: 0px 0px 5px black;
+    }
+
+    main p {
+        padding: 0 1rem;
+    }
+
+    ul.list li {
+        margin-left: 4rem;
     }
 
     nav.tutorial li a {
