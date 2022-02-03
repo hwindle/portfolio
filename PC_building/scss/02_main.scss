@@ -191,3 +191,15 @@ span.skill {
     font-size: 1rem;
     font-weight: bold;
 }
+
+/*** footer ***/
+
+footer {
+    width: 100%;
+    background-color: $grey2;
+    color: $white;
+}
+
+footer p {
+    text-align: center;
+}
