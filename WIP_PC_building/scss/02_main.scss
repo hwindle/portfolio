@@ -174,3 +174,8 @@ nav.tutorial ul li a:hover {
     color: $white;
     text-decoration-color: $grey1;
 }
+
+/* bit for animating scroll to page section */
+section {
+    scroll-behavior: smooth;
+}
