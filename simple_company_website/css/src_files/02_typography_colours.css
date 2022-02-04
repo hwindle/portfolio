@@ -60,3 +60,14 @@ h2, h4, h6 {
 }
 
 /*** setting the colours for elements - DARK MODE ***/
+
+body, main {
+    background: #3f3932;
+    color: #EEE; 
+}
+
+#logo {
+    background-image: url('../../pics/apple-touch-icon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}

@@ -4,100 +4,34 @@
  * Setting up the padding, basic colours, and
  * any positioning.
  ********************************************/
- html, body {
+html, body {
     height: 100%; }
-  
-  body, div#mainContent {
-    background: #3f3932;
-    color: #EEE; }
-  
-  a#top_head, .jumbotron, #keyContacts, #mainDiv > .row {
-    background: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/lighter_sandy_bg.png") repeat;
-    color: #3f3932;
-    text-decoration: none; }
-  
-  #keyContacts {
-    color: #3f3932 !important; }
-  
-  /*
-  .no-multiplebgs a#top_head, .jumbotron, #keyContacts, #mainDiv > .row {
-    background: $header-bg;
-    color: $content-bg;
-    text-decoration: none;
-  }
-  */
-  #top_head.jumbotron {
+
+header {
     margin: 0;
-    padding: 1em 2em; }
+    padding: 1rem 2rem; 
+}
   
-  #logo {
+#logo {
     margin: 0;
     margin-left: 0;
     padding: 0;
-    width: 700px;
-    height: 151px;
-    background-image: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/abc_filtspec_website_logo.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    width: 250px;
+    height: 250px;
+}
   
-  @media (max-width: 1400px) and (min-height: 1200px) {
-    #logo {
-      width: 800px;
-      height: 251px; } }
-  @media (max-width: 950px) {
-    #logo {
-      width: 650px;
-      height: 101px; } }
-  @media (max-width: 800px) {
-    #logo {
-      width: 630px;
-      height: 101px; } }
-  @media (max-width: 700px) {
-    #logo {
-      width: 550px;
-      height: 80px; } }
-  @media (max-width: 600px) {
-    #logo {
-      /* background-image: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/abc_letters.svg"); */
-      width: 450px;
-      height: 70px; } }
-  @media (max-width: 500px) {
-    #logo {
-      /* background-image: url("/web/20161017222847im_/http://abcomponents.org/assets/photos/abc_letters.svg"); */
-      width: 340px;
-      height: 65px; }
+pre, code, p {
+    padding: 1rem; 
+}
   
-    #keyContacts span {
-      width: 20px;
-      height: 20px; }
-  
-    #keyContacts {
-      font-size: 80%; } }
-  pre, code, p {
-    padding: 1em; }
-  
-  footer {
-    width: 80%;
-    margin: 20px auto 3px auto;
-    /* margin-left: 50%; */ }
-  
-  /** special bits **/
-  #ourMap {
+footer {
     width: 100%;
-    height: 500px; }
+    margin: 20px auto 3px auto;
+}
   
-  @media (max-width: 1000px) {
-    #ourMap {
-      height: 400px; } }
-  @media (max-width: 800px) {
-    #ourMap {
-      height: 360px; } }
-  @media (max-width: 700px) {
-    #ourMap {
-      height: 320px; } }
-  @media (max-width: 600px) {
-    #ourMap {
-      height: 280px; } }
-  @media (max-width: 500px) {
-    #ourMap {
-      height: 400px; } }
+/** special bits **/
+#ourMap {
+    width: 100%;
+    height: 500px; 
+}
+  
