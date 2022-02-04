@@ -1,3 +1,17 @@
+:root {
+    --main-bg-col: rgba(39, 37, 30, 1.0); 
+    --light-grey: rgba(178, 179, 181, 1.0);
+    --white: rgba(250, 250, 250, 1.0);
+    --mid-grey: rgba(0, 0, 0, 0.5);
+    --black: rgba(0, 0, 0, 1.0);
+
+    --dark-company-col: rgba(59, 5, 92, 1.0);
+    --light-company-col: rgba(155, 46, 117, 1.0);
+
+    --green: rgba(39, 117, 22, 1.0);
+    --red: rgba(177, 37, 2, 1.0);
+}
+
 /*******************************************
 * HEADINGS & PARAGRAPHS
 *
@@ -62,18 +76,18 @@ h2, h4, h6 {
 /*** setting the colours for elements - DARK MODE ***/
 
 body, main {
-    background: #3f3932;
-    color: #EEE; 
+    background: var(--main-bg-col);
+    color: var(--white); 
 }
 
 figure {
-    color: #b2b3b5;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #EEE;
+    color: var(--light-grey);
+    background: var(--main-bg-col);
+    border: 1px solid var(--white);
 }
 
 figure > img {
-    background: white;
+    background: var(--white);
 }
 
 #logo {
@@ -84,156 +98,155 @@ figure > img {
 
 /*** Plain links within the body copy ***/
 a, a:visited {
-    color: #2886a9;
-    border-bottom: #200288; 
+    color: var(--light-company-col);
+    border-bottom: var(--dark-company-col); 
 }
   
 a:hover, a:focus {
-    color: #200288;
-    border-bottom: #2886a9; 
+    color: var(--dark-company-col);
+    border-bottom: var(--light-company-col); 
 }
 
 nav#main-nav a, nav#main-nav a:visited {
-    color: #b2b3b5;
+    color: var(--light-grey);
 }
 
 nav#main-nav a:hover, nav#main-nav a:focus {
-    background: #141414;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-bottom: 2px solid #b2b3b5; 
+    background: var(--mid-grey);
+    color: var(--white);
+    border-bottom: 2px solid var(--light-grey); 
 }
 
 nav#main-nav ul li {
-    background: #3f3932;
+    background: var(--main-bg-col);
 }
 
 #top-ham-menu {
-    background: #3f3932;
-    color: #b2b3b5;
+    background: var(--main-bg-col);
+    color: var(--light-grey);
 }
 
 .map-button {
-    color: #3f3932;
-    background: #b2b3b5;
+    color: var(--main-bg-col);
+    background: var(--light-grey);
 }
 
 .map-button:focus, .map-button:hover {
-    background: #2886a9;
-    color: white;
-    border: 2px solid #200288; 
+    background: var(--light-company-col);;
+    color: var(--white);
+    border: 2px solid var(--dark-company-col); 
 }
 
 /*** tables ***/
 table {
-    border-top: #EEE 1px solid;
-    border-bottom: #EEE 1px solid;
-    box-shadow: 2px 0 2px rgba(240, 240, 240, 0.3), 
-    -2px 0 2px rgba(240, 240, 240, 0.3); 
+    border-top: var(--white) 1px solid;
+    border-bottom: var(--white) 1px solid;
+    box-shadow: 2px 0 2px var(--light-grey), 
+    -2px 0 2px var(--mid-grey); 
 }
 
 thead, tfoot {
-    background-color: #333;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #3f3932);
+    background-color: var(--mid-grey);
+    background-image: linear-gradient(var(--mid-grey), var(--main-bg-col));
 }
   
 thead {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5); 
+    border-bottom: 1px solid var(--mid-grey); 
 }
   
 tfoot {
-    border-top: 1px solid rgba(0, 0, 0, 0.5); 
+    border-top: 1px solid var(--mid-grey); 
 }
 
 colgroup {
-    background: #4d453c;
+    background: var(--mid-grey);
 }
 
 thead > tr > th { 
-    text-shadow: 2px 2px 0 #222, -1px -1px 0 #222; 
+    text-shadow: 2px 2px 0 var(--mid-grey), 
+        -1px -1px 0 var(--mid-grey); 
 }
 
 tbody > tr:nth-child(even) {
-    background: #4d453c;
-    background: rgba(255, 255, 255, 0.3); 
+    background: var(--mid-grey);
 }
   
 tbody > tr > td:nth-child(odd) {
-    background: #302c26;
-    background: rgba(0, 0, 0, 0.3); 
+    background: var(--mid-grey); 
 }
   
 td {
-    color: white; 
+    color: var(--white); 
 }
 
 table.openingTable > tr, table.openingTable > tr:nth-child(even),
 table.openingTable > tr:nth-child(odd), table.openingTable td,
 table.openingTable > tbody > tr > td:nth-child(2n+1) {
-    background: #3f3932; 
+    background: var(--main-bg-col); 
 }
 
 strong {
-    color: #2886a9; 
+    color: var(--light-company-col);
 }
 
 .bullet-list li:before {
-    color: #b2b3b5; 
+    color: var(--light-grey); 
 }
 
 /* forms */
 .success, .js-success, .php-error, .js-error {
-    color: #b2b3b5;
+    color: var(--light-grey);
 }
 
 .success {
-    background: #327b33; 
+    background: var(--green); 
 }
   
 .php-error {
-    background: #9f2302;
-    color: #b2b3b5; 
+    background: var(--red);
+    color: var(--light-grey); 
 }
 
 .js-error {
-    background: #3f3932;
-    color: #EEE;
-    border: 1px solid #9f2302;
-    box-shadow: 0 0 2px rgba(255, 0, 0, 0.5); 
+    background: var(--main-bg-col);
+    color: var(--white);
+    border: 1px solid var(--red);
+    box-shadow: 0 0 2px var(--red); 
 }
 
 #error_space {
-    color: #EEE;
+    color: var(--white);
 }
 
 textarea#message {
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px var(--black);
 }
 
 input:focus, textarea:focus {
-    box-shadow: -1px 1px 3px #2886a9, 0 0 5px #200288;
-    background: #EEE; 
+    box-shadow: -1px 1px 3px var(--light-company-col)
+        , 0 0 5px var(--dark-company-col);
+    background: var(--white); 
 }
 
 input, textarea {
-    background: #b2b3b5;
-    color: black;
+    background: var(--light-grey);
+    color: var(--black);
 }
 
 input#submit-custom, input#attach {
-    color: #3f3932;
-    background: #b2b3b5;
+    color: var(--main-bg-col);
+    background: var(--light-grey);
 }
 
 input#submit-custom:focus, input#attach:focus,
 input#submit-custom:hover, input#attach:hover {
-    background: #2886a9;
-    color: white;
-    border: 2px solid #200288; 
+    background: var(--light-company-col);
+    color: var(--white);
+    border: 2px solid var(--dark-company-col); 
 }
 
 button#unhide-attachments {
-    background: #3f3932;
-    color: #EEE;
-    border: 2px solid #b2b3b5;
+    background: var(--main-bg-col);
+    color: var(--white);
+    border: 2px solid var(--light-grey);
 }
