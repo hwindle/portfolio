@@ -71,3 +71,60 @@ body, main {
     background-repeat: no-repeat;
     background-size: 100% 100%; 
 }
+
+/* forms */
+.success, .js-success, .php-error, .js-error {
+    color: #b2b3b5;
+}
+
+.success {
+    background: #327b33; 
+}
+  
+.php-error {
+    background: #9f2302;
+    color: #b2b3b5; 
+}
+
+.js-error {
+    background: #3f3932;
+    color: #EEE;
+    border: 1px solid #9f2302;
+    box-shadow: 0 0 2px rgba(255, 0, 0, 0.5); 
+}
+
+#error_space {
+    color: #EEE;
+}
+
+textarea#message {
+    box-shadow: 0 0 5px black;
+}
+
+input:focus, textarea:focus {
+    box-shadow: -1px 1px 3px #2886a9, 0 0 5px #200288;
+    background: #EEE; 
+}
+
+input, textarea {
+    background: #b2b3b5;
+    color: black;
+}
+
+input#submit-custom, input#attach {
+    color: #3f3932;
+    background: #b2b3b5;
+}
+
+input#submit-custom:focus, input#attach:focus,
+input#submit-custom:hover, input#attach:hover {
+    background: #2886a9;
+    color: white;
+    border: 2px solid #200288; 
+}
+
+button#unhide-attachments {
+    background: #3f3932;
+    color: #EEE;
+    border: 2px solid #b2b3b5;
+}
