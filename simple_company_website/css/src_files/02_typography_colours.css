@@ -32,7 +32,7 @@ h6 {
     font-size: 0.6em; 
 }
   
-a, p, table, figcaption {
+a, p, article, table, figcaption {
     font-family: body-sans, "Liberation Sans", Arial, sans-serif;
     font-size: 1em;
     padding: 0.3em 1em; 
@@ -77,7 +77,7 @@ figure > img {
 }
 
 #logo {
-    background-image: url('../../pics/apple-touch-icon.png');
+    background-image: url('../pics/apple-touch-icon.png');
     background-repeat: no-repeat;
     background-size: 100% 100%; 
 }
@@ -165,6 +165,20 @@ tbody > tr > td:nth-child(odd) {
   
 td {
     color: white; 
+}
+
+table.openingTable > tr, table.openingTable > tr:nth-child(even),
+table.openingTable > tr:nth-child(odd), table.openingTable td,
+table.openingTable > tbody > tr > td:nth-child(2n+1) {
+    background: #3f3932; 
+}
+
+strong {
+    color: #2886a9; 
+}
+
+.bullet-list li:before {
+    color: #b2b3b5; 
 }
 
 /* forms */
