@@ -71,7 +71,7 @@ table {
 /** Google Maps Buttons **/
 .map-button {
     width: 4em;
-    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+    font-family:  "Liberation Sans", Arial, sans-serif;
     font-size: 1.6em;
     padding: 0.4em 1em;
     border: 2px solid transparent; 
@@ -86,7 +86,7 @@ table {
   
 caption {
     font-size: 1.4em;
-    font-family: body-italic, "Liberation Sans", Arial, sans-serif;
+    font-style: italic;
     padding: 0 0 0.3em 0; 
 }
     
@@ -95,13 +95,13 @@ th, td {
 }
     
 thead > tr > th {
-    font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif;
+    font-weight: bold;
     letter-spacing: 1px;
     font-size: 1.2em;
 }
   
 tfoot > tr > td {
-    font-family: body-italic, "Liberation Sans", Arial, sans-serif;
+    font-style: italic;
     font-size: 0.9em; 
 }
   
@@ -118,7 +118,6 @@ table.openingTable {
   
 .bulletList li {
     margin-left: 3em;
-    font-family: body-sans, "Liberation Sans", Arial, sans-serif; 
 }
   
 .bulletList li:before {
@@ -126,7 +125,6 @@ table.openingTable {
 }
   
 .numberList li {
-    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
     list-style-type: decimal;
     margin-left: 3em; 
 }

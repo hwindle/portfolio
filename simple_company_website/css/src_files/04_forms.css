@@ -5,7 +5,6 @@
 * or PHP web applications
 */
 .success, .js-success, .php-error, .js-error {
-    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
     width: 50%;
     margin: 0 auto; 
 }
@@ -19,7 +18,6 @@
     width: 70%;
     height: 4em;
     margin: 0 auto;
-    font-family: body-italic, "Liberation Sans", Arial, sans-serif;
     font-size: 1.2em; 
 }
   
@@ -51,7 +49,7 @@ textarea#message {
   
 label {
     float: left;
-    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2em; 
 }
 
@@ -61,7 +59,7 @@ input {
   
 input, textarea {
     float: left;
-    font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif;
+    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
     padding: 0.3em;
     border: 1px solid transparent;
     border-radius: 5px 5px 0 0; 

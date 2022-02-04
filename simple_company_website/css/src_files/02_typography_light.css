@@ -12,6 +12,15 @@
     --red: rgba(177, 37, 2, 1.0);
 }
 
+@font-face {
+    font-family: body-font;
+    src: url('../fonts/Copse-Regular.ttf');
+}
+
+* {
+    font-size: 18px;
+}
+
 /*******************************************
 * HEADINGS & PARAGRAPHS
 *
@@ -46,8 +55,8 @@ h6 {
     font-size: 0.6em; 
 }
   
-a, p, table, figcaption {
-    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+body, a, p, table, figcaption {
+    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
     font-size: 1em;
     padding: 0.3em 1em; 
 }
@@ -69,7 +78,7 @@ h2, h4, h6 {
     list-style-type: none;
     display: inline-block;
     padding: 0.3em 2em;
-    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
+    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
     font-size: 1.6em; 
 }
 
@@ -91,7 +100,7 @@ figure > img {
 }
 
 #logo {
-    background-image: url('../pics/apple-touch-icon.png');
+    background-image: url('../../pics/apple-touch-icon.png');
     background-repeat: no-repeat;
     background-size: 100% 100%; 
 }

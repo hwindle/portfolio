@@ -6,7 +6,7 @@
 ***************************************/
 figcaption {
     font-size: 1.4em;
-    font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif;
+    font-family: "Liberation Sans bold", Verdana, Arial, sans-serif;
     letter-spacing: 1px;
     width: 100%; 
 }

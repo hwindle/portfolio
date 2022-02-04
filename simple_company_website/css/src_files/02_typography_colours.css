@@ -12,44 +12,53 @@
     --red: rgba(177, 37, 2, 1.0);
 }
 
+* {
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: body-font;
+    src: url('../fonts/Copse-Regular.ttf');
+}
+
 /*******************************************
 * HEADINGS & PARAGRAPHS
 *
 * h1-h6 values and line-heights  go here.
 ******************************************/
 h1 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 2;
     letter-spacing: 2px; 
 }
   
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.5; 
 }
   
 h3 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 1.3; 
 }
   
 h4 {
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1; 
 }
   
 h5 {
-    font-size: 0.8em; 
+    font-size: 0.8rem; 
 }
   
 h6 {
-    font-size: 0.6em; 
+    font-size: 0.6rem; 
 }
   
-a, p, article, table, figcaption {
-    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
-    font-size: 1em;
-    padding: 0.3em 1em; 
+body, a, p, article, table, figcaption {
+    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 0.3rem 1rem; 
 }
   
 h1, h2, h3, h4, h5, h6 {
@@ -57,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1, h3, h5 {
-    font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif; 
+    font-family: "Liberation Sans bold", Verdana, Arial, sans-serif; 
 }
   
 h2, h4, h6 {
@@ -68,9 +77,9 @@ h2, h4, h6 {
 #key-contacts p {
     list-style-type: none;
     display: inline-block;
-    padding: 0.3em 2em;
-    font-family: body-sans, "Liberation Sans", Arial, sans-serif;
-    font-size: 1.6em; 
+    padding: 0.3rem 2rem;
+    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.6rem; 
 }
 
 /*** setting the colours for elements - DARK MODE ***/
