@@ -66,10 +66,105 @@ body, main {
     color: #EEE; 
 }
 
+figure {
+    color: #b2b3b5;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #EEE;
+}
+
+figure > img {
+    background: white;
+}
+
 #logo {
     background-image: url('../../pics/apple-touch-icon.png');
     background-repeat: no-repeat;
     background-size: 100% 100%; 
+}
+
+/*** Plain links within the body copy ***/
+a, a:visited {
+    color: #2886a9;
+    border-bottom: #200288; 
+}
+  
+a:hover, a:focus {
+    color: #200288;
+    border-bottom: #2886a9; 
+}
+
+nav#main-nav a, nav#main-nav a:visited {
+    color: #b2b3b5;
+}
+
+nav#main-nav a:hover, nav#main-nav a:focus {
+    background: #141414;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-bottom: 2px solid #b2b3b5; 
+}
+
+nav#main-nav ul li {
+    background: #3f3932;
+}
+
+#top-ham-menu {
+    background: #3f3932;
+    color: #b2b3b5;
+}
+
+.map-button {
+    color: #3f3932;
+    background: #b2b3b5;
+}
+
+.map-button:focus, .map-button:hover {
+    background: #2886a9;
+    color: white;
+    border: 2px solid #200288; 
+}
+
+/*** tables ***/
+table {
+    border-top: #EEE 1px solid;
+    border-bottom: #EEE 1px solid;
+    box-shadow: 2px 0 2px rgba(240, 240, 240, 0.3), 
+    -2px 0 2px rgba(240, 240, 240, 0.3); 
+}
+
+thead, tfoot {
+    background-color: #333;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #3f3932);
+}
+  
+thead {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5); 
+}
+  
+tfoot {
+    border-top: 1px solid rgba(0, 0, 0, 0.5); 
+}
+
+colgroup {
+    background: #4d453c;
+}
+
+thead > tr > th { 
+    text-shadow: 2px 2px 0 #222, -1px -1px 0 #222; 
+}
+
+tbody > tr:nth-child(even) {
+    background: #4d453c;
+    background: rgba(255, 255, 255, 0.3); 
+}
+  
+tbody > tr > td:nth-child(odd) {
+    background: #302c26;
+    background: rgba(0, 0, 0, 0.3); 
+}
+  
+td {
+    color: white; 
 }
 
 /* forms */
