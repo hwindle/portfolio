@@ -81,6 +81,7 @@ body {
 /*** setting the colours for elements - LIGHT MODE ***/
 header {
     background: linear-gradient(var(--white), var(--mid-grey));
+    color: var(--main-bg-col);
 }
 
 body, main {
@@ -116,13 +117,13 @@ a:hover, a:focus {
 }
 
 nav#main-nav a, nav#main-nav a:visited {
-    color: var(--light-grey);
+    color: var(--main-bg-col);
 }
 
 nav#main-nav a:hover, nav#main-nav a:focus {
     background: var(--mid-grey);
-    color: var(--white);
-    border-bottom: 2px solid var(--light-grey); 
+    color: var(--light-company-col);
+    border-bottom: 2px solid var(--dark-company-col); 
 }
 
 nav#main-nav, ul.submenu {
