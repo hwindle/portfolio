@@ -74,13 +74,7 @@ h2, h4, h6 {
     font-weight: 500; 
 }
  
-#key-contacts p {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0.3rem 2rem;
-    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.6rem; 
-}
+
 
 /*** setting the colours for elements - DARK MODE ***/
 
@@ -100,7 +94,7 @@ figure > img {
 }
 
 #logo {
-    background-image: url('../pics/apple-touch-icon.png');
+    background-image: url('../../pics/apple-touch-icon.png');
     background-repeat: no-repeat;
     background-size: 100% 100%; 
 }

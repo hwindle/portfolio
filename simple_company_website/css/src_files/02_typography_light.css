@@ -74,13 +74,6 @@ h2, h4, h6 {
     font-weight: 500; 
 }
  
-#key-contacts p {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0.3em 2em;
-    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.6em; 
-}
 
 /*** setting the colours for elements - LIGHT MODE ***/
 
