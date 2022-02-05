@@ -69,6 +69,13 @@ footer {
 }
 
 /*** navigation ***/
+span.home {
+    display: inline-block;
+    background-image: url('../../pics/home_white.svg');
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+}
  
 nav#main-nav {
     display: flex;
