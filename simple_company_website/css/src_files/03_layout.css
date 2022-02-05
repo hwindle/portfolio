@@ -69,14 +69,15 @@ main {
 main#home-main {
     display: flex;
     flex-direction: row wrap;
+    justify-content: space-between;
 }
 
 section#left-content {
-    flex-grow: 3;
+    flex-grow: 4;
 }
 
 aside.right-column {
-    flex-shrink: 2;
+    flex-shrink: 3;
 }
 
 /*** FOOTER ***/

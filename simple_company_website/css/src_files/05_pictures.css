@@ -12,18 +12,16 @@ figcaption {
 }
   
 figure {
-    text-decoration: none; 
-}
-  
-figure {
-    width: 75%;
-    height: 75%;
+    width: 55%;
+    height: 65%;
     margin: 15px auto;
-    padding: 1em 1em;
-    border-radius: 10px 10px 0 0; 
+    padding: 2.4rem;
+    border-radius: 10px; 
 }
   
 figure > img {
+    margin: 0 auto;
+    max-height: 100%;
     max-width: 100%; 
 }
   
