@@ -17,27 +17,46 @@
 <body>
 
     <main id="mainDiv">
-        <a href="./index.html" id="home">
-            <header>
+        <header>
+            <div id="logo"></div>
+            <div class="header-titles">
                 <hgroup>
                     <h1>Company Name</h1>
                     <h2>Filtration Specialists</h2>
                 </hgroup>
                 <hgroup id="key-contacts">
-                    <p>Phone: +44 (0)115 932 3892</p>
-                    <p>Email: sales@example.com</p>
+                    <p>Phone: +44 (0)115 932 3892 | 
+                    Email: sales@example.com</p>
                 </hgroup>
-            </header>
-        </a>
+            </div>
+        </header>
         <nav id="main-nav" aria-role="navigation">
-            <!-- move to the right on tablet/mobiles -->
-            <button id="top-ham-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Menu &#9661;
-            </button>
-            <li role="menuitem"><a href="products.html">Products</a></li>
-            <li role="menuitem"><a href="services.html">Services</a></li>
-            <li role="menuitem"><a href="about.html">About</a></li>
-            <li role="menuitem"><a href="contact.html">Contact</a></li>
+            <li role="menuitem" tabindex="0"><a href="index.html"><span class="home"></span>
+                Home</a></li>
+            <li role="menuitem" aria-haspopup="true"><a href="products.html">Products</a>
+                <ul class="submenu">
+                    <li tabindex="-1"><a href="#">Item 1</a></li>
+                    <li tabindex="-1"><a href="#">Item 2</a></li>
+                    <li tabindex="-1"><a href="#">Item 3</a></li>
+                    <li tabindex="-1"><a href="#">Item 4</a></li>
+                    <li tabindex="-1"><a href="#">Item 5</a></li>
+                </ul>
+            </li>
+            <li role="menuitem" tabindex="0" aria-haspopup="true"><a href="services.html">Services</a>
+                <ul class="submenu">
+                    <li tabindex="-1"><a href="#">Service A</a></li>
+                    <li tabindex="-1"><a href="#">Service B</a></li>
+                    <li tabindex="-1"><a href="#">Service C</a></li>
+                    <li tabindex="-1"><a href="#">Service D</a></li>
+                    <li tabindex="-1"><a href="#">Service E</a></li>
+                </ul>
+            </li>
+            <li role="menuitem" tabindex="0">
+                <a href="about.html">About</a>
+            </li>
+            <li role="menuitem" tabindex="0">
+                <a href="contact.html">Contact</a>
+            </li>
         </nav>
 
         <section id="content">
