@@ -16,7 +16,6 @@
 </head>
 <body>
 
-    <main id="mainDiv">
         <header>
             <div id="logo"></div>
             <div class="header-titles">
@@ -31,6 +30,7 @@
             </div>
         </header>
         <nav id="main-nav" aria-role="navigation">
+            <ul>
             <li role="menuitem" tabindex="0"><a href="index.html"><span class="home"></span>
                 Home</a></li>
             <li role="menuitem" aria-haspopup="true"><a href="products.html">Products</a>
@@ -57,65 +57,61 @@
             <li role="menuitem" tabindex="0">
                 <a href="contact.html">Contact</a>
             </li>
+        </ul>
         </nav>
 
-        <section id="content">
+    <main id="home-main">
+        <section id="left-content">
             
-                <h2>Your One Stop Filtration Specialist</h2>
+            <h2>Your One Stop Filtration Specialist</h2>
 
+            <figure>
+                <img alt="Red Cherries" src="./pics/red_cherries.jpg">
+                <figcaption>Ripe Red Cherries</figcaption>
+            </figure>
+            <h3>Filters we Supply</h3>
+            <p>ABC supply filters and accessories for a vast array of applications and equipment, including: </p>
+            <ul class="bulletList">
+                <li>Cars
+                    <ul class="circles">
+                        <li>Bikes</li>
+                        <li>4x4's</li>
+                        <li>Vintage cars</li>
+                    </ul>
+                </li>
+                <li>Commercial vehicles
+                    <ul class="circles">
+                        <li>Vans</li>
+                        <li>Trucks</li>
+                        <li>Buses</li>
+                    </ul>
+                </li>
+                <li>Compressors</li>
+                <li>Small engines
+                    <ul class="circles">
+                        <li>Lawnmowers</li>
+                        <li>Disc cutter saws</li>
+                        <li>Pumps and generators</li>
+                    </ul>
+                </li>
+                <li>Off highway equipment
+                    <ul class="circles">
+                        <li>Agricultural</li>
+                        <li>Forktrucks</li>
+                        <li>Plant machinery</li>
+                        <li>Cranes</li>
+                    </ul>
+                </li>
+                <li>Industrial machinery</li>
+            </ul>
+        </section>
+        <aside id="recCardLink" class="right-column">
+            <a class="product" href="./downloads/swan.pdf" target="blank">
                 <figure>
-                  <img alt="No filters but here is something else instead." src="jpg">
-                  <figcaption>Some Long Example Text Filters etc.</figcaption>
+                    <img src="./pics/swan.jpg" alt="A teenage cygnet (swan) about to cross the road."/>
+                    <figcaption>Download a Swan</figcaption>
                 </figure>
-    
-              <div class="row">
-                <div class="">
-                <h3>Filters we Supply</h3>
-                <p>ABC supply filters and accessories for a vast array of applications and equipment, including: </p>
-                <ul class="bulletList">
-                  <li>Cars
-                    <ul class="circles">
-                      <li>Bikes</li>
-                      <li>4x4's</li>
-                      <li>Vintage cars</li>
-                    </ul>
-                  </li>
-                  <li>Commercial vehicles
-                    <ul class="circles">
-                      <li>Vans</li>
-                      <li>Trucks</li>
-                      <li>Buses</li>
-                    </ul>
-                  </li>
-                  <li>Compressors</li>
-                  <li>Small engines
-                    <ul class="circles">
-                      <li>Lawnmowers</li>
-                      <li>Disc cutter saws</li>
-                      <li>Pumps and generators</li>
-                    </ul>
-                  </li>
-                  <li>Off highway equipment
-                    <ul class="circles">
-                      <li>Agricultural</li>
-                      <li>Forktrucks</li>
-                      <li>Plant machinery</li>
-                      <li>Cranes</li>
-                    </ul>
-                  </li>
-                  <li>Industrial machinery</li>
-                </ul>
-                </div>
-                <div id="recCardLink" class="">
-                    <a class="product" href="./downloads/swan.pdf" target="blank">
-                        <figure>
-                            <img src="./pics/swan.jpg" alt="A teenage cygnet (swan) about to cross the road."/>
-                        <figcaption>Download a Swan</figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </div>
-            
+            </a>
             <p>AB Components Ltd is a filter distributor based in the East Midlands, between Derby and Nottingham. We have also acquired Talbot Components, based in Shropshire. </p>
             <h2>Talbot Components</h2>
             <p>For Talbot Components sales, email: <a href="talbot@example.com"><strong>talbot@example.com</strong></a> or phone on <strong>01137 123 456</strong>. Talbot Components is based in the West Midlands, in Market Drayton. They supply filters, Millers Oils, bulbs, wiper blades and other consumables in Shropshire and the surrounding counties. </p>
@@ -123,8 +119,8 @@
             Our commitment to all customers, old and new, is to maintain the highest standards of service and quality.
             </p>
             <p>We offer a local delivery service and a national and international parcel/pallet service.</p>
+        </aside>
             
-        </section>
     </main>
     <footer>
         <p>

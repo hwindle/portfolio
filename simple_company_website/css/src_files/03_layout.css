@@ -62,8 +62,27 @@ pre, code, p {
     padding: 1rem; 
 }
 
+main {
+    margin-top: 2rem;
+}
+
+main#home-main {
+    display: flex;
+    flex-direction: row wrap;
+}
+
+section#left-content {
+    flex-grow: 3;
+}
+
+aside.right-column {
+    flex-shrink: 2;
+}
+
 /*** FOOTER ***/
 footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     margin: 20px auto 3px auto;
 }
@@ -80,10 +99,10 @@ span.home {
 nav#main-nav {
     display: flex;
     flex-direction: row wrap;
+    height: 3rem;
 }
 
 nav#main-nav a, nav#main-nav a:visited {
-    border-bottom: 2px solid transparent;
     width: 0px;
     transition: 0.7s ease; 
 }
@@ -95,17 +114,19 @@ nav#main-nav a:hover, nav#main-nav a:focus {
 }
   
 nav#main-nav ul li {
-    display: block;
+    display: inline-block;
+    list-style-type: none;
     height: 100%;
     font-size: 1.6em;
-    padding: 0.3em 1em;
-    border-bottom: 0px solid transparent; 
 }
-  
-#top-ham-menu {
-    font-size: 1.2em;
+
+nav#main-nav ul.submenu {
+    display: block;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    height: 0px;
+    overflow: hidden;
 }
-  
 
 
 /** special bits **/

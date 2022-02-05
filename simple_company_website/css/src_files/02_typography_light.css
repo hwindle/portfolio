@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center; 
 }
   
-h1, h3, h5 {
+h1, h3, h5, nav#main-nav a  {
     font-family: "Liberation Sans bold", Verdana, Arial, sans-serif; 
 }
   
@@ -125,8 +125,8 @@ nav#main-nav a:hover, nav#main-nav a:focus {
     border-bottom: 2px solid var(--light-grey); 
 }
 
-nav#main-nav ul li {
-    background: var(--main-bg-col);
+nav#main-nav, ul.submenu {
+    background: var(--black);
 }
 
 #top-ham-menu {

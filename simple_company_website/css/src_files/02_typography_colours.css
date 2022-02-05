@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center; 
 }
   
-h1, h3, h5 {
+h1, h3, h5, nav#main-nav a {
     font-family: "Liberation Sans bold", Verdana, Arial, sans-serif; 
 }
   
@@ -116,6 +116,7 @@ a:hover, a:focus {
     border-bottom: var(--light-company-col); 
 }
 
+/*** navigation ***/
 nav#main-nav a, nav#main-nav a:visited {
     color: var(--light-grey);
 }
@@ -126,15 +127,11 @@ nav#main-nav a:hover, nav#main-nav a:focus {
     border-bottom: 2px solid var(--light-grey); 
 }
 
-nav#main-nav ul li {
-    background: var(--main-bg-col);
+nav#main-nav, ul.submenu {
+    background: var(--black);
 }
 
-#top-ham-menu {
-    background: var(--main-bg-col);
-    color: var(--light-grey);
-}
-
+/*** Google maps ***/
 .map-button {
     color: var(--main-bg-col);
     background: var(--light-grey);
