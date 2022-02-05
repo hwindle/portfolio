@@ -67,7 +67,40 @@ footer {
     width: 100%;
     margin: 20px auto 3px auto;
 }
+
+/*** navigation ***/
+ 
+nav#main-nav {
+    display: flex;
+    flex-direction: row wrap;
+}
+
+nav#main-nav a, nav#main-nav a:visited {
+    border-bottom: 2px solid transparent;
+    width: 0px;
+    transition: 0.7s ease; 
+}
   
+nav#main-nav a:hover, nav#main-nav a:focus {
+    text-decoration: none;
+    /* animation part, eases in */
+    width: 100%;
+}
+  
+nav#main-nav ul li {
+    display: block;
+    height: 100%;
+    font-size: 1.6em;
+    padding: 0.3em 1em;
+    border-bottom: 0px solid transparent; 
+}
+  
+#top-ham-menu {
+    font-size: 1.2em;
+}
+  
+
+
 /** special bits **/
 #ourMap {
     width: 100%;

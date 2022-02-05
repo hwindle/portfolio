@@ -15,42 +15,6 @@
     background: url('../pics/instagram_white.svg') no-repeat 100% 100%;
 }
 
-/*** Plain links within the body copy ***/
- 
-nav#main-nav {
-    display: flex;
-    flex-direction: row wrap;
-}
-
-nav#main-nav a, nav#main-nav a:visited {
-    border-bottom: 2px solid transparent;
-    width: 0px;
-    transition: 0.7s ease; 
-}
-  
-nav#main-nav a:hover, nav#main-nav a:focus {
-    text-decoration: none;
-    /* animation part, eases in */
-    width: 100%;
-}
-  
- /*********
-  * PHONE Navigation drop down menu only
-  * and the menu button
-  */
-nav#main-nav ul li {
-    display: block;
-    height: 100%;
-    font-size: 1.6em;
-    padding: 0.3em 1em;
-    border-bottom: 0px solid transparent; 
-}
-  
-/* The hamburger menu, shown on mobile devices */
-#top-ham-menu {
-    font-size: 1.2em;
-}
-  
 
 /*** footer ***/
 footer p  {
