@@ -4,7 +4,8 @@
  * Setting up the padding, basic colours, and
  * any positioning.
  ********************************************/
-html, body {
+html, body, main {
+    width: 100%;
     height: 100%; 
 }
 
@@ -52,6 +53,8 @@ hgroup#key-contacts p {
     font-family: body-font, Georgia, 'Times New Roman', Times, serif;
     font-size: 1.4rem;
     text-align: center; 
+    text-shadow: 1px 1px 2px black, 
+        -1px -1px 2px black, 0px 0px 6px black;
 }
 
 /*** BODY CONTENT ***/

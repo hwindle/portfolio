@@ -55,9 +55,7 @@ h6 {
     font-size: 0.6rem; 
 }
   
-body, a, p, article, table, figcaption {
-    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
-    font-size: 1rem;
+a, p, article, table, figcaption {
     padding: 0.3rem 1rem; 
 }
   
@@ -75,12 +73,20 @@ h2, h4, h6 {
 }
  
 
+body {
+    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
 
 /*** setting the colours for elements - DARK MODE ***/
 
 body, main {
     background: var(--main-bg-col);
     color: var(--white); 
+}
+
+header {
+    background: linear-gradient(var(--black), var(--light-grey));
 }
 
 figure {

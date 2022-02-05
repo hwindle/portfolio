@@ -55,10 +55,8 @@ h6 {
     font-size: 0.6em; 
 }
   
-body, a, p, table, figcaption {
-    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
-    font-size: 1em;
-    padding: 0.3em 1em; 
+a, p, article, table, figcaption {
+    padding: 0.3rem 1rem; 
 }
   
 h1, h2, h3, h4, h5, h6 {
@@ -66,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1, h3, h5 {
-    font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif; 
+    font-family: "Liberation Sans bold", Verdana, Arial, sans-serif; 
 }
   
 h2, h4, h6 {
@@ -75,7 +73,15 @@ h2, h4, h6 {
 }
  
 
+body {
+    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+} 
+
 /*** setting the colours for elements - LIGHT MODE ***/
+header {
+    background: linear-gradient(var(--white), var(--mid-grey));
+}
 
 body, main {
     background: var(--main-bg-col);
