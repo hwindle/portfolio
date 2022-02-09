@@ -1,25 +1,3 @@
-/*******************************************
-* NAVIGATION & LINKS
-*
-* a link settings and navigation bar styling
-******************************************/
-#twitter-logo {
-    background: url('../pics/twitter_white.svg') no-repeat 100% 100%; 
-}
-  
-#facebook-logo {
-    background: url('../pics/fb_white.svg') no-repeat 100% 100%; 
-}
- 
-#instagram-logo {
-    background: url('../pics/instagram_white.svg') no-repeat 100% 100%;
-}
-
-
-/*** footer ***/
-footer p  {
-    font-size: 0.9em; 
-}
   
  /**************
  * For special bits that don't belong
