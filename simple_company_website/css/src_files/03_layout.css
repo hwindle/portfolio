@@ -40,6 +40,10 @@ div.header-titles {
     header hgroup h2 {
         font-size: 2rem;
     }
+
+    aside.right-column {
+        display: none;
+    }
 }
 
 /* bigger screens */
@@ -73,23 +77,25 @@ main {
 
 main#home-main {
     display: flex;
-    flex-direction: row wrap;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 section#left-content {
     flex-grow: 4;
+    height: 100%;
 }
 
 aside.right-column {
     flex-shrink: 3;
+    height: 100%;
 }
 
 /*** FOOTER ***/
 footer {
-    /* flex-shrink: 0; */
+    margin-top: 0.6rem;
     width: 100%;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     text-align: center;
 }
 
