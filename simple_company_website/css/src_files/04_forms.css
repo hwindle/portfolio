@@ -11,7 +11,7 @@
     
 .js-error {
     width: 70%;
-    border-radius: 0 0 5px 5px;
+    border-radius: 3px;
 }
   
 #error_space {
@@ -22,11 +22,51 @@
 }
   
 /* CONTACT FORM */
+form {
+    box-sizing: border-box;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+  
+.full-width {
+    grid-column: span 2;
+}
+
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* mobile screens */
 @media screen and (max-width: 1024px) {
     form {
         width: 90%;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    label {
+        display: block;
+    }
+
+    button,
+    fieldset,
+    input,
+    legend,
+    select,
+    textarea {
+        grid-column: span 1;
     }
 }
 
@@ -36,55 +76,95 @@
         width: 60%;
         margin: 0 auto; 
     }
-}
-  
-textarea#message {
-    width: 100%;
-    height: 10rem;
-    max-height: 60%; 
-}
-  
-label {
-    float: left;
-    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.2em; 
+
+    label {
+        display: inline-block;
+    }
 }
 
-input {
-    width: 100%;
-}
-  
-input, textarea {
-    float: left;
-    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
-    padding: 0.3em;
-    border: 1px solid transparent;
-    border-radius: 3px; 
-}
-  
-input#submit-custom, input#attach {
-    width: 4em;
+input[type="submit"] {
+    margin: 0.3rem;
+    padding: 0 3rem;
     font-family: body-sans, "Liberation Sans", Arial, sans-serif;
-    font-size: 1.6em;
-    padding: 0.4em 1em;
-    margin-left: 15px;
-    border: 2px solid transparent; 
+    font-size: 2rem; 
 }
-  
-button#unhide-attachments {
-    border-radius: 5px 5px 0 0;
-    font-family: body-bold, "Liberation Sans bold", Verdana, Arial, sans-serif;
-    font-size: 1.2em;
-    padding: 0.3em 1em;
-    margin-left: 15px; 
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    font-family: body-font, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
 }
-  
-#uploads-div {
+
+textarea {
+    min-height: 12rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: 1.6rem;
+  width: 1.6rem;
+  vertical-align: middle;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-image: radial-gradient(
+      var(--light-company-col) 40%,
+      transparent calc(40% + 1px)
+    );
+}
+
+input[type="checkbox"]:checked {
+    background-image: linear-gradient(
+        var(--light-company-col) 40%, 
+        var(--dark-company-col)
+    );
+}
+
+.large-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+.small-label {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 0.25rem;
+    margin-right: 1.5rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* Firefox */
+  color: var(--light-company-col);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--light-company-col);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px black;
+}
+
+/* modal */
+div#error_space {
     display: none; 
 }
-  
-input#attach {
-    padding: 0.3em 0.6em;
-    font-size: 1.2em; 
-}
+ 
   

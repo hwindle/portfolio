@@ -64,70 +64,46 @@
         <section id="content">
             <h3>Contact</h3>
 
-            <form method="post" action="#" id="contact-form" class="" enctype="multipart/form-data">
+        <form method="post" action="#" id="contact-form" class="">
             <!-- names are: submit, name, email, telephone, human, message -->
             <div class="group">
-                <label for="name" class="">*Name
-                    <input type="text" name="name" id="name" class=""  required="required" placeholder="First Last">
-                </label>
+                <label for="name" class="large-label">*Name</label>
+                <input type="text" name="name" id="name" class=""  required="required" placeholder="First Last">
             </div>
             <div class="group">
-                <label for="email" class="">*Email
-                    <input type="text" name="email" id="email" class=""  required="required" placeholder="info@example.com">
-                </label>
+                <label for="email" class="large-label">*Email</label>
+                <input type="text" name="email" id="email" class=""  required="required" placeholder="info@example.com">
             </div>
             <div class="group">
-                <label for="telephone" class="col-xs-12 col-sm-3">Telephone
-                    <input type="text" name="telephone" id="telephone" class="" max-length="20" placeholder="01234 567890"/>
+                <label for="telephone" class="large-label">Telephone
                 </label>
+                <input type="text" name="telephone" id="telephone" class="" max-length="20" placeholder="01234 567890">
             </div>
-            <!-- This is the start of the PHP mailer, file upload picture bit -->
-      <div class="group"><button id="unhide-attachments">Add Pictures</button></div>
-      <!-- hidden part -->
-      <div id="uploads-div">
         <div class="group">
-          <input type="hidden" name="MAX_FILE_SIZE" value="1000">
-          <label for="uploads" class="">
-            <span class="glyphicon glyphicon-paperclip"></span>
-            Upload
-          </label>
-          <div class="">
-            <input id="uploads" name="userfile[]" type="file" multiple="multiple">
-          </div>
+            <label for="human" class="large-label">*Three plus two is?
+            </label>
+            <input type="number" name="human" id="human" class="" required="required" placeholder="1">
+        </div>
+        <div class="full-width">  
+            <textarea name="message" id="message" class="" placeholder="Type your enquiry here"></textarea>
         </div>
         <div class="group">
-          <div class="">
-            <input type="submit" name="attach" id="attach" value="Attach"/>
-          </div>
+            <input type="submit" class="btn" id="submit-custom" name="submit" value="Send">
         </div>
-      </div>
-      <!-- end of hidden part -->
-      <div class="group">
-        <label for="human" class="">*Three plus two is?
-            <input type="number" name="human" id="human" class="" required="required" placeholder="1"/>
-        </label>
-      </div>
-      <div class="group">  
-            <textarea name="message" id="message" class="" placeholder="type your enquiry here"></textarea>
-      </div>
-      <div class="group">
-          <input type="submit" class="btn" id="submit-custom" name="submit" value="Send"/>
-      </div>
     </form>
 
         <div id="error_space" tabindex="-1" role="dialog" aria-labelledby="Contact Form Errors">
             <header>
                 <h4 class="modal-title" id="contact_header_errors">Contact  Form Result</h4>
             </header>
-            <div class="">
+            <div class="small-label">
                 <p id="php_success"></p>
                 <p id="php_errors"></p>
             </div>
         </div>
 
     <!-- Google map -->
-    <div class="row">
-        <div id="opening-times" class="">
+    <div id="opening-times" class="">
         <h3>Trade Counter</h3>
         <p>We are open Monday to Saturday, and we also sell a range of bacon. </p>
         <table class="openingTable">
