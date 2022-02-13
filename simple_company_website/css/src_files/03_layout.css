@@ -99,14 +99,6 @@ footer {
     text-align: center;
 }
 
-footer section.flex {
-    /*
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: center;
-    align-items: center; */
-}
-
 button.social-icon {
     margin: 0 1rem;
     width: 40px;
