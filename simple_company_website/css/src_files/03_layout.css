@@ -99,14 +99,24 @@ footer {
     text-align: center;
 }
 
+footer section a {
+    text-decoration: none;
+}
+
 button.social-icon {
     margin: 0 1rem;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background-color: transparent;
     border: 0;
     text-decoration: none;
     cursor: pointer;
+}
+
+button.social-icon:hover {
+    background-color: var(--light-company-col);
+    box-shadow: 0px 0px 4px var(--white);
+    outline: var(--dark-company-col);
 }
 
 footer #twitter-logo {
