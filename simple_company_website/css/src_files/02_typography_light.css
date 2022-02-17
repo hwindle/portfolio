@@ -121,9 +121,8 @@ nav#main-nav a, nav#main-nav a:visited {
 }
 
 nav#main-nav a:hover, nav#main-nav a:focus {
-    background: var(--mid-grey);
-    color: var(--light-company-col);
-    border-bottom: 2px solid var(--dark-company-col); 
+    background: var(--dark-company-col);
+    color: #fff; 
 }
 
 nav#main-nav, ul.submenu {
@@ -239,7 +238,7 @@ input:focus, textarea:focus {
 
 input, textarea {
     background: var(--light-grey);
-    color: var(--black);
+    color: white;
 }
 
 input#submit-custom, input#attach {
@@ -250,12 +249,15 @@ input#submit-custom, input#attach {
 input#submit-custom:focus, input#attach:focus,
 input#submit-custom:hover, input#attach:hover {
     background: var(--light-company-col);
-    color: var(--white);
+    color: white;
     border: 2px solid var(--dark-company-col); 
 }
 
-button#unhide-attachments {
-    background: var(--main-bg-col);
-    color: var(--white);
-    border: 2px solid var(--light-grey);
+
+footer button.social-icon {
+    filter: brightness(0.1);
+}
+
+footer button.social-icon:hover {
+    filter: brightness(0.7);
 }

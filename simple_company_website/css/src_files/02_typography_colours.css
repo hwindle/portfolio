@@ -122,9 +122,8 @@ nav#main-nav a, nav#main-nav a:visited {
 }
 
 nav#main-nav a:hover, nav#main-nav a:focus {
-    background: var(--mid-grey);
+    background: var(--light-company-col);
     color: var(--white);
-    border-bottom: 2px solid var(--light-grey); 
 }
 
 nav#main-nav, ul.submenu {
