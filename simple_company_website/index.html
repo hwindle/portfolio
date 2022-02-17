@@ -29,20 +29,33 @@
         </header>
         
         <nav id="main-nav" aria-role="navigation">
-            <ul>
-            <li role="menuitem" tabindex="0"><a href="index.html"><span class="home"></span>
-                Home</a></li>
-            <li role="menuitem"><a href="products.html">Products</a>
-            </li>
-            <li role="menuitem" tabindex="0"><a href="services.html">Services</a>
-            </li>
-            <li role="menuitem" tabindex="0">
-                <a href="about.html">About</a>
-            </li>
-            <li role="menuitem" tabindex="0">
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+            <ul class="menu">
+                <li class="logo"><a href="../index.html">Back to portfolio</a></li>
+                <li class="item"><a href="./index.html"><span class="fas fa-home house"></span>Home</a></li>
+                
+                <li class="item has-submenu">
+                    <a tabindex="0">Products</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="./products.html">Product 1</a></li>
+                        <li class="subitem"><a href="./products.html">Product 2</a></li>
+                        <li class="subitem"><a href="./products.html">Product 3</a></li>
+                        <li class="subitem"><a href="./products.html">Product 4</a></li>
+                    </ul>
+                </li>
+                <li class="item has-submenu">
+                    <a tabindex="0">Services</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="./services.html">Service A</a></li>
+                        <li class="subitem"><a href="./services.html">Service B</a></li>
+                        <li class="subitem"><a href="./services.html">Service C</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="./about.html">About</a></li>
+                <li class="item"><a href="./contact.html">Contact</a></li>
+                <li class="item button"><a href="#">Log In</a></li>
+                <li class="item button secondary"><a href="#">Sign Up</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
         </nav>
 
         <main id="home-main">

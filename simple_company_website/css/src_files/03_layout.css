@@ -136,45 +136,7 @@ footer #instagram-logo {
 
 
 /*** navigation ***/
-span.home {
-    display: inline-block;
-    background-image: url('../../pics/home_white.svg');
-    background-size: contain;
-    width: 35px;
-    height: 35px;
-}
- 
-nav#main-nav {
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: space-between;
-    height: 3rem;
-}
 
-nav#main-nav a, nav#main-nav a:visited {
-    text-decoration: none;
-    width: 0px;
-    transition: 0.7s ease; 
-}
-  
-nav#main-nav a:hover, nav#main-nav a:focus {
-    text-decoration: none;
-    /* animation part, eases in */
-    width: 100%;
-}
-  
-nav#main-nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    height: 100%;
-    padding: 0 1.4rem;
-    font-size: 1.6em;
-    transition: 0.3s all linear;
-}
-
-nav#main-nav ul.submenu {
-    display: none;
-}
 
 
 /** special bits **/
