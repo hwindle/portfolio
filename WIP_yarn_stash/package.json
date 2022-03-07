@@ -18,5 +18,8 @@
     "gulp-util": "^3.0.8",
     "jquery": "^3.4.1",
     "mustache": "^3.0.3"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.7.4"
   }
 }
