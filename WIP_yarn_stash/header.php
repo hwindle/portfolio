@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Yarn and String</title>
+    <title>{title} | Yarn and String</title>
     <link rel="stylesheet" href="css/foundation.min.css">
   </head>
   <body>
     <header>
         <h1 id="big-title">Yarn and String</h1>
-        <h2>Add Fibre Type</h2>
+        <h2>{title}</h2>
     </header>
     <nav>
         <ul>
@@ -23,23 +23,3 @@
         </ul>
     </nav>
     <section id="content">
-
-
-
-        <div class="errors">
-            <p>Database entry added or pdo error on line 10</p>
-        </div>
-    </section>
-    <footer>
-        <p>Made by me, &copy; Hazel Windle 2018 </p>
-    </footer>
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
