@@ -27,10 +27,6 @@ select {
   background: #ddd;
 }
 
-.form-row {
-
-}
-
 .submit-btn-row {
   background: white;
 }
@@ -40,10 +36,19 @@ input[type="submit"] {
   font-weight: bold;
 }
 
+@font-face {
+    font-family: body-font;
+    src: url('../fonts/Mukta-Light.ttf');
+}
+
 body {
   margin: 0em;
-  font-family: cantarell, sans-serif;
+  font-family: body-font, Arial, Helvetica, sans-serif;
   font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: cantarell, sans-serif;
 }
 
 .wrapper {
