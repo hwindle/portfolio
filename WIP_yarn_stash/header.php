@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} | Yarn and String</title>
-    <link rel="stylesheet" href="css/foundation.min.css">
-  </head>
-  <body>
-    <header>
-        <h1 id="big-title">Yarn and String</h1>
-        <h2>{title}</h2>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./delete.html" target="blank">Delete Yarn</a></li>
-            <li><a href="./add_yarn.html" target="blank">Add Yarn</a></li>
-            <li><a href="./stash.html" target="blank">Yarn Stash</a></li>
-            <li><a href="./wishlist.html" target="blank">Wishlist</a></li>
-            <li><a href="./update_yarn.html" target="blank">Update Yarn</a></li>
-        </ul>
-    </nav>
-    <section id="content">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Home | Yarn and String</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="wrapper">
+        <nav class="top-bar header-bar">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Yarn and String</li>
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li><a href="./add_yarn.html">Add New Yarn</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+                <li><a href="./index.html">Yarn Stash</a></li>
+              </ul>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+              </ul>
+            </div>
+        </nav>
+        <section id="content">

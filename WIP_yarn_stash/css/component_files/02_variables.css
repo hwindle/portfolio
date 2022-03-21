@@ -13,19 +13,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: cantarell, sans-serif;
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 0.2em;
-  grid-template-columns: 20%  40%  30%;
-  grid-template-areas: "header header  header" "sidebar content content" "footer footer footer";
-}
-
-header {
-  grid-area: header;
-  text-align: center;
-  background: url("../img/bg_header.png") #ccc;
-}
-
 #big-title {
   font-size: 2.6em;
   color: white;

@@ -1,10 +1,10 @@
 /* Navigation bit */
 nav {
-  grid-area: sidebar;
   background-color: #ba76b0;
 }
 
 nav ul li {
+    display: inline-block;
   list-style-type: none;
   font-size: 1.2em;
   padding: 0.6em;
