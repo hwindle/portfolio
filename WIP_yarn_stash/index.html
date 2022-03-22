@@ -13,7 +13,7 @@
     <body class="wrapper">
         <nav class="top-bar header-bar">
             <div class="top-bar-left">
-              <ul class="dropdown menu" data-dropdown-menu>
+              <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu>
                 <li class="menu-text">Yarn and String</li>
                 <li>
                   <a href="./index.html">Home</a>
@@ -23,10 +23,10 @@
                 <li><a href="./index.html">Yarn Stash</a></li>
               </ul>
             </div>
-            <div class="top-bar-right">
+            <div class="top-bar-right search-bit">
               <ul class="menu">
                 <li><input type="search" placeholder="Search"></li>
-                <li><button type="button" class="button">Search</button></li>
+                <li><button type="button" class="button search-btn">Search</button></li>
               </ul>
             </div>
         </nav>
