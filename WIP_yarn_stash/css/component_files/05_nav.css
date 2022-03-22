@@ -1,6 +1,6 @@
 /* Navigation bit */
 nav {
-  background-color: #ba76b0;
+  background-color: var(--highlight);
 }
 
 nav ul li {
@@ -11,7 +11,7 @@ nav ul li {
 }
 
 a:link, a:visited {
-    background-color: #ba76b0;
+    background-color: var(--highlight);
     color: white;
     padding: 4px 25px;
     text-align: center;
@@ -20,7 +20,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color: #930a7e;
+    background-color: var(--dark-highlight);
     font-weight: bold;
 }
 /* navigation */

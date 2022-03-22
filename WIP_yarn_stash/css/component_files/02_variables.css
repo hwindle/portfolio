@@ -1,3 +1,11 @@
+:root {
+    --text: rgb(11, 11, 11);
+    --main-bg: rgb(250, 250, 250);
+    --light-grey: rgb(223, 213, 223);
+    --highlight: rgb(186, 137, 211);
+    --dark-highlight: rgb(61, 49, 80);
+}
+
 @font-face {
     font-family: body-font;
     src: url('../fonts/Mukta-Light.ttf');
@@ -13,13 +21,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: cantarell, sans-serif;
 }
 
-#big-title {
-  font-size: 2.6em;
-  color: white;
-}
-
-header h2 {
-  font-size: 2.2em;
-  font-style: italic;
-  color: white;
+nav ul li.menu-text {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
 }
