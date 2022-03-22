@@ -11,9 +11,11 @@ CREATE TABLE yarn (
   metres_per_ball int(11) NOT NULL DEFAULT 200,
   grams int(11) NOT NULL DEFAULT 100,
   num_balls int(11) NOT NULL DEFAULT 1,
-  /* total_metres */
+  /* virtual columns, updated on value update */
+  v_total_metres INT AS (metres_per_ball * num_balls) PERSISTENT,
   cost_per_ball decimal(10,2) NOT NULL,
-  /* total_cost */
+  /* other virtual column */
+  v_total_cost decimal(10, 2) AS (num_balls * cost_per_ball) PERSISTENT,
   purpose varchar(500),
   wishlist boolean() DEFAULT 0,
   place varchar(200),
