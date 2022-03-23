@@ -34,3 +34,12 @@ footer {
   bottom: 0px;
   left: 1em;
 }
+
+/* mobile view */
+@media screen and (max-width: 768px) {
+    td.mobile-hide, thead {
+        display: none;
+    }
+
+    
+}
