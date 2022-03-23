@@ -28,9 +28,17 @@ tr:hover {
   background: var(--highlight);
 }
 
+td button.update, td button.delete {
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+td button.update:hover, td button.delete:hover {
+    background-color: var(--dark-highlight);
+}
+
 footer {
-  grid-area: footer;
-  position: fixed;
   bottom: 0px;
   left: 1em;
 }
