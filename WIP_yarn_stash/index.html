@@ -6,7 +6,8 @@
         <title>Home | Yarn and String</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="css/foundation.min.css">
         <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css">
         <link rel="stylesheet" href="css/main.css">
