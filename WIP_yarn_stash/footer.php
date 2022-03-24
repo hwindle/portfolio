@@ -1,10 +1,8 @@
-<div class="errors">
+    <div class="errors">
             <p>Database entry added or pdo error on line 10</p>
         </div>
     </section>
-    <footer>
-        <p>Made by me, &copy; Hazel Windle 2018 </p>
-    </footer>
+    
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
