@@ -1,8 +1,9 @@
 
-table {
+table.db-results {
     width: 80%;
     margin: 1rem auto;
     border: 2px solid var(--light-grey);
+    border-radius: 0.6rem;
     border-collapse: collapse;
 }
 
@@ -12,19 +13,7 @@ thead {
   color: var(--main-bg);
 }
 
-thead, tr {
-  border-bottom: 1px solid var(--text);
-}
-
-td, th {
-  padding: 0.6em;
-}
-
-tr:nth-child(even) {
-   background: var(--light-grey);
-}
-
-tr:hover {
+table.db-results > tbody > tr:hover {
   background: var(--highlight);
 }
 
@@ -38,16 +27,15 @@ td button.update:hover, td button.delete:hover {
     background-color: var(--dark-highlight);
 }
 
-footer {
-  bottom: 0px;
-  left: 1em;
+td.yarn-colour {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
 }
 
 /* mobile view */
 @media screen and (max-width: 768px) {
     td.mobile-hide, thead {
         display: none;
-    }
-
-    
+    }    
 }
