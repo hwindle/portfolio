@@ -1,5 +1,56 @@
 body {
     background-image: url('../../img/knitting_bg.jpg');
-    background-repeat: repeat;
-    
+    background-repeat: repeat; 
+}
+
+/*** details page ***/
+div.yarn-details {
+    background-color: var(--main-bg);
+    border-radius: 9px;
+    box-shadow: 0px 0px 5px #333,
+        0px 0px 15px var(--light-grey);
+    padding: 1.6rem;
+}
+
+/* mobile */
+@media screen and (max-width: 900px) {
+    div.yarn-details {
+        width: 95%;
+        margin: 0.4rem auto;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 1200px) {
+    div.yarn-details {
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1201px) {
+    div.yarn-details {
+        width: 60%;
+        margin: 1.6rem auto;
+    }
+}
+
+div.yarn-details h2 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    font-style: oblique;
+    color: var(--dark-highlight);
+    text-align: center;
+}
+
+div.yarn-details p.fibre {
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+div.yarn-details strong {
+    font-weight: bold;
 }
