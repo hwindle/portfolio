@@ -62,3 +62,7 @@ div.action-btns > a {
 div.action-btns > a > button {
     font-size: 1.8rem;
 }
+
+div.action-btns > a > button:hover {
+    background-color: var(--dark-highlight);
+}
