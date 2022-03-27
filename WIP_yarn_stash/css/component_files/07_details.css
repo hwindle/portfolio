@@ -16,18 +16,32 @@ div.yarn-details > div.details-heading {
 }
 
 div.yarn-details > div.details-body {
+    flex-basis: 70%;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
 }
 
-div.yarn-details p.fibre {
+div.yarn-details p {
     font-size: 1.4rem;
-    padding: 1rem;
+    padding: 0.6rem 0;
 }
 
 div.yarn-details strong {
     font-weight: bold;
-    padding: 0 1.6rem 0 0;
+    padding: 0 1rem 0 0;
 }
 
+p.colour-info > span.actual-colour {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
 
+p.colour-info > span.dyejob {
+    margin-left: 1.6rem;
+}
+
+p > span.total_metres, p.total_cost {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
