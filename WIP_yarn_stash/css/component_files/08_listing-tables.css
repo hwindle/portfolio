@@ -17,13 +17,13 @@ table.db-results > tbody > tr:hover {
   background: var(--highlight);
 }
 
-td button.update, td button.delete {
+td a > button.update, td a > button.delete {
     width: 2rem;
     height: 2rem;
     cursor: pointer;
 }
 
-td button.update:hover, td button.delete:hover {
+td a > button.update:hover, td a > button.delete:hover {
     background-color: var(--dark-highlight);
 }
 

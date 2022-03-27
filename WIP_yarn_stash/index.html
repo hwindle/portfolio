@@ -290,6 +290,7 @@
                             </button>
                         </td>
                     </tr>
+                    <!-- keep these bottom 2 -->
                     <tr>
                         <td>Stylecraft</td>
                         <td>Special</td>
@@ -302,14 +303,18 @@
                         <td class="total-metres">1200 m</td>
                         <td class="mobile-hide purpose">Jumper</td>
                         <td class="update-cell">
+                            <a href="#">
                             <button class="update" id="1" aria-label="Update">
                                 <span class="fi-pencil"></span>
                             </button>
+                            </a>
                         </td>
                         <td class="delete-cell">
-                            <button class="delete" id="1" aria-label="Delete">
+                            <a href="">
+                            <button class="delete" id="2" aria-label="Delete" data-open="delete-modal">
                                 <span class="fi-x"></span>
                             </button>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -324,20 +329,42 @@
                         <td class="total-metres">1000 m</td>
                         <td class="mobile-hide purpose">Jumper</td>
                         <td class="update-cell">
-                            <button class="update" id="1" aria-label="Update">
+                            <a href="#">
+                            <button class="update" id="3" aria-label="Update">
                                 <span class="fi-pencil"></span>
                             </button>
+                            </a>
                         </td>
                         <td class="delete-cell">
-                            <button class="delete" id="1" aria-label="Delete">
+                            <a href="">
+                            <button class="delete" id="1" aria-label="Delete" data-open="delete-modal">
                                 <span class="fi-x"></span>
                             </button>
+                            </a>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </section>
         
+        <!-- DELETE MODAL -->
+        <div class="reveal" id="delete-modal" aria-labelledby="delete-modal-header" data-reveal>
+            <h1 id="delete-modal-header">Deleting Yarn</h1>
+            <p class="lead">Are you sure you wish to delete 
+                <span class="del-yarn">Brand Yarn name, weight</span>?</p>
+            <p class="delete-action-btns">
+                <button class="no" aria-label="Close Delete Modal"   type="button">
+                    <span aria-hidden="true">&times;</span>
+                    No
+                </button>
+                <a href="#">
+                <button class="yes" id="delete-yes">
+                    <span class="fi-tick"></span>
+                    Yes
+                </button>
+                </a>
+            </p>
+        </div>
 
         <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/what-input.js"></script>
