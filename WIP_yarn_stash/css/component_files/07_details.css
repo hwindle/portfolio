@@ -1,0 +1,33 @@
+div.yarn-details h2 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    font-style: oblique;
+    color: var(--dark-highlight);
+    text-align: center;
+    text-shadow: 1px 1px 2px #fff, 
+        -1px -1px 2px #fff;
+}
+
+div.yarn-details > div.details-heading {
+    width: 100%;
+    background: linear-gradient(0deg, #86728b, var(--main-bg));
+}
+
+div.yarn-details > div.details-body {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+div.yarn-details p.fibre {
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+div.yarn-details strong {
+    font-weight: bold;
+    padding: 0 1.6rem 0 0;
+}
+
+

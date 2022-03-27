@@ -5,10 +5,14 @@ body {
 
 /*** details page ***/
 div.yarn-details {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
     background-color: var(--main-bg);
     border-radius: 9px;
-    box-shadow: 0px 0px 5px #333,
-        0px 0px 15px var(--light-grey);
+    box-shadow: 0px 0px 5px var(--light-grey),
+        0px 0px 15px #333,
+        0px 0px 25px #000;
     padding: 1.6rem;
 }
 
@@ -36,21 +40,3 @@ div.yarn-details {
     }
 }
 
-div.yarn-details h2 {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    padding: 0.3rem 1rem;
-    font-weight: bold;
-    font-style: oblique;
-    color: var(--dark-highlight);
-    text-align: center;
-}
-
-div.yarn-details p.fibre {
-    font-size: 1.4rem;
-    padding: 1rem;
-}
-
-div.yarn-details strong {
-    font-weight: bold;
-}
