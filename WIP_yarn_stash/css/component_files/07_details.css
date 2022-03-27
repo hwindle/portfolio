@@ -16,7 +16,7 @@ div.yarn-details > div.details-heading {
 }
 
 div.yarn-details > div.details-body {
-    flex-basis: 70%;
+    /* flex-basis: 70%; */
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
 }
@@ -44,4 +44,21 @@ p.colour-info > span.dyejob {
 p > span.total_metres, p.total_cost {
     font-size: 1.6rem;
     font-weight: bold;
+}
+
+/* yarn-details update-delete buttons */
+div.action-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    /* margin: 21px auto; */
+}
+
+div.action-btns > a {
+    padding: 0.4rem 1.8rem;
+}
+
+div.action-btns > a > button {
+    font-size: 1.8rem;
 }
