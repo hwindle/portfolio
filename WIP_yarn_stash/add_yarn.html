@@ -34,80 +34,113 @@
         </nav>
         <section id="content">
             <form method="post" action="#">
-                <p class="form-row">
-                    <label for="brand_id">Brand: </label>
-                    <select name="brand_id" id="brand_id">
-                        <option value="0">Unknown</option>
-                        <option value="1">Drops</option>
-                        <option value="2">Fyberspates, Coop Knits</option>
-                        <option value="3">Novita</option>
-                        <option value="4">Paintbox</option>
-                        <option value="5">Rowan</option>
-                        <option value="6">Stylecraft</option>
-                        <option value="7">West Yorkshire Spinners</option>
-                    </select>
-                    <label for="yarn_name">Yarn Name: </label>
-                    <select name="yarn_name_id" id="yarn_name" class="">
-                        <option value="0" data-brand-id="2">Socks Yeah 4ply</option>
-                        <option value="1" data-brand-id="2">Socks Yeah DK</option>
-                        <option value="2" data-brand-id="2">Scrumptious 4ply</option>
-                        <option value="3" data-brand-id="2">Vivacious 4ply</option>
-                        <option value="4" data-brand-id="2">Faery Wings fluffy</option>
-                    </select>
-                </p>
-                <p class="form-row">
-                    <label for="put_up">Put Up: </label>
-                    <select name="put_up_id" id="put_up" class="">
-                        <option value="0">Ball</option>
-                        <option value="1">Hank</option>
-                        <option value="2">Donut</option>
-                        <option value="3">Cake</option>
-                    </select>
-                </p>
-                <p class="form-row">
-                    <label for="notes">Notes: </label>
-                    <textarea name="notes" id="notes"></textarea>
-                    <label for="handspun">Handspun: </label>
-                    <input type="checkbox" name="handspun" id="handspun">
-                </p>
-                <p class="form-row">
-                    <label for="fibres_id">Fibres: </label>
-                    <select name="fibres_id" id="fibres_id">
-                        <option value="0">Acrylic</option>
-                        <option value="1">Merino</option>
-                        <option value="2">Fluffy mohair</option>
-                        <option value="3">Alpaca blend</option>
-                    </select>
-                </p>
-                <p class="form-row">
-                    <label for="weights_id">Weight: </label>
-                    <select name="weights_id" id="weights_id">
-                        <option value="0">Lace</option> 
-                        <option value="1">4ply</option> 
-                        <option value="2">DK</option> 
-                        <option value="3">Worsted</option> 
-                        <option value="4">Aran</option> 
-                        <option value="5">Chunky</option> 
-                    </select>
-                    <label for="metres_per_ball">Metres in Ball: </label>
-                    <input type="number" name="metres_per_ball" id="metres_per_ball" required>
-                </p>
-                <p class="form-row">
-                    <label for="price">Price GBP </label>
-                    <input type="text" name="price" id="price" placeholder="1.23" required>
-                    <label for="ball_weight">Ball Weight: </label>
-                    <input type="number" name="ball_weight" id="ball_weight" required>
-                </p>
-                <p class="submit-btn-row">
-                    <input name="add" type="submit" value="Add" />
-                </p>
+                <div class="grid-x grid-padding-x">
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="brand" class="">Brand
+                            <input id="brand" name="brand" type="text" placeholder="Regia" required>
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="yarn-name" class="">Yarn Name (without weight)
+                            <input id="yarn-name" name="yarn-name" type="text" placeholder="Stripes" required>
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="weight" class="">Weight
+                            <select id="weight" name="weight">
+                                <option value="Lace">Lace</option>
+                                <option value="4ply">4ply/fingering</option>
+                                <option value="Sport">Sport</option>
+                                <option value="DK">DK</option>
+                                <option value="Worsted">Worsted</option>
+                                <option value="Aran">Aran</option>
+                                <option value="Chunky">Chunky</option>
+                                <option value="Super chunky">Super chunky</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="fibre" class="">Fibre
+                            <select id="fibre" name="fibre">
+                                <option value="acrylic">Acrylics</option>
+                                <option value="wool">Wool</option>
+                                <option value="sock">Wool with nylon</option>
+                                <option value="plant">Plant fibres</option>
+                                <option value="luxury-mix">Luxury blend</option>
+                                <option value="budget-mix">Budget fibre mix</option>
+                                <option value="alpaca">Alpaca</option>
+                                <option value="silk">Silk</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="construction" class="">Construction
+                            <select id="construction" name="construction">
+                                <option value="woolen">Woolen</option>
+                                <option value="2ply">2ply</option>
+                                <option value="3ply">3 or more plies</option>
+                                <option value="chainette">chainette</option>
+                                <option value="tape">Tape</option>
+                                <option value="novelty">Novelty</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="colourway-name" class="">
+                            Colourway Name
+                            <input id="colourway-name" name="colourway-name" type="text" placeholder="sea green">
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="actual-colour" class="">
+                            Actual colour
+                            <input id="actual-colour" name="actual-colour" type="color" required>
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="dyejob" class="">Dyejob
+                            <select id="dyejob" name="dyejob">
+                                <option value="flat">Flat</option>
+                                <option value="heathered">Heathered</option>
+                                <option value="barberpole">Barber pole</option>
+                                <option value="striped">Self striping</option>
+                                <option value="varigated">Varigated</option>
+                                <option value="tonal">Tonal</option>
+                                <option value="speckled">Speckled</option>
+                                <option value="batik">Batik</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="metres-per-ball" class="">
+                            Metres per ball 
+                            <input id="metres-per-ball" name="metres-per-ball" type="number" min="1" max="10000" required>
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        
+                    </p>
+
+                    <p class="submit-btn-row">
+                        <input name="add" type="submit" value="Add" />
+                    </p>
+                </div>
             </form>
             <div class="errors">
-                <p>Database entry added</p>
+                <p>Database entry added or pdo error on line 10</p>
             </div>
         </section>
         
-      
-    </body>
-</html>
-      
+    
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.min.js"></script>
+        <script>
+          $(document).foundation();
+        </script>
+        <script src="js/main.js"></script>
+      </body>
+    </html>

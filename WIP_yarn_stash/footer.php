@@ -1,4 +1,4 @@
-    <div class="errors">
+        <div class="errors">
             <p>Database entry added or pdo error on line 10</p>
         </div>
     </section>
