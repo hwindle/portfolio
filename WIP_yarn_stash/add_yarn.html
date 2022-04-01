@@ -118,14 +118,55 @@
                         </label>
                     </p>
                     <p class="small-12 medium-6 large-4 cell">
-                        
+                        <label for="grams-per-ball" class="">
+                            Grams per ball
+                            <input id="grams-per-ball" name="grams-per-ball" type="number" min="1" max="1500" value="50" required>
+                        </label>
                     </p>
                     <p class="small-12 medium-6 large-4 cell">
-                        
+                        <label for="num-of-balls" class="">
+                            Number of balls
+                            <input id="num-of-balls" name="num-of-balls" type="number" min="1" max="568" required>
+                        </label>
+                    </p>
+                    <p class="small-12 medium-6 large-4 cell">
+                        <label for="cost-per-ball" class="">
+                            Cost per ball
+                            <input id="cost-per-ball" name="cost-per-ball" type="text" placeholder="12.34" required>
+                        </label>
+                    </p>
+                    <p class="small-12 cell">
+                        <label for="purpose">Purpose</label>
+                        <textarea id="purpose" name="purpose" placeholder="Sweaters, shawls, socks etc">
+
+                        </textarea>
+                    </p>
+                    <p class="medium-6 large-4 cell">
+                        <label for="place" class="">
+                            Place
+                            <input id="place" name="place" type="text">
+                        </label>
+                    </p>
+                    <p class="medium-6 large-4 cell">
+                        <fieldset>
+                            <legend>Wishlist</legend>
+                            <p>
+                                <input type="radio" name="wishlist" id="no" checked><label for="no">No</label> 
+                            </p>
+                            <p>
+                                <input type="radio" name="wishlist" id="yes"><label for="yes">Yes</label>
+                            </p>
+                        </fieldset>
+                    </p>
+                    <p class="small-12 medium-6 cell">
+                        <label for="weblink" class="">
+                            Purchase link
+                            <input type="url" name="weblink" id="weblink">
+                        </label>
                     </p>
 
-                    <p class="submit-btn-row">
-                        <input name="add" type="submit" value="Add" />
+                    <p class="small-12 medium-6 cell">
+                        <input name="add" id="add" type="submit" value="Add">
                     </p>
                 </div>
             </form>
