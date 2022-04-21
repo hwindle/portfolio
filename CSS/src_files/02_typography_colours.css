@@ -1,0 +1,15 @@
+:root {
+    --peach: rgb(253, 174, 141);
+    --cream: rgb(238, 225, 216);
+    --blue: rgb(4, 125, 172);
+    --yellow: rgb(249, 164, 45);
+}
+
+* {
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: body-font;
+    src: url('../fonts/Copse-Regular.ttf');
+}
