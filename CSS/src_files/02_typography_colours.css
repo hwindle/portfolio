@@ -17,6 +17,8 @@
 }
 
 * {
+    background-color: var(--peach);
+    color: var(--black);
     font-size: 18px;
     font-family: body-font, Arial, Helvetica, sans-serif;
 }
@@ -24,3 +26,4 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: heading-font, Arial, Helvetica, sans-serif;
 }
+

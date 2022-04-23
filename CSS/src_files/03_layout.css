@@ -1,0 +1,22 @@
+section {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+}
+
+section#top {
+    background-color: var(--cream);
+}
+
+section#about {
+    background-color: var(--blue);
+    color: var(--cream);
+}
+
+section#projects {
+    background-color: var(--yellow);
+}
+
+section#contact {
+    background-color: var(--peach);
+}
