@@ -3,13 +3,24 @@
     --cream: rgb(238, 225, 216);
     --blue: rgb(4, 125, 172);
     --yellow: rgb(249, 164, 45);
-}
-
-* {
-    font-size: 18px;
+    --black: rgb(0, 0, 0);
 }
 
 @font-face {
     font-family: body-font;
-    src: url('../fonts/Copse-Regular.ttf');
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: heading-font;
+    src: url('../fonts/Ubuntu-Bold.ttf');
+}
+
+* {
+    font-size: 18px;
+    font-family: body-font, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: heading-font, Arial, Helvetica, sans-serif;
 }
