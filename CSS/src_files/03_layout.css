@@ -27,3 +27,26 @@ section#projects {
 section#contact {
     background-color: var(--peach);
 }
+
+/*** header ***/
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+header nav ul {
+    margin-top: 1.5rem;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
