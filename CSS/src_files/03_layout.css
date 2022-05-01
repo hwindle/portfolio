@@ -1,11 +1,18 @@
 section {
-    display: grid;
-    width: 100%;
-    height: 100vh;
+
+}
+
+header {
+    background-color: var(--cream);
 }
 
 section#top {
+    width: 100%;
+    height: 100vh;
     background-color: var(--cream);
+    background-image: url('../src_files/background-tiia-pakk.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 section#about {
