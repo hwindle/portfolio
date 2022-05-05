@@ -62,7 +62,7 @@ header nav ul li {
     display: inline-block;
 }
 
-nav li a { 
+nav li a, a.back-to-top { 
     font-size: 1.8rem;
     background-color: var(--blue);
     padding: 0.6rem 1.6rem;
@@ -71,7 +71,7 @@ nav li a {
     border: 3px solid var(--cream);
 }
 
-nav li a:hover {
+nav li a:hover, a.back-to-top:hover {
     text-decoration: underline;
     text-decoration-color: var(--blue);
     color: var(--blue);
@@ -124,3 +124,62 @@ article#top-intro div.container a#call-to-action:hover {
     color: var(--yellow);
     border: 3px solid var(--yellow);
 }
+
+/*** about section ***/
+a.back-to-top {
+    display: block;
+    width: 50%;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    a.back-to-top {
+        width: 80%;
+    }
+}
+
+section#about a.back-to-top {
+    background-color: var(--cream);
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+section#about a.back-to-top:hover {
+    background-color: var(--blue);
+    border-color: var(--cream);
+    color: var(--cream);
+    text-decoration-color: var(--cream);
+}
+
+section#about {
+    height: 50vh;
+}
+
+section#about h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2.5;
+}
+
+section#about p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    section#about p {
+        width: 70%;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    section#about p {
+        width: 40%;
+        margin: 1.6rem auto;
+    }
+}
+
