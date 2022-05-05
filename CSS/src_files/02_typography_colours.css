@@ -16,7 +16,7 @@
     src: url('../fonts/Ubuntu-Bold.ttf');
 }
 
-* {
+body {
     background-color: var(--peach);
     color: var(--black);
     font-size: 18px;

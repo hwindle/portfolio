@@ -29,9 +29,23 @@ section#contact {
 }
 
 /*** header ***/
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 900px) {
+    header {
+        display: grid;
+        grid-template-columns: 100%; 
+        place-items: center;
+    }
+
+    header nav {
+        margin-bottom: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 header h1 {
@@ -41,12 +55,26 @@ header h1 {
 }
 
 header nav ul {
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
 }
 
-header nav li {
+header nav ul li {
     display: inline-block;
-    padding: 0.3rem 1rem;
-    font-size: 1.8rem;
-    text-decoration: none;
 }
+
+nav li a { 
+    font-size: 1.8rem;
+    background-color: var(--blue);
+    padding: 0.6rem 1.6rem;
+    text-decoration: none;
+    color: var(--cream);
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+    color: var(--blue);
+    background-color: var(--cream);
+}
+
+/* top article */
