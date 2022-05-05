@@ -183,3 +183,20 @@ section#about p {
     }
 }
 
+section#about > p > a {
+    display: block;
+    margin: 0 auto;
+    color: var(--cream);
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px black,
+                 -1px -1px 3px black;
+}
+
+
+section#about > p > a:hover {
+    color: var(--yellow);
+
+}
+
+
