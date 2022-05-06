@@ -1,5 +1,6 @@
 div#projects-container {
     display: grid;
+    row-gap: 1.4rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -31,8 +32,11 @@ a.card {
     height: 100%;
     display: block;
     text-decoration: none;
-    margin: 1rem;
+    background-color: var(--cream);
+    margin: 1.6rem;
     border: 1px solid #333;
+    box-shadow: 0 0 4px #111,
+                0 0 12px #333;
 }
 
 img.project-image {
