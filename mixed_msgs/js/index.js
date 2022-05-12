@@ -50,7 +50,9 @@ function displayRandomMsgHTML(obj) {
 
     Returns an innerHTML string, with span classes */
 
-  let result = `This is a <span class="animal">${obj.animal}</span> eating some <span class="food">${obj.food}</span> and feeling <span class="mood">${obj.feeling}</span>`;  
+  let result = `This is a <span class="animal">${obj.animal}</span> 
+  eating some <span class="food">${obj.food}</span> 
+  and feeling <span class="mood">${obj.feeling}</span>`;  
   document.getElementById('img-animal').setAttribute('src', obj.pic);
   return document.getElementById('msg-js').innerHTML = result;
 }
