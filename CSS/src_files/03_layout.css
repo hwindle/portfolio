@@ -1,1 +1,85 @@
+/* main grid */
+body {
+  /* display grid isn't really needed on mobile */
+  display: grid;
+  grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'content content content'
+    'footer footer footer';
+}
 
+
+header {
+  grid-area: header;
+  background-color: var(--col-grey-600);
+  width: 100%;
+  padding: 2rem 0;
+}
+
+header h1, header h2 {
+  text-align: center;
+}
+
+section.header-social-links {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.6rem 0;
+}
+
+ul.socials {
+  float: right;
+}
+
+ul.socials > li.social-item {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+/* header end */
+
+nav {
+  grid-area: nav;
+}
+
+nav ul.main-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* nav end */
+
+main {
+  grid-area: content;
+}
+
+/* testing bits */
+main.other-page, section.latest-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+main#home-page {
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+div.project-card {
+  height: 30vh;
+  width: 20%;
+  background-color: var(--col-orange-500);
+}
+
+section.about-me {
+  height: 20vh;
+  width: 60%;
+  background-color: var(--col-lightest);
+  margin: 0 auto;
+}
