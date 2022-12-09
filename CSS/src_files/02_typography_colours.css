@@ -9,13 +9,13 @@
   /* weights 300, 300 italic, 600, 600 italic
     font-family: 'Titillium Web', sans-serif; */
   --body-font: "Titillium Web", sans-serif;
-  --weight-body-font: 300;
+  --weight-body-font: 400;
   --heading-font: "Titillium Web", sans-serif;
   --weight-heading-font: 600;
 }
 
 body {
-  background-color: var(--col-lightest);
+  background-color: var(--col-grey-300);
   color: var(--body-text);
   font-size: 16px;
   font-family: var(--body-font);
