@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************
+ *  COLOUR PALETTE 
+ *
+ *  baby powder
+ *    hsl(70, 27%, 96%)
+ *
+ *  dark purple
+ *    hsl(286.36, 31%, 14%)
+ *
+ *  orange soda
+ *    hsl(7.06, 87%, 58%)
+ *
+ *  dark olive green
+ *    hsl(98.1, 42%, 30%)
+ *
+ *  orange yellow
+ *    hsl(44.39, 90%, 49%)
+ *
+ *  middle blue
+ *    hsl(184.34, 52%, 68%)
+ *
+ *  orchid crayola
+ *    hsl(321.67, 51%, 73%)
+ *
+ ************************/
+
+/*** GENERAL STYLES ***/
+body {
+  background-color: hsl(70, 27%, 96%);
+  /* aubergine color */
+  color: #29182e;
+  font-size: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+
+
+
+/*** HEADER ***/
+header {
+  background-color: hsl(286.36, 31%, 14%);
+}
+
+nav {
+  padding: 1.4rem 2rem;
+}
+
+/* main text logo */
+nav span {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  color: hsl(7.06, 87%, 58%);
+}
+
+.header-text {
+  display: flex;
+  gap: 2.5rem;
+  color: hsl(70, 27%, 96%);
+}
+
+.header-text h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+}
+
+.header-text p {
+  line-height: 1.25;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: hsl(7.06, 87%, 58%);
+  color: hsl(70, 27%, 96%);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+}
+
+section.header-text {
+  margin: 40% auto;
+}
+
+/*** Social integrity section ***/
+section.social-integrity {
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+section.social-integrity img {
+  display: block;
+  width: 350px;
+  
+}
+
+section.social-integrity h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+section.social-integrity h2 span:first-child {
+  color: hsl(98.1, 42%, 30%);
+}
+
+section.social-integrity h2 span:last-child {
+  color: hsl(7.06, 87%, 58%);
+}
+
+section.social-integrity h2,
+section.social-integrity p {
+  padding: 1.5rem;
+  line-height: 1.25rem;
+}
+
+/*** Open platform section ***/
+section.open-platform {
+  margin-top: 2rem;
+}
+
+section.open-platform h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+
+section.open-platform div {
+  padding: 1.5rem;
+}
+
+section.open-platform article {
+  padding: 1.5rem 0;
+}
+
+article.unity {
+  color: hsl(7.06, 87%, 58%);
+}
+
+article.privacy {
+  color: hsl(98.1, 42%, 30%);
+}
+
+article.clarity {
+  color: hsl(44.39, 90%, 49%);
+}
+
+section.open-platform article h3 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+/*** FOOTER ***/
+footer {
+  margin-top: 1.5rem;
+  background-color: hsl(286.36, 31%, 14%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+/* the text logo */
+footer span {
+  margin: 3.125rem 2rem 0.8rem 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  color: hsl(7.06, 87%, 58%);
+}
+
+footer div {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+footer div a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.15rem;
+  color: hsl(44.39, 90%, 49%);
+  text-decoration: none;
+}
+
+footer span.copyright {
+  color: hsl(70, 27%, 96%);
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+/*** LAYOUT & MEDIA QUERIES ***/
+@media screen and (max-width: 767px) {
+  /* header */
+  header {
+    height: 100vh;
+  }
+
+  .header-text {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #get-started-desktop,
+  .desktop-only-image {
+    display: none;
+  }
+
+  #get-started-mobile {
+    display: inline;
+  }
+
+  /* section.social-integrity */
+  section.social-integrity img {
+    margin: 1rem auto;
+  }
+
+  /* section.open-platform */
+  section.open-platform div {
+    margin: 0 auto;
+    width: 16rem;
+  }
+
+  /* footer */
+  
+}
+
+@media screen and (min-width: 768px) {
+  /* hiding the relevant elements */
+  #get-started-desktop,
+  .desktop-only-image {
+    display: block;
+  }
+
+  #get-started-mobile {
+    display: none;
+  }
+
+  /* header */
+  header {
+    height: auto;
+    padding: 1.8rem 3rem 0 3rem;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header div.flex-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+
+  section.header-text {
+    margin: 0;
+    text-align: left;
+  }
+
+  .header-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .header-text p,
+  .header-text h2 {
+    padding: 0;
+  }
+
+  .flex-header img {
+    margin: 0;
+    padding: 0;
+    width: 492px;
+  }
+
+  /* social-integrity section */
+  section.social-integrity {
+    margin-top: 3rem;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  aside.social-integrity-info h2,
+  aside.social-integrity-info p {
+    text-align: right;
+  }
+
+  section.social-integrity img {
+    margin: 0;
+  }  
+
+  /* section.open-platform */
+  section.open-platform {
+    margin-top: 4rem;
+  }
+
+  section.open-platform .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .flex-container article {
+    width: 16rem;
+  }
+
+  /* footer */
+  footer div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

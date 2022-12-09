@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAKEBOOK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>Fakebook</span>
+        <!-- Hide on mobile view -->
+        <div id="get-started-desktop">
+          <span class="btn">Get started</span>
+        </div>
+      </nav>
+      <div class="flex-header">
+        <section class="header-text">
+          <h1>Connecting the world</h1>
+          <p>
+            A next-gen social networking service, empowering the user, making
+            universal connectivity both uninstrusive and immersive.
+          </p>
+          <!-- hide this on desktop/tablet view -->
+          <div id="get-started-mobile">
+            <span class="btn">Get started</span>
+          </div>
+        </section>
+        <img
+          class="desktop-only-image"
+          src="./Assets/header-img.png"
+          alt="Man with a paper aeroplane"
+          aria-hidden="true"
+        />
+      </div>
+    </header>
+    <!-- Hero section - social integrity -->
+    <section class="social-integrity">
+      <img
+        src="./Assets/phone-mockup.png"
+        alt="Mobile phone mockup of the webpage"
+      />
+      <aside class="social-integrity-info">
+        <h2>
+          Focused on <span>Social</span>
+          <span>Integrity</span>
+        </h2>
+        <p>
+          Avoiding the sharing functionality, you can focus on showcasing your
+          best self without hesitation.
+        </p>
+      </aside>
+    </section>
+    <!-- 2nd section about an open platform -->
+    <section class="open-platform">
+      <h2>Say Hello to an Open platform</h2>
+      <div class="flex-container">
+        <article class="unity">
+          <h3>Unity</h3>
+          <img src="./Assets/svg/orange_dot.svg" alt="" aria-hidden="true" />
+          <p>
+            Ensuring peace of mind for all our users, share only what you want.
+            You are in full control of yourself with us.
+          </p>
+        </article>
+        <article class="privacy">
+          <h3>Privacy</h3>
+          <img src="./Assets/svg/green_keyhole.svg" alt="" aria-hidden="true" />
+          <p>
+            With limitless privacy toggle functionality, we will only ever use
+            your data to provide the best experience for you.
+          </p>
+        </article>
+        <article class="clarity">
+          <h3>Clarity</h3>
+          <img
+            src="./Assets/svg/yellow_speaker.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <p>
+            We will always notify you of any changes affecting you, and will
+            never breach our promise of a clear, open network.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <span>Fakebook</span>
+      <div>
+        <a href="#">Get Started</a>
+        <a href="#">About</a>
+        <a href="#">Jobs</a>
+        <a href="#">Help</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies Policy</a>
+      </div>
+      <span class="copyright"> &copy; Fakebook 2022 </span>
+    </footer>
+  </body>
+</html>

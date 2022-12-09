@@ -1,0 +1,22 @@
+@import 'partials/colours';
+
+.img-container {
+    margin: 1.6rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    justify-content: center;
+}
+
+
+
+.img-container figure img {
+    margin: 1rem;
+    max-width: 95%;
+}
+
+.img-container figure figcaption {
+    text-align: center;
+    color: $headings;
+    font-weight: bold;
+}
