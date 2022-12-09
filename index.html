@@ -20,13 +20,25 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="./CSS/styles.css" />
     <!-- Favicon -->
-    <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   </head>
   <body>
     <header>
       <h1>Windle's Web Development</h1>
       <h2>Hazel Windle's Portfolio</h2>
+      <section class="header-social-links">
+        <ul class="socials">
+          <li class="social-item">
+            <span class="fa-brands fa-square-github"></span>
+            <a href="https://github.com/hwindle" target="_blank"> GitHub </a>
+          </li>
+          <li class="social-item">
+            <span class="fa-brands fa-linkedin"></span>
+            <a href="#" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
+      </section>
     </header>
     <nav>
       <ul class="main-menu">
@@ -54,9 +66,51 @@
         </li>
       </ul>
     </nav>
+    <!-- Start of main content -->
     <main>
-
+      <section class="latest-projects">
+        <a class="card" href="./PC_building/index.html">
+          <img class="project-image" src="./pics/img_01.png" />
+          <h4 class="project-heading">PC Building</h4>
+          <div class="skills">
+            <ol>
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>Gulp</li>
+              <li>PC Hardware</li>
+            </ol>
+          </div>
+        </a>
+        <a class="card" href="./simple_company_website/index.html">
+          <img class="project-image" src="./pics/img_02.png" />
+          <h4 class="project-heading">Simple Company Website</h4>
+          <div class="skills">
+            <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ol>
+          </div>
+        </a>
+        <a class="card" href="./yarn_stash/index.html">
+          <img class="project-image" src="./pics/img_03.png" />
+          <h4 class="project-heading">Yarn stash web app UI</h4>
+          <div class="skills">
+            <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>MySQL</li>
+              <li>UX Design</li>
+            </ol>
+          </div>
+        </a>
+      </section>
+      <section class="about-me">
+        <h3>About</h3>
+        <p>A full stack web developer who is fluent in Python, JavaScript, PHP and Linux<!--React-->. With a passion for lifelong learning, problem solving and collaboration with other technically minded people. First started programming in 2004 with Perl on SuSe Linux 9.0, and I have grown as a developer since then.</p>
+      </section>
     </main>
+    <!-- end of main content -->
     <footer>
       <p class="copyright">&copy; 2022 Hazel Windle</p>
       <p class="p-sitemap">
