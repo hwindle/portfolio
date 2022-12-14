@@ -1,6 +1,8 @@
 @import url('./src_files/01_reset.css');
 @import url('./src_files/02_typography_colours.css');
 @import url('./src_files/03_layout.css');
-@import url('./src_files/04_forms.css');
-@import url('./src_files/05_product_cards.css');
-@import url('./src_files/06_footer.css');
+@import url('./src_files/04_navigation.css');
+@import url('./src_files/05_forms.css');
+@import url('./src_files/06_projects_content.css');
+@import url('./src_files/07_footer.css');
+@import url('./src_files/08_media_queries.css');
