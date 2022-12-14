@@ -1,10 +1,11 @@
 {
+  "type": "module",
   "name": "shopping_checkout",
   "version": "1.0.0",
   "description": "credit card, debit card validation",
   "main": "main.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha js/**/test/*_tester.js"
   },
   "author": "",
   "license": "ISC",
