@@ -77,6 +77,7 @@ const findInvalidCards = (creditNestedArr) => {
   return invalidCards;
 };
 
+// the below could be used on valid cards to select card issuer in GUI.
 const idInvalidCardCompanies = (invalidCards) => {
   let companies = [];
   for (let i = 0; i < invalidCards.length; i++) {
