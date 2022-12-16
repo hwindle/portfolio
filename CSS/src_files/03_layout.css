@@ -78,7 +78,7 @@ div.project-card {
 }
 
 section.about-me {
-  height: 20vh;
+  min-height: 20vh;
   width: 60%;
   background-color: var(--col-lightest);
   margin: 0 auto;

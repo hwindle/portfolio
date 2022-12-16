@@ -73,7 +73,26 @@
     <!-- Start of main content -->
     <main id="contact-page">
       <!-- see contact_form_to_replicate png -->
-      <form action="" class="contact-form"></form>
+      <h1>Contact</h1>
+      <h5>Let's work together</h5>
+      <form action="" class="contact-form">
+        <section class="form-row">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </section>
+        <section class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" required />
+        </section>
+        <section class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </section>
+        <section class="form-buttons">
+          <input type="button" id="clear" name="clear" value="Clear" />
+          <input type="submit" id="send-msg" name="send-msg" value="Send" />
+        </section>
+      </form>
     </main>
     <!-- end of main content -->
     <footer>
