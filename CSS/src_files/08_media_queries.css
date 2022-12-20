@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  nav ul.main-menu {
+    flex-direction: column;
+  }
+
+  nav ul.main-menu li.menu-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  
+}

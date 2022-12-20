@@ -1,25 +1,25 @@
 /* from homework */
-aside.card {
+div.project-card {
+  flex-basis: 450px;
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  /* width: auto; */
-  /* height: 25rem; */
+  height: 31rem;
   background-color: var(--col-lightest);
   border-radius: 8px 8px 0 0;
   box-shadow: 0 -3px 6px var(--col-grey-300);
 }
 
-.card figure {
+.project-card figure {
   flex: 1 1 auto;
 }
 
-.card figure > img {
+.project-card figure > img {
   border: 2px solid var(--body-text);
   border-radius: 8px 8px 0 0;
 }
 
-.card figure > figcaption {
+.project-card figure > figcaption {
   font-size: 1.3rem;
   font-style: small-caps;
   color: var(--body-text);
@@ -29,13 +29,13 @@ div.card-links {
   margin: 1rem;
 }
 
-.card a.card-btn:visited {
+.project-card a.card-btn:visited {
   color: var(--col-grey-600);
   font-weight: 600;
   text-shadow: 1px 1px 2px var(--body-text);
 }
 
-.card a.card-btn, .card a.card-btn:active {
+.project-card a.card-btn, .project-card a.card-btn:active {
   background: linear-gradient(50deg, var(--col-orange-500), var(--col-yellow-300));
   font-weight: 600;
   font-size: 1.2rem;
@@ -46,16 +46,7 @@ div.card-links {
   margin: 0.25rem 0.5rem;
 }
 
-.card a.card-btn:hover, .card a.card-btn:focus {
+.project-card a.card-btn:hover, .project-card a.card-btn:focus {
   background: linear-gradient(50deg, var(--col-yellow-300), var(--col-orange-500));
   text-shadow: 1px 1px 2px var(--col-lightest), 2px 2px 1px var(--col-grey-300); 
-}
-
-span.svg-icon-git {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  margin: -10px 10px -8px -10px;
-  background: transparent url('./pics/GitHub-Logo.wine.svg') no-repeat center center;
-  /* background-size: 32px; */
 }
