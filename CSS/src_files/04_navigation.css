@@ -1,0 +1,28 @@
+/*** NAVIGATION ***/
+nav ul.main-menu {
+  background-color: var(--col-lightest);
+}
+
+nav ul.main-menu li {
+  padding: 0.8rem 2rem;
+}
+
+nav ul.main-menu li a, 
+nav ul.main-menu li a:visited {
+  padding: 0.4rem 1.8rem;
+  position: relative;
+  color: var(--body-text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, var(--col-orange-500), var(--col-yellow-300));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  transition: background-size cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+}
+
+li.menu-item a:hover,
+li.menu-item a:focus {
+  background-size: 100% 3px;
+}
