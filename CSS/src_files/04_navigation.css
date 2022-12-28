@@ -15,14 +15,17 @@ nav ul.main-menu li a:visited {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
+  border-radius: 4px 4px 0 0;
+  /* fancy underline bit */
   background-image: linear-gradient(90deg, var(--col-orange-500), var(--col-yellow-300));
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 3px;
+  background-size: 0% 4px;
   transition: background-size cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
 }
 
 li.menu-item a:hover,
 li.menu-item a:focus {
   background-size: 100% 3px;
+  background-color: rgba(210, 210, 210, 0.8);
 }
