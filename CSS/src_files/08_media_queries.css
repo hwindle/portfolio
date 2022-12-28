@@ -16,22 +16,34 @@
   /*** NAVIGATION ***/
   nav ul.main-menu {
     flex-direction: column;
+    align-items: center;
   }
 
   nav ul.main-menu li.menu-item {
-    display: block;
+    display: none;
     width: 100%;
     text-align: center;
+  }
+
+  nav ul.main-menu li.menu-item.show {
+    display: block;
   }
 
   /*** About me section ***/
   section.about-me {
     width: 80%;
   }
+}
 
+@media screen and (min-width: 769px) {
+  /*** Hide menu button ***/
+  li.phone-menu-btn {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+
   /*** About me section ***/
   section.about-me {
     width: 70%;
