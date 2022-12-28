@@ -1,6 +1,6 @@
 /*** NAVIGATION ***/
 nav ul.main-menu {
-  background-color: var(--col-lightest);
+  background-color: var(--col-grey-300);
 }
 
 nav ul.main-menu li {
@@ -27,7 +27,7 @@ nav ul.main-menu li a:visited {
 li.menu-item a:hover,
 li.menu-item a:focus {
   background-size: 100% 3px;
-  background-color: rgba(210, 210, 210, 0.8);
+  background-color: var(--col-lightest);
 }
 
 /*** SOCIAL LINKS ***/
