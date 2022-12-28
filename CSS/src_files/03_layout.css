@@ -54,12 +54,21 @@ main#home-page {
 
 div.project-card {
   height: 30vh;
-  background-color: var(--col-orange-500);
 }
 
 section.about-me {
   min-height: 20vh;
-  width: 60%;
+  width: 50%;
   background-color: var(--col-lightest);
   margin: 2rem auto;
+}
+
+section.about-me h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+section.about-me p {
+  padding: 0.6rem 1.2rem;
+  text-align: justify;
 }

@@ -24,5 +24,16 @@
     text-align: center;
   }
 
+  /*** About me section ***/
+  section.about-me {
+    width: 80%;
+  }
 
+}
+
+@media screen and (max-width: 1024px) {
+  /*** About me section ***/
+  section.about-me {
+    width: 70%;
+  }
 }
