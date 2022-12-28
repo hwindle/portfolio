@@ -7,12 +7,17 @@ body {
 
 header {
   background-color: var(--col-grey-600);
+  background-image: url('../../pics/background/bg-stones.jpg'),
+    linear-gradient(rgba(0, 0, 0, 0.7), var(--col-grey-600));
+  background-size: cover;
+  background-blend-mode: overlay;
   width: 100%;
   padding: 2rem 0 0 0;
 }
 
 header h1, header h2 {
   text-align: center;
+  color: white;
 }
 
 section.header-social-links {
@@ -21,13 +26,14 @@ section.header-social-links {
 }
 
 ul.socials {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 15px 0 0 0;
 }
 
 /* header end */
 
+/* nav start */
 nav ul.main-menu {
   display: flex;
   flex-direction: row;
@@ -37,7 +43,7 @@ nav ul.main-menu {
 /* nav end */
 
 
-/* testing bits */
+/* MAIN */
 main.other-page, section.latest-projects {
   display: flex;
   flex-wrap: wrap;
