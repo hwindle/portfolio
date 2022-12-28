@@ -29,3 +29,30 @@ li.menu-item a:focus {
   background-size: 100% 3px;
   background-color: rgba(210, 210, 210, 0.8);
 }
+
+/*** SOCIAL LINKS ***/
+ul.socials > li.social-item {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0.6rem 1.6rem;
+}
+
+ul.socials > li.social-item > span {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+ul.socials > li.social-item a:visited,
+ul.socials > li.social-item a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+ul.socials > li.social-item a:hover,
+ul.socials > li.social-item a:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--col-yellow-300);
+  color: var(--col-orange-500);
+}

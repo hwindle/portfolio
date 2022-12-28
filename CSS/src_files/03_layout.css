@@ -8,7 +8,7 @@ body {
 header {
   background-color: var(--col-grey-600);
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
 }
 
 header h1, header h2 {
@@ -16,20 +16,16 @@ header h1, header h2 {
 }
 
 section.header-social-links {
-  width: 95%;
-  margin: 0 auto;
-  padding: 0.6rem 0;
+  display: flex;
+  justify-content: end;
 }
 
 ul.socials {
-  float: right;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 15px 0 0 0;
 }
 
-ul.socials > li.social-item {
-  display: inline-block;
-  list-style-type: none;
-  font-size: 1.5rem;
-}
 /* header end */
 
 nav ul.main-menu {
