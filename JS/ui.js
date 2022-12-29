@@ -17,3 +17,18 @@ mobileBtn.addEventListener('mousedown', () => {
     }
   });
 });
+
+/***
+ * Contact form - clear form button
+ */
+const clearFormBtn = document.querySelector('input#clear');
+// inputs to clear
+const emailInput = document.querySelector('input#email');
+const subjectInput = document.querySelector('input#subject');
+const messageTextarea = document.querySelector('textarea#message');
+
+clearFormBtn.addEventListener('click', () => {
+  emailInput.value = '';
+  subjectInput.value = '';
+  messageTextarea.value = '';
+});
