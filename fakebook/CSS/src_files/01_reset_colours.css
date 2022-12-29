@@ -4,28 +4,12 @@
   box-sizing: border-box;
 }
 
-/************************
- *  COLOUR PALETTE 
- *
- *  baby powder
- *    hsl(70, 27%, 96%)
- *
- *  dark purple
- *    hsl(286.36, 31%, 14%)
- *
- *  orange soda
- *    hsl(7.06, 87%, 58%)
- *
- *  dark olive green
- *    hsl(98.1, 42%, 30%)
- *
- *  orange yellow
- *    hsl(44.39, 90%, 49%)
- *
- *  middle blue
- *    hsl(184.34, 52%, 68%)
- *
- *  orchid crayola
- *    hsl(321.67, 51%, 73%)
- *
- ************************/
+:root {
+  --light-blush: hsl(70, 27%, 96%);
+  --dark-purple: hsl(286.36, 31%, 14%);
+  --orange: hsl(7.06, 87%, 58%);
+  --green: hsl(98.1, 42%, 30%);
+  --yellow: hsl(44.39, 90%, 49%);
+  --blue: hsl(184.34, 52%, 68%);
+  --orchid: hsl(321.67, 51%, 73%);
+}

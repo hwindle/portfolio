@@ -1,0 +1,37 @@
+/*** LAYOUT & MEDIA QUERIES ***/
+
+/*** MOBILE ***/
+@media screen and (max-width: 767px) {
+  /* header */
+  header {
+    height: 100vh;
+  }
+
+  .header-text {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #get-started-desktop,
+  .desktop-only-image {
+    display: none;
+  }
+
+  #get-started-mobile {
+    display: inline;
+  }
+
+  /* section.social-integrity */
+  section.social-integrity img {
+    margin: 1rem auto;
+  }
+
+  /* section.open-platform */
+  section.open-platform div {
+    margin: 0 auto;
+    width: 16rem;
+  }
+
+  /* footer */
+}

@@ -1,0 +1,49 @@
+/*** HEADER ***/
+header {
+  background-color: hsl(286.36, 31%, 14%);
+}
+
+nav {
+  padding: 1.4rem 2rem;
+}
+
+/* main text logo */
+nav span {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  color: hsl(7.06, 87%, 58%);
+}
+
+.header-text {
+  display: flex;
+  gap: 2.5rem;
+  color: var(--light-blush);
+}
+
+.header-text h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+}
+
+.header-text p {
+  line-height: 1.25;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: var(--orange);
+  color: var(--light-blush);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+}
+
+section.header-text {
+  margin: 40% auto;
+}

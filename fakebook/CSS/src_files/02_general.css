@@ -1,8 +1,8 @@
 /*** GENERAL STYLES ***/
 body {
-  background-color: hsl(70, 27%, 96%);
+  background-color: var(--light-blush);
   /* aubergine color */
-  color: #29182e;
+  color: var(--dark-purple);
   font-size: 16px;
   font-family: "Lexend Deca", sans-serif;
   text-align: center;
