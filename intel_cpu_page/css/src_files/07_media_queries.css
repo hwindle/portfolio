@@ -1,0 +1,31 @@
+@media only screen and (max-width: 900px) {
+  main {
+    max-width: 100%;
+  }
+
+  #header-img {
+    display: none;
+  }
+
+  header h1 {
+    padding-top: 2.6em;
+  }
+
+  #options-box {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    max-width: 85%;
+  }
+
+  #form {
+    flex-direction: column;
+  }
+
+  #form input {
+    width: 100%;
+  }
+}

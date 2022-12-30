@@ -1,0 +1,24 @@
+
+/** forms **/
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em;
+  border: 1px solid var(--borders);
+}
+
+#form #email {
+  width: 600px;
+  border: 1px solid var(--borders);
+  font-size: 1.2em;
+  padding: 0.3em 0.6em;
+}
+
+#form input[type='submit'] {
+  border: 0;
+  background: var(--dark-blue);
+  color: white;
+  font-size: 1.2em;
+  padding: 0.3em 0.6em;
+}

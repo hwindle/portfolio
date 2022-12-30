@@ -1,0 +1,14 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** colours **/
+:root {
+  --fg-text: rgb(85, 85, 85);
+  --borders: #d7d7d7;
+  --bg: #f3f3f3;
+  --dark-blue: #0071c5;
+  --light-blue: #00aeef;
+}

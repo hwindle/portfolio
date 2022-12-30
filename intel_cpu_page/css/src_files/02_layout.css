@@ -1,0 +1,47 @@
+/** flexbox layout **/
+body {
+  background: var(--bg);
+  color: var(--fg-text);
+}
+
+#options-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#options-box .card {
+  margin: 1.4em;
+  padding: 1.6em;
+  border: 1px solid var(--borders);
+}
+
+.card ul > li {
+  padding: 0.3em 0.6em;
+}
+
+main {
+  max-width: 70%;
+  padding: 0.6em;
+  margin: auto;
+}
+
+header, footer {
+  background-color: var(--bg);
+  width: 100%;
+}
+
+header h1 {
+  font-size: 3em;
+  line-height: 2;
+  text-align: left;
+}
+
+footer p.links {
+  float: right;
+}
+
+footer p.copy {
+  float: right;
+  padding: 1em;
+}

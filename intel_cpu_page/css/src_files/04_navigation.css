@@ -1,0 +1,34 @@
+/** navigation **/
+#nav-bar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 1em;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  background: white;
+  color: var(--dark-blue);
+  font-size: 1.2em;
+  padding: 0.3em 0.6em;
+}
+
+#nav-bar a:hover {
+  text-decoration: underline;
+  color: var(--fg-text);
+}
+
+#nav-bar a:visited {
+  color: var(--light-blue);
+}
+
+footer .links a, a.link-to-top {
+  color: var(--dark-blue);
+  text-decoration-color: var(--dark-blue);
+}
+
+footer .links a:hover, a.link-to-top:hover {
+  color: var(--light-blue);
+  text-decoration-color: var(--light-blue);
+}

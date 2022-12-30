@@ -1,0 +1,31 @@
+/** media **/
+#header-img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  padding: 5px;
+}
+
+section.feature {
+  background: white;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.feature .feature-icon {
+  width: 25%;
+  height: 25%;
+  padding: 0.3em;
+  float: left;
+}
+
+.feature .feature-text {
+  padding: 1em;
+}
+
+#video {
+  width: 640px;
+  margin: auto;
+  padding: 2em 0;
+}
