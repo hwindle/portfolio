@@ -18,5 +18,17 @@
   #options-box {
     flex-direction: column;
   }
+
+  /* email form */
+  #form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #form input[type='submit'] {
+    display: block;
+    width: 75%;
+  }
 }
 
