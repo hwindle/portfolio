@@ -1,6 +1,10 @@
 @media only screen and (max-width: 900px) {
-  main {
-    max-width: 100%;
+  body {
+    grid-template-areas: 
+      'header header header'
+      'main main main'
+      'sidebar sidebar sidebar'
+      'footer footer footer';
   }
 
   #header-img {
@@ -16,16 +20,3 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  main {
-    max-width: 85%;
-  }
-
-  #form {
-    flex-direction: column;
-  }
-
-  #form input {
-    width: 100%;
-  }
-}
