@@ -37,19 +37,29 @@ body {
 }
 
 #options-box {
+  /* grid-area: 1/1 4/4; */
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
-#options-box .card {
+#options-box div.card {
+  display: flex;
+  flex-direction: column;
   margin: 1.4em;
   padding: 1.6em;
   border: 1px solid var(--borders);
 }
 
 .card ul > li {
-  padding: 0.3em 0.6em;
+  padding: 0.3em 0.8em;
+  list-style-type: square;
+}
+
+#options-box div.card button.select {
+  flex-grow: 1;
+  padding-bottom: 0.5rem;
 }
 
 
@@ -67,6 +77,24 @@ header h1 {
 
 header h2.spacer {
   flex-grow: 1;
+}
+
+/*** ASIDE ***/
+aside {
+  text-align: center;
+}
+
+aside > .amd-cpus {
+  margin: 1rem;
+}
+
+aside > .amd-cpus > .card > ul > li {
+  list-style-type: none;
+  color: maroon;
+}
+
+.amd-cpus button.select {
+  background-image: linear-gradient(90deg, red, maroon);
 }
 
 /*** FOOTER ***/
