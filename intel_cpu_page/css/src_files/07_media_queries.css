@@ -12,7 +12,8 @@
   }
 
   header h1 {
-    padding-top: 2.6em;
+    padding-top: 1.6em;
+    margin-left: 2rem;
   }
 
   #options-box {
@@ -26,9 +27,14 @@
     align-items: center;
   }
 
-  #form input[type='submit'] {
+  #form input {
     display: block;
-    width: 75%;
+    width: 100%;
+  }
+
+  /* white feature boxes */
+  section.feature {
+    margin: 1rem 0.8rem;
   }
 }
 
