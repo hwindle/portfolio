@@ -53,8 +53,8 @@ function displayRandomMsgHTML(obj) {
   let result = `This is a <span class="animal">${obj.animal}</span> 
   eating some <span class="food">${obj.food}</span> 
   and feeling <span class="mood">${obj.feeling}</span>`;  
-  document.getElementById('img-animal').setAttribute('src', obj.pic);
-  return document.getElementById('msg-js').innerHTML = result;
+  document.querySelector('#img-animal').setAttribute('src', obj.pic);
+  return document.querySelector('#msg-js').innerHTML = result;
 }
 
 
@@ -72,9 +72,11 @@ function messageCreate(msgBits) {
   };
 }
 
-displayRandomMsgHTML(messageCreate(msgBits));
-
-function changeMsg() {  
+const buttonChangeMsg = document.querySelector('#change-msg');
+buttonChangeMsg.addEventListener('click', () => {
   displayRandomMsgHTML(messageCreate(msgBits));
-}
+});
+
+
+
 
