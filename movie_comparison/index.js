@@ -1,148 +1,74 @@
-// variables to compare values in.
-let leftMovie;
-let rightMovie;
 
-const autoCompleteConfig = {
-  renderOption(movie) {
-    const imgSrc = movie.Poster === 'N/A' ? '' : movie.Poster;
-    return `
-      <img src="${imgSrc}" alt="${movie.Title}">
-      ${movie.Title} (${movie.Year})
-    `;
-  },
+// codecademy one
+const tmdbKey = '80836905ac94fca8d5055c0ecf1ab442';
+const tmdbBaseUrl = 'https://api.themoviedb.org/3/';
+const playBtn = document.getElementById('playBtn');
 
-  onOptionSelect(movie) {
-    onMovieSelect(movie);
-  },
+const getGenres = async () => {
+  const genreRequestEndpoint = 'genre/movie/list?api_key=';
+  const requestParams = tmdbKey;
+  const urlToFetch = tmdbBaseUrl + genreRequestEndpoint + requestParams;
 
-  inputValue(movie) {
-    return movie.Title;
-  },
-
-  async fetchData(searchTerm) {
-    const response = await axios.get('http://www.omdbapi.com/', {
-      params: {
-        apikey: '<PUT_API_KEY_HERE>',
-        s: searchTerm
-      }
-    });
-
-    if (response.data.Error) {
-      return [];
+  try {
+    const response = await fetch(urlToFetch, {cache: 'no-cache'});
+    if (response.ok) {
+      const jsonResponse = await response.json();
+      // console.log(jsonResponse);
+      const genres = jsonResponse.genres;
+      console.log(genres);
+      return genres;
     }
-
-    return response.data.Search;
+  } catch(error) {
+    console.log(error);
   }
-}; // end of autoCompleteConfig
-
-createAutoComplete({
-  ...autoCompleteConfig,
-  root: document.querySelector('#left-autocomplete'),
-  onOptionSelect(movie) {
-    document.querySelector('.tutorial').classList.add('is-hidden');
-    onMovieSelect(movie, document.querySelector('#left-summary'), 'left');
-  }
-});
-
-createAutoComplete({
-  ...autoCompleteConfig,
-  root: document.querySelector('#right-autocomplete'),
-  onOptionSelect(movie) {
-    document.querySelector('.tutorial').classList.add('is-hidden');
-    onMovieSelect(movie, document.querySelector('#right-summary'), 'right');
-  }
-});
-
-const onMovieSelect = async movie => {
-  const response = await axios.get('http://www.omdbapi.com/', {
-    params: {
-      apikey: '<PUT_API_KEY_HERE>',
-      i: movie.imdbID
-    }
-  });
-
-  let summaryElement = '';
-  summaryElement.innerHTML = movieTemplate(response.data);
-  leftMovie = response.data;
-  
 };
 
-const runComparison = () => {
-  const leftSideStats = document.querySelectorAll(
-    '#left-summary .notification'
-  );
-  const rightSideStats = document.querySelectorAll(
-    '#right-summary .notification'
-  );
-
-  leftSideStats.forEach((leftStat, index) => {
-    const rightStat = rightSideStats[index];
-
-    const leftSideValue = leftStat.dataset.value;
-    const rightSideValue = rightStat.dataset.value;
-
-    if (rightSideValue > leftSideValue) {
-      leftStat.classList.remove('is-primary');
-      leftStat.classList.add('is-warning');
-    } else {
-      rightStat.classList.remove('is-primary');
-      rightStat.classList.add('is-warning');
+const getMovies = async () => {
+  const selectedGenre = getSelectedGenre();
+  const discoverMovieEndpoint = 'discover/movie?api_key=';
+  const requestParams = tmdbKey + '&with_genres=' + selectedGenre;
+  const urlToFetch = tmdbBaseUrl + discoverMovieEndpoint + requestParams;
+  try {
+    const response = await fetch(urlToFetch);
+    if (response.ok) {
+      const jsonResponse = await response.json();
+      console.log(jsonResponse);
+      const movies = jsonResponse.results;
+      return movies;
     }
-  });
+  } catch(error) {
+    console.log(error);
+  }
 };
 
-const movieTemplate = movieDetail => {
-  const dollars = parseInt(
-    movieDetail.BoxOffice.replace(/\$/g, '').replace(/,/g, '')
-  );
-  const metascore = parseInt(movieDetail.Metascore);
-  const imdbRating = parseFloat(movieDetail.imdbRating);
-  const imdbVotes = parseInt(movieDetail.imdbVotes.replace(/,/g, ''));
-  const awards = movieDetail.Awards.split(' ').reduce((prev, word) => {
-    const value = parseInt(word);
-
-    if (isNaN(value)) {
-      return prev;
-    } else {
-      return prev + value;
+const getMovieInfo = async (movie) => {
+  const movieId = movie.id;
+  const movieEndpoint = `/movie/${movieId}`;
+  const requestParams = tmdbKey;
+  const urlToFetch = tmdbBaseUrl + movieEndpoint + '?api_key=' + requestParams;
+  // get one movie
+  try {
+    const response = await fetch(urlToFetch);
+    if (response.ok) {
+      const movieInfo = await response.json();
+      return movieInfo;
     }
-  }, 0);
-
-  return `
-    <article class="media">
-      <figure class="media-left">
-        <p class="image">
-          <img src="${movieDetail.Poster}" />
-        </p>
-      </figure>
-      <div class="media-content">
-        <div class="content">
-          <h1>${movieDetail.Title}</h1>
-          <h4>${movieDetail.Genre}</h4>
-          <p>${movieDetail.Plot}</p>
-        </div>
-      </div>
-    </article>
-
-    <article data-value=${awards} class="notification is-primary">
-      <p class="title">${movieDetail.Awards}</p>
-      <p class="subtitle">Awards</p>
-    </article>
-    <article data-value=${dollars} class="notification is-primary">
-      <p class="title">${movieDetail.BoxOffice}</p>
-      <p class="subtitle">Box Office</p>
-    </article>
-    <article data-value=${metascore} class="notification is-primary">
-      <p class="title">${movieDetail.Metascore}</p>
-      <p class="subtitle">Metascore</p>
-    </article>
-    <article data-value=${imdbRating} class="notification is-primary">
-      <p class="title">${movieDetail.imdbRating}</p>
-      <p class="subtitle">IMDB Rating</p>
-    </article>
-    <article data-value=${imdbVotes} class="notification is-primary">
-      <p class="title">${movieDetail.imdbVotes}</p>
-      <p class="subtitle">IMDB Votes</p>
-    </article>
-  `;
+  } catch(error) {
+    console.log(error);
+  }
 };
+
+// Gets a list of movies and ultimately displays the info of a random movie from the list
+const showRandomMovie = async () => {
+  const movieInfo = document.getElementById('movieInfo');
+  if (movieInfo.childNodes.length > 0) {
+    clearCurrentMovie();
+  };
+  const movies = await getMovies();
+  const randomMovie = getRandomMovie(movies);
+  const info = await getMovieInfo(randomMovie);
+  displayMovie(info);
+};
+
+getGenres().then(populateGenreDropdown);
+playBtn.onclick = showRandomMovie;
