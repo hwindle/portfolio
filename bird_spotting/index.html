@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird Spotting App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header>
+    <h1 id="title">Bird Spotting</h1>
+    <p id="description">Please input any bird sightings, or remove any birds that have disappeared.</p>
+  </header>
+<main>
+  <section id="add-form">
+    <form id="survey-form">
+      <div class="location">
+        <label for="location" id="name-label">Location
+          <input type="text" id="location" placeholder="sighting location" class="control" pattern="[a-zA-Z -0-9]*" required>
+        </label>
+      </div>
+      <div class="date">
+        <label for="date-time">Date
+          <input type="date" id="date-time" required />
+        </label>
+      </div>
+      <div class="number-birds">
+        <label for="number" id="number-label">Number of birds
+          <input type="number" id="number" min="0" max="50" placeholder="1" value="1" required>
+        </label>
+      </div>
+      <div class="gender">
+        <p class="radio-btn-heading">Gender</p>
+        <article class="radio-btn-flex-wrapper">
+          <p class="one-radio-option">
+            <input type="radio" name="gender" id="gender-m" class="radio-input" value="male" checked />
+            <label for="gender-m">Male</label>
+          </p>
+          <p class="one-radio-option">
+            <input type="radio" name="gender" id="gender-f" class="radio-input" value="female" />
+            <label for="gender-f">Female</label>
+          </p>
+        </article>
+      </div>
+      <div class="species" id="bird-species-data">
+        <!-- the select gets filled in, or radio buttons are added here -->
+        <label for="species">Type of bird</label>
+        <select id="species" class="control">
+        </select>
+      </div>
+      <!-- svg for animated tick checkbox -->
+      <svg class="checkbox-symbol">
+        <symbol id="check" viewbox="0 0 12 10">
+          <polyline
+            points="1.5 6 4.5 9 10.5 1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          ></polyline>
+        </symbol>
+      </svg>
+      <div class="status">
+        <p>Bird Options</p>
+        <article class="checkbox-flex-wrapper">
+          <p class="one-checkbox-option">
+            <input class="bird-option checkbox-input" type="checkbox" name="status" id="baby" value="Baby" />
+            <label class="checkbox" for="baby">
+              <span>
+                <svg width="14px" height="12px">
+                  <use xlink:href="#check"></use>
+                </svg>
+              </span>
+              <span>Baby (duckling)</span>
+            </label>
+          </p>
+          <p class="one-checkbox-option">
+            <input class="bird-option checkbox-input" type="checkbox" name="status" id="angel-wing" value="Angel wing" />
+            <label class="checkbox" for="angel-wing">
+              <span>
+                <svg width="14px" height="12px">
+                  <use xlink:href="#check"></use>
+                </svg>
+              </span>
+              <span>Wing deformity</span>
+            </label>
+          </p>
+          <p class="one-checkbox-option">
+            <input class="bird-option checkbox-input" type="checkbox" name="status" id="albino" value="White patches" />
+            <label class="checkbox" for="albino">
+              <span>
+                <svg width="14px" height="12px">
+                  <use xlink:href="#check"></use>
+                </svg>
+              </span>
+              <span>White Patches/stripes</span>
+            </label>
+          </p>
+          <p class="one-checkbox-option">
+            <input class="bird-option checkbox-input" type="checkbox" name="status" id="limping" value="Limping" />
+            <label class="checkbox" for="limping">
+              <span>
+                <svg width="14px" height="12px">
+                  <use xlink:href="#check"></use>
+                </svg>
+              </span>
+              <span>Limping</span>
+            </label>
+          </p>
+          <p class="one-checkbox-option">
+            <input class="bird-option checkbox-input" type="checkbox" name="status" id="tame" value="Tame" />
+            <label class="checkbox" for="tame">
+              <span>
+                <svg width="14px" height="12px">
+                  <use xlink:href="#check"></use>
+                </svg>
+              </span>
+              <span>Tame</span>
+            </label>
+          </p>
+          <p class="one-checkbox-option">
+            <input class="bird-option checkbox-input" type="checkbox" name="status" id="plucked" value="Chest plucked" />
+            <label class="checkbox" for="plucked">
+              <span>
+                <svg width="14px" height="12px">
+                  <use xlink:href="#check"></use>
+                </svg>
+              </span>
+              <span>Chest plucked</span>
+            </label>
+          </p>
+        </article>
+      </div>
+      <input id="clear-form" class="clear" type="reset" value="Clear" />
+      <input class="submit" type="submit" id="add-submit" value="Submit" />
+    </form>
+  </section>
+
+  <!-- List of birds -->
+  <h2 class="section-title">Current Birds</h2>
+  <section id="bird-list">
+    <!-- birds added here as article elements -->
+  </section>
+  <section id="bird-summary">
+    <h3 class="section-title">Summary</h3>
+    <table class="bird-summary-list">
+      <thead>
+        <tr>
+          <th>Species</th>
+          <th>Total Count</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="test-tr-delete">
+          <td>No birds added</td>
+          <td>0</td>
+          <td>N/A</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+<footer>
+  <p class="bird-rescue">
+    If you find an injured bird phone Linjoy Wildlife
+    Sanctuary on <span class="tel-no">07780 742748</span> or visit <a href="https://www.facebook.com/people/Linjoy-Wildlife-Sanctuary-and-Rescue-Midlands/100064569286962/" target="_blank">their website</a> for more information.
+  </p>
+</footer>
+
+  <!-- scripts -->
+  <script src="JS/app.js"></script>
+</body>
+</html>

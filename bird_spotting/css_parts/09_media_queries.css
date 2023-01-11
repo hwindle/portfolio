@@ -1,0 +1,114 @@
+@media only screen and (max-width: 699px) {
+  section#bird-list {
+    display: block;
+  }
+
+  /*** Form ***/
+  form {
+    grid-template-areas: 
+    'location location'
+    'date date'
+    'number number'
+    'gender gender'
+    'species species'
+    'status status'
+    'submit submit'
+    'clear clear';
+  }
+
+  input.clear {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  article.checkbox-flex-wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  /*** TABLE - bird summary ***/
+  table {
+    display: block;
+  }
+  
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tbody tr {
+    height: auto;
+    padding: 0.5rem 0;
+  }
+
+  table tbody tr td {
+    padding-left: 45%;
+    margin-bottom: 0.75rem;
+  }
+
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+
+  table tbody tr td:before {
+    position: absolute;
+    font-weight: 700;
+    width: 40%;
+    left: 0.75rem;
+    top: 0;
+  }
+
+  /* set header text on mobile */
+  table tbody tr td:nth-child(1):before {
+    content: "Species";
+  }
+
+  table tbody tr td:nth-child(2):before {
+    content: "Total Count";
+  }
+
+  table tbody tr td:nth-child(3):before {
+    content: "Location";
+  }
+
+  /*** FOOTER ***/
+  footer {
+    height: 20rem;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  p.bird-rescue {
+    max-width: 70%;
+  }
+}
+
+/** bigger mobile **/
+@media screen and (min-width: 700px) and (max-width: 849px) {
+  section#bird-list {
+    display: block;
+  }
+}
+
+/*** TABLETS ***/
+@media only screen and (min-width: 850px) and (max-width: 1024px) {
+  section#bird-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/** wide screens **/
+@media only screen and (min-width: 1921px) {
+  section#bird-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  img.species-pic {
+    max-width: 300px;
+  }
+}
