@@ -1,97 +1,70 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #7f0920;
-  color: #0a0408;
+  background-color: rgb(22, 22, 22);
+  color: white;
+  font-size: 16px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#appTitle {
+header {
+  background-image: linear-gradient(180deg, black 0px, purple 250px);
+  width: 100%;
+  padding: 1rem;
+}
+
+header > h1#appTitle {
+  font-size: 3rem;
+  line-height: 2;
   text-align: center;
-  margin: 0px auto;
-  display: block;
-  font-family: 'Staatliches', sans-serif;
-  font-size: 80px;
 }
 
-#genreForm, #playBtn {
-  text-align: center;
-  margin: 0px auto;
-  display: block;
-  font-family: 'Fredoka One', sans-serif;
+/*** Main layout ***/
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
-#movieInfo {
-  width:  65%;
-  margin:  32px auto;
+form {
+  margin-top: 3rem;
+  width: 50vw;
+  padding: 1.5rem;
+  background-color: rgb(200, 130, 255);
+  color: black;
+  border: 2px solid black;
+  box-shadow: 0 0 15px 2px purple;
 }
 
-#movieInfo:after {
-  content:  "";
-  display:  table;
-  clear:  both;
+section#movieInfo {
+  width: 75vw;
+  min-height: 50vh;
+  padding: 2rem;
+  border: 2px solid gray;
 }
 
-#moviePoster, #movieText {
-  width:  50%;
-  float:  left;
+section.film-flex-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-img#moviePoster {
-  width:  100%;
-  height:  auto;
-  display:  block;
-  margin:  auto;
-}
-
-#movieText {
-  font-family: 'Questrial';
-  color: #FEFBEA;
-  line-height: 1.25;
-}
-
-#movieTitle, #movieOverview {
-  padding:  32px;
-}
-
-#playBtn {
-  margin-top: 20px;
-  font-size: 25px;
-  padding: 7px 10px;
-  border-radius: 10px;
-  border-style: none;
-  background-color: #B97828;
-  color: #fdc238;
-  cursor:  pointer;
-}
-
-label {
-  display: block;
-  font-size: 35px;
-  margin-bottom: 5px;
-}
-
-select {
-  width: 200px;
+div#moviePoster > img {
+  width: 100%;
   height: auto;
+  /* margin-right: 2rem; */
 }
 
-#likeOrDislikeBtns {
+h3#movieTitle {
+  font-size: 2.6rem;
   text-align: center;
-  margin: 0px auto;  
-}
-
-#likeBtn, #dislikeBtn {
-  padding: 15px 25px;
-  font-size: 25px;
-  border-radius: 12px;
-  border-style: none;
-  cursor:  pointer;
-}
-
-#likeBtn {
-  background-color: #249e57;
-  color: darkgreen;
-}
-
-#dislikeBtn {
-  background-color: #c74a4a;
-  color: #910000;
 }

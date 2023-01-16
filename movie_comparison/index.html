@@ -3,45 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>Film Search</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Fredoka+One&family=Questrial&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/style.css">
-    <script defer src="https://kit.fontawesome.com/e918d10e90.js" crossorigin="anonymous"></script>
-    <script defer src="public/helpers.js"></script>
-    <script defer src="public/script.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <h1 id="appTitle">Film Search</h1>
     </header>
-    <form id="search-form">
-      <div class="form-row">
-        <label for="year">Type a year:</label>
-        <input type="number" name="year" id="year"  min="1930" max="2023" required/>
-      </div>
-      <div class="form-row">
-        <label for="genres">Choose a genre:</label>
-        <select name="genres" id="genres">
-        </select>
-      </div>
-      <button id="search-btn">Search for random film</button>
-    </form>
+    <main>
+      <form id="search-form">
+        <div class="form-row">
+          <label for="year">Type a year:</label>
+          <input type="number" name="year" id="year"  min="1930" max="2023" required/>
+        </div>
+        <div class="form-row">
+          <label for="genres">Choose a genre:</label>
+          <select name="genres" id="genres">
+          </select>
+        </div>
+        <button id="search-btn">Search for random film</button>
+      </form>
     
-    <section id="movieInfo">
-      <div id="moviePoster"></div>
-      <div id="movieText">Title - Overview</div>
-      <article class="additional-info">
-        <p id="director">Director</p>
-        <section class="cast">
-          <p class="actor">Actors 1 - 10</p>
-        </section>
-        <p id="imdb-rating">IMDB Rating: </p>
-        <p id="run-time">Run time: 1hr x mins</p>
-      </article>
-    </section>
+      <section id="movieInfo">
+        <h3 id="movieTitle">Title</h3>
+        <section class="film-flex-wrap">
+          <div id="moviePoster">
+            <img src="./pics/sample_film.jpg" class="poster" alt="Harrison Ford" />
+          </div>
+          <!-- written movie info -->
+          <article class="additional-info">
+            <p id="movieOverview">Overview</p>
+            <p id="director">Director</p>
+            <section class="cast">
+              <p class="actor">Actors 1 - 10</p>
+            </section>
+            <p id="imdb-rating">IMDB Rating: </p>
+            <p id="run-time">Run time: 1hr x mins</p>
+          </article>
+        </section><!-- end of inner flexbox container -->
+      </section>
+    </main>
 
     <!-- scripts -->
-    <script src="index.js"></script>
+    <script src="./JS/utils.js"></script>
+    <script src="./JS/index.js"></script>
   </body>
 </html>
