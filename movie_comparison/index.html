@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Film Finder</title>
+    <title>Film Search</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Fredoka+One&family=Questrial&family=Staatliches&display=swap" rel="stylesheet">
@@ -13,21 +13,35 @@
   </head>
   <body>
     <header>
-      <h1 id="appTitle">🍿Film Finder🍿</h1>
+      <h1 id="appTitle">Film Search</h1>
     </header>
-    <form id="genreForm">
-      <label>Choose a genre:</label>
-      <select name="genres" id="genres">
-      </select>
+    <form id="search-form">
+      <div class="form-row">
+        <label for="year">Type a year:</label>
+        <input type="number" name="year" id="year"  min="1930" max="2023" required/>
+      </div>
+      <div class="form-row">
+        <label for="genres">Choose a genre:</label>
+        <select name="genres" id="genres">
+        </select>
+      </div>
+      <button id="search-btn">Search for random film</button>
     </form>
-    <button id="playBtn">Let's Play!</button>
-    <div id="movieInfo">
+    
+    <section id="movieInfo">
       <div id="moviePoster"></div>
-      <div id="movieText"></div>
-    </div>
-    <div id="likeOrDislikeBtns" hidden>
-      <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
-      <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
-    </div>
+      <div id="movieText">Title - Overview</div>
+      <article class="additional-info">
+        <p id="director">Director</p>
+        <section class="cast">
+          <p class="actor">Actors 1 - 10</p>
+        </section>
+        <p id="imdb-rating">IMDB Rating: </p>
+        <p id="run-time">Run time: 1hr x mins</p>
+      </article>
+    </section>
+
+    <!-- scripts -->
+    <script src="index.js"></script>
   </body>
 </html>
