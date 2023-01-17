@@ -13,7 +13,7 @@
       <form id="search-form">
         <div class="form-row">
           <label for="year">Type a year:</label>
-          <input type="number" name="year" id="year"  min="1930" max="2023" required/>
+          <input type="number" name="year" id="year"  min="1930" max="2023" value="2023" required/>
         </div>
         <div class="form-row">
           <label for="genres">Choose a genre:</label>
@@ -24,20 +24,24 @@
       </form>
     
       <section id="movieInfo">
-        <h3 id="movieTitle">Title</h3>
+        <h3 id="movieTitle">Air Force One</h3>
         <section class="film-flex-wrap">
           <div id="moviePoster">
             <img src="./pics/sample_film.jpg" class="poster" alt="Harrison Ford" />
           </div>
           <!-- written movie info -->
           <article class="additional-info">
-            <p id="movieOverview">Overview</p>
-            <p id="director">Director</p>
+            <p id="movieOverview">The President is aboard Air Force One with his wife, daughter and government officials when it's hijacked by terrorists who want their country's dictator freed. A decorated Vietnam vet, the President becomes a vigilante force to free the hostages, retake the plane and thwart the hijackers.</p>
+            <h4>Director(s)</h4>
+            <p id="director">Wolfgang Petersen</p>
+            <h4>Cast</h4>
             <section class="cast">
-              <p class="actor">Actors 1 - 10</p>
+              <p class="actor">Harrison Ford</p>
+              <p class="actor">Gary Oldman</p>
+              <p class="actor">Glenn Close</p>
             </section>
-            <p id="imdb-rating">IMDB Rating: </p>
-            <p id="run-time">Run time: 1hr x mins</p>
+            <p id="imdb-rating">IMDB Rating: 4.5</p>
+            <p id="run-time">Run time: 1hr 59 mins</p>
           </article>
         </section><!-- end of inner flexbox container -->
       </section>

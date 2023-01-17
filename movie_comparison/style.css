@@ -32,6 +32,7 @@ main {
   align-items: center;
 }
 
+/*** FORMS ***/
 form {
   margin-top: 3rem;
   width: 50vw;
@@ -42,11 +43,44 @@ form {
   box-shadow: 0 0 15px 2px purple;
 }
 
+div.form-row {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input#year,
+select {
+  width: 100%;
+  padding: 0.3rem 0.8rem;
+  border: 0;
+  font-size: 1.5rem;
+}
+
+button#search-btn {
+  font-size: 1.7rem;
+  padding: 0.5rem 0.8rem;
+  border: 3px solid purple;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+button#search-btn:hover,
+button#search-btn:focus {
+  background-color: white;
+  color: black;
+}
+
+/*** the Film display bit ***/
 section#movieInfo {
   width: 75vw;
   min-height: 50vh;
   padding: 2rem;
   border: 2px solid gray;
+  margin-bottom: 2rem;
 }
 
 section.film-flex-wrap {
@@ -66,5 +100,34 @@ div#moviePoster > img {
 
 h3#movieTitle {
   font-size: 2.6rem;
-  text-align: center;
+  text-align: center ;
+}
+
+article.additional-info {
+  max-width: 50%;
+}
+
+article.additional-info > p#movieOverview {
+  text-align: justify;
+}
+
+article.additional-info > h4 {
+  line-height: 3;
+}
+
+section.cast {
+  margin-bottom: 2rem;
+}
+
+
+/*** Mobile media queries ***/
+@media screen and (max-width: 700px) {
+  form {
+    width: 75vw;
+  }
+
+  section.film-flex-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
 }
