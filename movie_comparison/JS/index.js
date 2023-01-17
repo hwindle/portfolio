@@ -23,6 +23,7 @@ const getGenres = async () => {
   }
 };
 
+// UPDATE
 const getMovies = async () => {
   const selectedGenre = getSelectedGenre();
   const discoverMovieEndpoint = 'discover/movie?api_key=';
@@ -41,6 +42,7 @@ const getMovies = async () => {
   }
 };
 
+// UPDATE
 const getMovieInfo = async (movie) => {
   const movieId = movie.id;
   const movieEndpoint = `/movie/${movieId}`;
@@ -58,7 +60,7 @@ const getMovieInfo = async (movie) => {
   }
 };
 
-// Gets a list of movies and ultimately displays the info of a random movie from the list
+// UPDATE - Gets a list of movies and ultimately displays the info of a random movie from the list
 const showRandomMovie = async () => {
   const movieInfo = document.getElementById('movieInfo');
   if (movieInfo.childNodes.length > 0) {
