@@ -1,6 +1,6 @@
 
 // codecademy one
-const tmdbKey = '80836905ac94fca8d5055c0ecf1ab442';
+const tmdbKey = 'FILM_API_KEY';
 const tmdbBaseUrl = 'https://api.themoviedb.org/3/';
 const playBtn = document.getElementById('playBtn');
 
