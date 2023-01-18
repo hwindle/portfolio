@@ -19,36 +19,19 @@ const getGenres = async () => {
   }
 };
 
-const filterMoviesByYear = async (allFilms, year) => {
-  // holds an array of objects that match the year
-  const filteredFilms = [];
-  allFilms.forEach(film => {
-    // get just the year of each film from release-date
-    // getting first 4 characters
-    const filmYear = film.release_date.slice(0, 4);
-    //console.log(filmYear, typeof(filmYear));
-    if (filmYear === year) {
-      filteredFilms.push(film);
-    }
-  });
-  console.dir(filteredFilms);
-  return filteredFilms;
-};
-
-// UPDATE
+// DONE - primary release year get parameter added.
 const getMovies = async () => {
   const selectedYear = getSelectedYear();
   const selectedGenre = getSelectedGenre();
   const discoverMovieEndpoint = 'discover/movie?api_key=';
-  const requestParams = tmdbKey + '&with_genres=' + selectedGenre;
+  const requestParams = tmdbKey + '&with_genres=' + selectedGenre + '&primary_release_year=' + selectedYear;
   const urlToFetch = tmdbBaseUrl + discoverMovieEndpoint + requestParams;
   try {
     const response = await fetch(urlToFetch);
     if (response.ok) {
       const jsonResponse = await response.json();
       console.log(jsonResponse);
-      const allMovies = jsonResponse.results;
-      const movies = filterMoviesByYear(allMovies, selectedYear);
+      const movies = jsonResponse.results;
       return movies;
     }
   } catch(error) {
