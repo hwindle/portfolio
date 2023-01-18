@@ -15,6 +15,12 @@ const getSelectedGenre = () => {
   return selectedGenre;
 };
 
+// get the chosen year
+const getSelectedYear = () => {
+  const chosenYear = document.querySelector('input#year').value;
+  return chosenYear.toString();
+};
+
 // Create HTML for movie poster
 const createMoviePoster = (posterPath) => {
   const moviePosterUrl = `https://image.tmdb.org/t/p/original/${posterPath}`;

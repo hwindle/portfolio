@@ -1,8 +1,6 @@
-
-// codecademy one
 const tmdbKey = '80836905ac94fca8d5055c0ecf1ab442';
 const tmdbBaseUrl = 'https://api.themoviedb.org/3/';
-const playBtn = document.querySelector('#search-btn');
+const searchBtn = document.querySelector('#search-btn');
 
 const getGenres = async () => {
   const genreRequestEndpoint = 'genre/movie/list?api_key=';
@@ -21,8 +19,25 @@ const getGenres = async () => {
   }
 };
 
+const filterMoviesByYear = async (allFilms, year) => {
+  // holds an array of objects that match the year
+  const filteredFilms = [];
+  allFilms.forEach(film => {
+    // get just the year of each film from release-date
+    // getting first 4 characters
+    const filmYear = film.release_date.slice(0, 4);
+    //console.log(filmYear, typeof(filmYear));
+    if (filmYear === year) {
+      filteredFilms.push(film);
+    }
+  });
+  console.dir(filteredFilms);
+  return filteredFilms;
+};
+
 // UPDATE
 const getMovies = async () => {
+  const selectedYear = getSelectedYear();
   const selectedGenre = getSelectedGenre();
   const discoverMovieEndpoint = 'discover/movie?api_key=';
   const requestParams = tmdbKey + '&with_genres=' + selectedGenre;
@@ -32,7 +47,8 @@ const getMovies = async () => {
     if (response.ok) {
       const jsonResponse = await response.json();
       console.log(jsonResponse);
-      const movies = jsonResponse.results;
+      const allMovies = jsonResponse.results;
+      const movies = filterMoviesByYear(allMovies, selectedYear);
       return movies;
     }
   } catch(error) {
@@ -59,11 +75,8 @@ const getMovieInfo = async (movie) => {
 };
 
 // UPDATE - Gets a list of movies and ultimately displays the info of a random movie from the list
-const showRandomMovie = async () => {
-  const movieInfo = document.getElementById('movieInfo');
-  if (movieInfo.childNodes.length > 0) {
-    clearCurrentMovie();
-  };
+const showRandomMovie = async (e) => {
+  e.preventDefault();
   const movies = await getMovies();
   const randomMovie = getRandomMovie(movies);
   const info = await getMovieInfo(randomMovie);
@@ -71,4 +84,4 @@ const showRandomMovie = async () => {
 };
 
 getGenres().then(populateGenreDropdown);
-playBtn.onclick = showRandomMovie;
+searchBtn.addEventListener('mousedown', showRandomMovie);
