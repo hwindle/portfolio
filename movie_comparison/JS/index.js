@@ -1,8 +1,8 @@
 
 // codecademy one
-const tmdbKey = 'FILM_API_KEY';
+const tmdbKey = '80836905ac94fca8d5055c0ecf1ab442';
 const tmdbBaseUrl = 'https://api.themoviedb.org/3/';
-const playBtn = document.getElementById('playBtn');
+const playBtn = document.querySelector('#search-btn');
 
 const getGenres = async () => {
   const genreRequestEndpoint = 'genre/movie/list?api_key=';
@@ -10,12 +10,10 @@ const getGenres = async () => {
   const urlToFetch = tmdbBaseUrl + genreRequestEndpoint + requestParams;
 
   try {
-    const response = await fetch(urlToFetch, {cache: 'no-cache'});
+    const response = await fetch(urlToFetch);
     if (response.ok) {
       const jsonResponse = await response.json();
-      // console.log(jsonResponse);
       const genres = jsonResponse.genres;
-      console.log(genres);
       return genres;
     }
   } catch(error) {
