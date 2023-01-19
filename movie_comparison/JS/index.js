@@ -57,14 +57,14 @@ const getMovieInfo = async (movie) => {
   }
 };
 
-// UPDATE - Gets a list of movies and ultimately displays the info of a random movie from the list
-const showRandomMovie = async (e) => {
-  e.preventDefault();
+getGenres().then(populateGenreDropdown);
+
+async function findFilms() {
+  //e.preventDefault();
   const movies = await getMovies();
   const randomMovie = getRandomMovie(movies);
   const info = await getMovieInfo(randomMovie);
   displayMovie(info);
-};
-
-getGenres().then(populateGenreDropdown);
-searchBtn.addEventListener('mousedown', showRandomMovie);
+}
+// DONE
+searchBtn.addEventListener('mousedown', findFilms);

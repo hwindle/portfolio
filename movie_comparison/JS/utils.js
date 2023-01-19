@@ -24,30 +24,43 @@ const getSelectedYear = () => {
 // Create HTML for movie poster
 const createMoviePoster = (posterPath) => {
   const moviePosterUrl = `https://image.tmdb.org/t/p/original/${posterPath}`;
-
   const posterImg = document.createElement('img');
-  posterImg.setAttribute('src', moviePosterUrl);
-  posterImg.setAttribute('id', 'moviePoster');
   posterImg.setAttribute('class', 'poster');
+  posterImg.setAttribute('src', moviePosterUrl);
   return posterImg;
 };
 
-// Create HTML for movie title UPDATE
+// Create HTML for movie title 
 const createMovieTitle = (title) => {
-  const titleHeader = document.createElement('h1');
+  const titleHeader = document.createElement('h3');
   titleHeader.setAttribute('id', 'movieTitle');
   titleHeader.innerHTML = title;
-
   return titleHeader;
 };
 
-// Create HTML for movie overview UPDATE
-const createMovieOverview = (overview) => {
-  const overviewParagraph = document.createElement('p');
-  overviewParagraph.setAttribute('id', 'movieOverview');
-  overviewParagraph.innerHTML = overview;
-
-  return overviewParagraph;
+// Create HTML for movie overview 
+const createMovieInfo = (film) => {
+  // create outer article
+  let outerArticle = document.createElement('article');
+  let formattedTime = '';
+  if (parseInt(film.runtime) > 60) {
+    formattedTime = Math.floor(parseInt(film.runtime) / 60) + ' hrs and ';
+    formattedTime += parseInt(film.runtime) % 60 + ' mins';
+  } else {
+    formattedTime = film.runtime + ' mins';
+  }
+  outerArticle.setAttribute('class', 'additional-info');
+  // set articles inner HTML
+  outerArticle.innerHTML = `\n<p id="movieOverview">${film.overview}</p>\n
+    \n<h4>Popularity</h4>\n<p id="director">${film.popularity}</p>\n
+    <h4>Other</h4>\n
+    <section class="cast">
+      <p class="actor">Language: ${film.original_language}</p>\n
+    </section>
+    <p id="imdb-rating">IMDB Rating: ${film.vote_average}</p>\n
+    <p id="run-time">Run time: ${formattedTime}</p>`;
+ 
+  return outerArticle;
 };
 
 // Returns a random movie from the first page of movies UPDATE
@@ -59,20 +72,18 @@ const getRandomMovie = (movies) => {
 
 // Uses the DOM to create HTML to display the movie UPDATE
 const displayMovie = (movieInfo) => {
-  const moviePosterDiv = document.getElementById('moviePoster');
-  const movieTextDiv = document.getElementById('movieText');
-  const likeBtn = document.getElementById('likeBtn');
-  const dislikeBtn = document.getElementById('dislikeBtn');
-
-  // Create HTML content containing movie info
-  const moviePoster = createMoviePoster(movieInfo.poster_path);
-  const titleHeader = createMovieTitle(movieInfo.title);
-  const overviewText = createMovieOverview(movieInfo.overview);
-
-  // Append title, poster, and overview to page
-  moviePosterDiv.appendChild(moviePoster);
-  movieTextDiv.appendChild(titleHeader);
-  movieTextDiv.appendChild(overviewText);
-
-
+  // get outer boxes
+  const outerSection = document.querySelector('section#movieInfo');
+  const innerFlex = document.querySelector('section.film-flex-wrap');
+  // create film poster
+  const posterElement = document.createElement('div');
+  posterElement.setAttribute('id', 'moviePoster');
+  const filmImg = createMoviePoster(movieInfo.poster_path);
+  posterElement.appendChild(filmImg);
+  // set the title
+  const title = createMovieTitle(movieInfo.title);
+  outerSection.appendChild(title);
+  // create the additional info
+  const filmInfo = createMovieInfo(movieInfo);
+  innerFlex.append(filmInfo);
 };
