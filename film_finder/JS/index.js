@@ -67,4 +67,4 @@ async function findFilms() {
   displayMovie(info);
 }
 // DONE
-searchBtn.addEventListener('mousedown', findFilms);
+searchBtn.addEventListener('mouseover', findFilms);

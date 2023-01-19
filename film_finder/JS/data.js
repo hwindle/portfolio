@@ -70,20 +70,35 @@ const getRandomMovie = (movies) => {
   return randomMovie;
 };
 
+function clearFilm() {
+  try {
+    const title = document.querySelector('h3#movieTitle');
+    title.remove();
+    const innerElement = document.querySelector('section.film-flex-wrap');
+    innerElement.remove();
+  } catch (err) {
+    console.log(err);
+  }
+}
+
 // Uses the DOM to create HTML to display the movie UPDATE
 const displayMovie = (movieInfo) => {
+  clearFilm();
   // get outer boxes
   const outerSection = document.querySelector('section#movieInfo');
+  
   const innerFlex = document.querySelector('section.film-flex-wrap');
+  // set the title
+  const title = createMovieTitle(movieInfo.title);
+  outerSection.appendChild(title);
   // create film poster
   const posterElement = document.createElement('div');
   posterElement.setAttribute('id', 'moviePoster');
   const filmImg = createMoviePoster(movieInfo.poster_path);
   posterElement.appendChild(filmImg);
-  // set the title
-  const title = createMovieTitle(movieInfo.title);
-  outerSection.appendChild(title);
+  innerFlex.appendChild(posterElement);
+
   // create the additional info
   const filmInfo = createMovieInfo(movieInfo);
-  innerFlex.append(filmInfo);
+  innerFlex.appendChild(filmInfo);
 };
