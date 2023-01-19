@@ -90,7 +90,9 @@ const displayMovie = (movieInfo) => {
   // create the additional info
   const filmInfo = createMovieInfo(movieInfo);
   innerFlex.appendChild(filmInfo);
+  outerSection.appendChild(innerFlex);
 };
+
 // DONE
 const searchBtn = document.querySelector('#search-btn');
 searchBtn.addEventListener('click', findFilms);
