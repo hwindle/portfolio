@@ -34,7 +34,7 @@ const populateGenreDropdown = (genres) => {
 
 /**
  * Get a bunch of movies from one year 
- * (1 page as it is paginated in this API).
+ * (10 pages as it is paginated in this API).
  * and from 1 genre of movies.
  * 
  * @returns an array of film objects
@@ -43,7 +43,9 @@ const getMovies = async () => {
   const selectedYear = getSelectedYear();
   const selectedGenre = getSelectedGenre();
   const moviesEndpoint = 'discover/movie?api_key=';
-  const requestParams = tmdbKey + '&with_genres=' + selectedGenre + '&primary_release_year=' + selectedYear;
+  // pages is the number of paginated pages returned
+  // sort_by is to get the better movies first
+  const requestParams = tmdbKey + '&with_genres=' + selectedGenre + '&primary_release_year=' + selectedYear + '&page=5' + '';
   const urlToFetch = tmdbBaseUrl + moviesEndpoint + requestParams;
   try {
     const response = await fetch(urlToFetch);
@@ -65,8 +67,8 @@ const getMovies = async () => {
  * @returns movieInfo details object
  */
 const getMovieInfo = async (movie) => {
-  localStorage.setItem('film-finder-movie', JSON.stringify(movie));
   const movieId = movie.id;
+  console.log('movie id: ', movie.id);
   const movieEndpoint = `/movie/${movieId}`;
   const requestParams = tmdbKey;
   const urlToFetch = tmdbBaseUrl + movieEndpoint + '?api_key=' + requestParams;

@@ -54,9 +54,17 @@ const createMovieInfo = (film) => {
 
 // Returns a random movie from the first page of movies UPDATE
 const getRandomMovie = (movies) => {
-  const randomIndex = Math.floor(Math.random() * movies.length);
-  const randomMovie = movies[randomIndex];
-  return randomMovie;
+  const quantityElement = document.querySelector('input#quantity');
+  const quantity = quantityElement.value;
+  let indexArr = [];
+  let randomMovies = [];
+  // for each number in number box, get a random film
+  for (let i = 0; i < parseInt(quantity); i++) {
+    indexArr.push(Math.floor(Math.random() * movies.length));
+  }
+  // get the movie object for each random film
+  indexArr.map(index => randomMovies.push(movies[index]));
+  return randomMovies;
 };
 
 function clearFilms() {
@@ -70,7 +78,7 @@ function clearFilms() {
 
 // Uses the DOM to create HTML to display the movie UPDATE
 const displayMovie = (movieInfo) => {
-  clearFilms();
+  // clearFilms();
   // get outer boxes
   const outerSection = document.createElement('section');
   outerSection.setAttribute('id', 'movieInfo');
@@ -78,7 +86,6 @@ const displayMovie = (movieInfo) => {
   innerFlex.setAttribute('class', 'film-flex-wrap');
   // set the title
   const title = createMovieTitle(movieInfo.title);
-
   // create film poster
   const posterElement = document.createElement('div');
   posterElement.setAttribute('id', 'moviePoster');
@@ -107,13 +114,18 @@ getGenres().then(populateGenreDropdown);
 async function findFilms(e) {
   e.preventDefault();
   const movies = await getMovies();
-  const randomMovie = getRandomMovie(movies);
-  const info = await getMovieInfo(randomMovie);
-  displayMovie(info);
+  const randomMovies = getRandomMovie(movies);
+  //console.log(randomMovies);
+  let info = {};
+  for (const item of randomMovies) {
+    info = await getMovieInfo(item);
+    console.log(info);
+    displayMovie(info);   
+  }
 }
 
 // If starting the app for first time, display the last found film
-const localFilm = JSON.parse(localStorage.getItem('film-finder-movie'));
-const initialFilm = getMovieInfo(localFilm);
-displayMovie(initialFilm);
+// const localFilm = JSON.parse(localStorage.getItem('film-finder-movie'));
+// const initialFilm = getMovieInfo(localFilm);
+// displayMovie(initialFilm);
 
