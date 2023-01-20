@@ -59,12 +59,10 @@ const getRandomMovie = (movies) => {
   return randomMovie;
 };
 
-function clearFilm() {
+function clearFilms() {
   try {
-    const title = document.querySelector('h3#movieTitle');
-    title.remove();
-    const innerElement = document.querySelector('section.film-flex-wrap');
-    innerElement.remove();
+    const films = document.querySelector('div.film-list');
+    films.children.remove();
   } catch (err) {
     console.log(err);
   }
@@ -72,14 +70,15 @@ function clearFilm() {
 
 // Uses the DOM to create HTML to display the movie UPDATE
 const displayMovie = (movieInfo) => {
-  clearFilm();
+  clearFilms();
   // get outer boxes
-  const outerSection = document.querySelector('section#movieInfo');
-  
-  const innerFlex = document.querySelector('section.film-flex-wrap');
+  const outerSection = document.createElement('section');
+  outerSection.setAttribute('id', 'movieInfo');
+  const innerFlex = document.createElement('section');
+  innerFlex.setAttribute('class', 'film-flex-wrap');
   // set the title
   const title = createMovieTitle(movieInfo.title);
-  outerSection.appendChild(title);
+  
   // create film poster
   const posterElement = document.createElement('div');
   posterElement.setAttribute('id', 'moviePoster');
@@ -89,8 +88,13 @@ const displayMovie = (movieInfo) => {
 
   // create the additional info
   const filmInfo = createMovieInfo(movieInfo);
+  // append the three bigger boxes
+  outerSection.appendChild(title);
   innerFlex.appendChild(filmInfo);
   outerSection.appendChild(innerFlex);
+  // add the film to the div film-list
+  const filmList = document.querySelector('div.film-list');
+  filmList.append(outerSection);
 };
 
 // DONE
