@@ -19,7 +19,7 @@ const createMoviePoster = (posterPath) => {
   return posterImg;
 };
 
-// Create HTML for movie title 
+// Create HTML for movie title
 const createMovieTitle = (title) => {
   const titleHeader = document.createElement('h3');
   titleHeader.setAttribute('id', 'movieTitle');
@@ -27,14 +27,14 @@ const createMovieTitle = (title) => {
   return titleHeader;
 };
 
-// Create HTML for movie overview 
+// Create HTML for movie overview
 const createMovieInfo = (film) => {
   // create outer article
   let outerArticle = document.createElement('article');
   let formattedTime = '';
   if (parseInt(film.runtime) > 60) {
     formattedTime = Math.floor(parseInt(film.runtime) / 60) + ' hrs and ';
-    formattedTime += parseInt(film.runtime) % 60 + ' mins';
+    formattedTime += (parseInt(film.runtime) % 60) + ' mins';
   } else {
     formattedTime = film.runtime + ' mins';
   }
@@ -48,7 +48,7 @@ const createMovieInfo = (film) => {
     </section>
     <p id="imdb-rating">IMDB Rating: ${film.vote_average}</p>\n
     <p id="run-time">Run time: ${formattedTime}</p>`;
- 
+
   return outerArticle;
 };
 
@@ -62,7 +62,7 @@ const getRandomMovie = (movies) => {
 function clearFilms() {
   try {
     const films = document.querySelector('div.film-list');
-    films.children.remove();
+    films.innerHTML = '';
   } catch (err) {
     console.log(err);
   }
@@ -78,7 +78,7 @@ const displayMovie = (movieInfo) => {
   innerFlex.setAttribute('class', 'film-flex-wrap');
   // set the title
   const title = createMovieTitle(movieInfo.title);
-  
+
   // create film poster
   const posterElement = document.createElement('div');
   posterElement.setAttribute('id', 'moviePoster');
@@ -111,3 +111,9 @@ async function findFilms(e) {
   const info = await getMovieInfo(randomMovie);
   displayMovie(info);
 }
+
+// If starting the app for first time, display the last found film
+const localFilm = JSON.parse(localStorage.getItem('film-finder-movie'));
+const initialFilm = getMovieInfo(localFilm);
+displayMovie(initialFilm);
+

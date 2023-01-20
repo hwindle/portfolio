@@ -65,6 +65,7 @@ const getMovies = async () => {
  * @returns movieInfo details object
  */
 const getMovieInfo = async (movie) => {
+  localStorage.setItem('film-finder-movie', JSON.stringify(movie));
   const movieId = movie.id;
   const movieEndpoint = `/movie/${movieId}`;
   const requestParams = tmdbKey;
