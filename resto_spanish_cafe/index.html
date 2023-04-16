@@ -15,16 +15,16 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="top-nav">
         <ul>
+          <li id="burger-menu">
+            <span class="fa-solid fa-bars"></span>
+          </li>
           <li>Contacto</li>
           <li>Nosotros</li>
           <li id="logo">Resto</li>
           <li>Menu</li>
           <li>Reservacion</li>
-          <li id="burger-menu">
-            <span class="fa-solid fa-bars"></span>
-          </li>
         </ul>
       </nav>
     </header>
@@ -353,5 +353,15 @@
       src="https://kit.fontawesome.com/128e09828b.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const mobileBtn = document.querySelector('#burger-menu');
+      const liArray = document.querySelectorAll('nav.top-nav > ul > li');
+
+      mobileBtn.addEventListener('mousedown', () => {
+        liArray.forEach((item) => {
+          item.classList.toggle('show');
+        });
+      });
+    </script>
   </body>
 </html>

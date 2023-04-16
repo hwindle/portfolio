@@ -434,15 +434,21 @@ footer {
 
 /** end of FOOTER **/
 
-/*** Bugfix for the form bumping into the footer on mobile */
 /* below 760px */
 @media screen and (max-width: 724px) {
+  /*** Bugfix for the form bumping into the footer on mobile */
   .reservation {
     min-height: 650px;
   }
 
   textarea {
     height: 3rem;
+  }
+  /*** mobile menu ***/
+  nav.top-nav > ul > li.show {
+    width: 100%;
+    text-align: center;
+    display: block;
   }
 }
 
