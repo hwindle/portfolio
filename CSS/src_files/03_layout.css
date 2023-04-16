@@ -68,6 +68,7 @@ section.about-me {
   width: 50%;
   background-color: var(--col-lightest);
   margin: 2rem auto;
+  font-size: 1.2rem;
 }
 
 section.about-me h3 {
