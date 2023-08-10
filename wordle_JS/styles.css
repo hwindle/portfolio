@@ -35,27 +35,28 @@ div.row {
   gap: 0.3rem;
 }
 
-input.letter-input {
+.letter-input {
   background-color: rgba(20, 2, 54, 1);
   border: 2px solid #ccc;
   border-radius: 3px;
   display: block;
   width: 100%;
-  font-size: 40px;
+  padding-top: 1rem;
+  font-size: 70px;
   color: white;
   font-weight: bold;
 }
 
-input.letter-input.wrong {
+.letter-input.wrong {
   background-color: #777;
 }
 
-input.letter-input.close {
+.letter-input.close {
   background-color: rgb(245, 198, 98);
   color: #333;
 }
 
-input.letter-input.correct {
+.letter-input.correct {
   background-color: rgb(89, 150, 65);
 }
 

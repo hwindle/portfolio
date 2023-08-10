@@ -55,7 +55,7 @@ async function startGame() {
       currentGuessWord = currentGuessWord.substring(0, currentGuessWord.length - 1) + letter;
     }
     letters[ANSWER_LENGTH * currentRow
-      + currentGuessWord.length - 1].value = letter;
+      + currentGuessWord.length - 1].innerText = letter;
   }
 
   async function getRowWord() {
@@ -81,7 +81,7 @@ async function startGame() {
 
     const guessLetters = currentGuessWord.split('');
     const map = makeHashMap(wordLetters);
-    console.log(map);
+    //console.log(map);
     // marking correct letters
     for (let i = 0; i < ANSWER_LENGTH; i++) {
       if (guessLetters[i] === wordLetters[i]) {
@@ -105,11 +105,11 @@ async function startGame() {
     // reset the word for the next row
     currentRow++;
     
-
+    // place to put winning or loosing message.
+    const winMsg = document.querySelector('.game-message');
     // win or loosing messages
     if (currentGuessWord === word) {
-      const winMsg = document.querySelector('.game-message');
-      winMsg.innerHTML = '<h3>You win! :-)</h3>';
+      winMsg.innerHTML = '<h3>🎊 You win! 😊</h3>';
       finishedGame = true;
       return;
     }
@@ -136,13 +136,14 @@ async function startGame() {
   function backspace() {
     currentGuessWord = currentGuessWord.substring(0, currentGuessWord.length - 1);
     letters[ANSWER_LENGTH * currentRow 
-      + currentGuessWord.length].value = '';
+      + currentGuessWord.length].innerText = '';
   }
 
   
 
   /// main event listener
   document.addEventListener('keydown', function (e) {
+    e.preventDefault();
     if (finishedGame || isLoading) {
       return;
     }
