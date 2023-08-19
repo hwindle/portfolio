@@ -164,6 +164,7 @@ async function startGame() {
       addLetter(action.toUpperCase());
     }
   });
+
 }
 
 
