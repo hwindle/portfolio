@@ -6,7 +6,7 @@ div.project-card {
   flex-direction: column;
   align-items: center;
   background-color: var(--col-grey-300);
-  height: 32rem;
+  height: auto;
   border: 1px solid var(--col-grey-600);
   border-radius: 10px 10px 0 0;
   box-shadow: 0 -3px 14px 2px var(--col-grey-600);
